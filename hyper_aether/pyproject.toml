@@ -1,0 +1,16 @@
+[project]
+name = "hyper-aether"
+version = "0.1.0"
+description = "A long term memory layer for multi agent systems using hypergraphs and large language models."
+authors = [
+    { name = "Shrey Kohli", email = "kohlishr@umich.edu"}]
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "numpy>=2.4.3",
+    "ollama>=0.6.1",
+    "pydantic>=2.12.5",
+    "scikit-learn>=1.8.0",
+    "sentence-transformers>=5.3.0",
+    "xgi>=0.10.1",
+]
