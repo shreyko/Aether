@@ -25,7 +25,7 @@ def run_simulation():
 
     print("\n=== STARTING RETRIEVAL (DUAL HYPERGRAPH ACTIVATION) ===")
     # The agent asks a question that seems only about the dog.
-    query = "What kind of dog does the user have?"
+    query = "What is the name of the user"
     print(f"User Query: '{query}'")
     
     # The Memory OS retrieves the full situational envelope
@@ -35,6 +35,7 @@ def run_simulation():
     print(agent_context)
     print("----------------------------------------------")
     print(memos.theme_to_edge_id)
+    
    
 if __name__ == "__main__":
     run_simulation()

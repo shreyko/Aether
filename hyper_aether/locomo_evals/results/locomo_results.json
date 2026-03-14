@@ -1,0 +1,2130 @@
+[
+    {
+        "conversation_idx": 0,
+        "question": "When did Caroline go to the LGBTQ support group?",
+        "ground_truth": "7 May 2023",
+        "generated_answer": "According to the Memory Context, Caroline attended a LGBTQ support group on December 14, 2023.",
+        "type": "2"
+    },
+    {
+        "conversation_idx": 0,
+        "question": "When did Melanie paint a sunrise?",
+        "ground_truth": 2022,
+        "generated_answer": "I don't know.",
+        "type": "2"
+    },
+    {
+        "conversation_idx": 0,
+        "question": "What fields would Caroline be likely to pursue in her educaton?",
+        "ground_truth": "Psychology, counseling certification",
+        "generated_answer": "Based on the provided Memory Context, Caroline's career aspirations and interests include:\n\n* Counseling or mental health work\n* Working with trans people, specifically helping them accept themselves and supporting their mental health\n* A career in counseling and mental health\n\nTherefore, Caroline would likely pursue education and training in the following fields:\n\n* Counseling\n* Mental health\n* Social work\n* Psychology\n* Therapy\n\nThese fields align with Caroline's expressed interests and career aspirations, as well as her passion for helping others and making a positive impact.",
+        "type": "3"
+    },
+    {
+        "conversation_idx": 0,
+        "question": "What did Caroline research?",
+        "ground_truth": "Adoption agencies",
+        "generated_answer": "Caroline researched counseling or mental health work.",
+        "type": "1"
+    },
+    {
+        "conversation_idx": 0,
+        "question": "What is Caroline's identity?",
+        "ground_truth": "Transgender woman",
+        "generated_answer": "I don't know.",
+        "type": "1"
+    },
+    {
+        "conversation_idx": 0,
+        "question": "When did Melanie run a charity race?",
+        "ground_truth": "The sunday before 25 May 2023",
+        "generated_answer": "I don't know.",
+        "type": "2"
+    },
+    {
+        "conversation_idx": 0,
+        "question": "When is Melanie planning on going camping?",
+        "ground_truth": "June 2023",
+        "generated_answer": "I don't know.",
+        "type": "2"
+    },
+    {
+        "conversation_idx": 0,
+        "question": "What is Caroline's relationship status?",
+        "ground_truth": "Single",
+        "generated_answer": "I don't know.",
+        "type": "1"
+    },
+    {
+        "conversation_idx": 0,
+        "question": "When did Caroline give a speech at a school?",
+        "ground_truth": "The week before 9 June 2023",
+        "generated_answer": "I don't know.",
+        "type": "2"
+    },
+    {
+        "conversation_idx": 0,
+        "question": "When did Caroline meet up with her friends, family, and mentors?",
+        "ground_truth": "The week before 9 June 2023",
+        "generated_answer": "I don't know.",
+        "type": "2"
+    },
+    {
+        "conversation_idx": 0,
+        "question": "How long has Caroline had her current group of friends for?",
+        "ground_truth": "4 years",
+        "generated_answer": "I don't know.",
+        "type": "2"
+    },
+    {
+        "conversation_idx": 0,
+        "question": "Where did Caroline move from 4 years ago?",
+        "ground_truth": "Sweden",
+        "generated_answer": "I don't know.",
+        "type": "1"
+    },
+    {
+        "conversation_idx": 0,
+        "question": "How long ago was Caroline's 18th birthday?",
+        "ground_truth": "10 years ago",
+        "generated_answer": "I don't know.",
+        "type": "2"
+    },
+    {
+        "conversation_idx": 0,
+        "question": "What career path has Caroline decided to persue?",
+        "ground_truth": "counseling or mental health for Transgender people",
+        "generated_answer": "Caroline has decided to pursue a career in counseling and mental health.",
+        "type": "1"
+    },
+    {
+        "conversation_idx": 0,
+        "question": "Would Caroline still want to pursue counseling as a career if she hadn't received support growing up?",
+        "ground_truth": "Likely no",
+        "generated_answer": "Based on the provided Memory Context, I don't know.",
+        "type": "3"
+    },
+    {
+        "conversation_idx": 0,
+        "question": "What activities does Melanie partake in?",
+        "ground_truth": "pottery, camping, painting, swimming",
+        "generated_answer": "Based on the provided Memory Context, Melanie partakes in the following activities:\n\n1. Painting\n2. Pottery\n\nThese activities are mentioned in multiple conversation chunks, such as conversation_chunk_5, conversation_chunk_7, conversation_chunk_10, and conversation_chunk_12.",
+        "type": "1"
+    },
+    {
+        "conversation_idx": 0,
+        "question": "When did Melanie sign up for a pottery class?",
+        "ground_truth": "2 July 2023",
+        "generated_answer": "I don't know.",
+        "type": "2"
+    },
+    {
+        "conversation_idx": 0,
+        "question": "When is Caroline going to the transgender conference?",
+        "ground_truth": "July 2023",
+        "generated_answer": "Caroline is going to the transgender conference this month.",
+        "type": "2"
+    },
+    {
+        "conversation_idx": 0,
+        "question": "Where has Melanie camped?",
+        "ground_truth": "beach, mountains, forest",
+        "generated_answer": "Beach.",
+        "type": "1"
+    },
+    {
+        "conversation_idx": 0,
+        "question": "What do Melanie's kids like?",
+        "ground_truth": "dinosaurs, nature",
+        "generated_answer": "I don't know.",
+        "type": "1"
+    },
+    {
+        "conversation_idx": 0,
+        "question": "When did Melanie go to the museum?",
+        "ground_truth": "5 July 2023",
+        "generated_answer": "Melanie went to the museum yesterday.",
+        "type": "2"
+    },
+    {
+        "conversation_idx": 0,
+        "question": "When did Caroline have a picnic?",
+        "ground_truth": "The week before 6 July 2023",
+        "generated_answer": "I don't know.",
+        "type": "2"
+    },
+    {
+        "conversation_idx": 0,
+        "question": "Would Caroline likely have Dr. Seuss books on her bookshelf?",
+        "ground_truth": "Yes, since she collects classic children's books",
+        "generated_answer": "I don't know.",
+        "type": "3"
+    },
+    {
+        "conversation_idx": 0,
+        "question": "What books has Melanie read?",
+        "ground_truth": "\"Nothing is Impossible\", \"Charlotte's Web\"",
+        "generated_answer": "Melanie has read \"Charlotte's Web\".",
+        "type": "1"
+    },
+    {
+        "conversation_idx": 0,
+        "question": "What does Melanie do to destress?",
+        "ground_truth": "Running, pottery",
+        "generated_answer": "Melanie runs as a way to de-stress.",
+        "type": "1"
+    },
+    {
+        "conversation_idx": 0,
+        "question": "When did Caroline go to the LGBTQ conference?",
+        "ground_truth": "10 July 2023",
+        "generated_answer": "I don't know.",
+        "type": "2"
+    },
+    {
+        "conversation_idx": 0,
+        "question": "When did Melanie read the book \"nothing is impossible\"?",
+        "ground_truth": 2022,
+        "generated_answer": "I don't know.",
+        "type": "2"
+    },
+    {
+        "conversation_idx": 0,
+        "question": "Would Caroline pursue writing as a career option?",
+        "ground_truth": "LIkely no; though she likes reading, she wants to be a counselor",
+        "generated_answer": "I don't know.",
+        "type": "3"
+    },
+    {
+        "conversation_idx": 0,
+        "question": "When did Caroline go to the adoption meeting?",
+        "ground_truth": "The friday before 15 July 2023",
+        "generated_answer": "I don't know.",
+        "type": "2"
+    },
+    {
+        "conversation_idx": 0,
+        "question": "When did Melanie go to the pottery workshop?",
+        "ground_truth": "The Friday before 15 July 2023",
+        "generated_answer": "Last Friday.",
+        "type": "2"
+    },
+    {
+        "conversation_idx": 0,
+        "question": "Would Melanie be considered a member of the LGBTQ community?",
+        "ground_truth": "Likely no, she does not refer to herself as part of it",
+        "generated_answer": "I don't know.",
+        "type": "3"
+    },
+    {
+        "conversation_idx": 0,
+        "question": "When did Melanie go camping in June?",
+        "ground_truth": "The week before 27 June 2023",
+        "generated_answer": "I don't know.",
+        "type": "2"
+    },
+    {
+        "conversation_idx": 0,
+        "question": "What LGBTQ+ events has Caroline participated in?",
+        "ground_truth": "Pride parade, school speech, support group",
+        "generated_answer": "Based on the provided Memory Context, Caroline has participated in the following LGBTQ+ events:\n\n1. LGBTQ support group (mentioned in [lgbtq_support_group_2023_12_14] and [meeting_with_melanie_2023_12_15])\n2. Pride parade (mentioned in [conversation_3], [pride_parade_experience], [pride_parade], and [pride-event])\n3. LGBTQ pride event (mentioned in [pride-event])\n4. LGBTQ support group (mentioned in [lgbtq_support_group_2023_12_14])\n5. LGBTQ advocacy event (mentioned in [conversation_2])\n6. Transgender conference (mentioned in [transgender_conference])\n7. LGBTQ art show (mentioned in [art-show])\n8. Art show reception (mentioned in [art-show-reception])\n9. LGBTQ support group (mentioned in [transition_support])\n10. LGBTQ support group (mentioned in [caroline_lgbtq_counseling_workshop])",
+        "type": "1"
+    },
+    {
+        "conversation_idx": 0,
+        "question": "When did Caroline go to a pride parade during the summer?",
+        "ground_truth": "The week before 3 July 2023",
+        "generated_answer": "I don't know.",
+        "type": "2"
+    },
+    {
+        "conversation_idx": 0,
+        "question": "What events has Caroline participated in to help children?",
+        "ground_truth": "Mentoring program, school speech",
+        "generated_answer": "I don't know.",
+        "type": "1"
+    },
+    {
+        "conversation_idx": 0,
+        "question": "When did Melanie go camping in July?",
+        "ground_truth": "two weekends before 17 July 2023",
+        "generated_answer": "I don't know.",
+        "type": "2"
+    },
+    {
+        "conversation_idx": 0,
+        "question": "When did Caroline join a mentorship program?",
+        "ground_truth": "The weekend before 17 July 2023",
+        "generated_answer": "I don't know.",
+        "type": "2"
+    },
+    {
+        "conversation_idx": 0,
+        "question": "What did Melanie paint recently?",
+        "ground_truth": "sunset",
+        "generated_answer": "Melanie recently painted a piece that Melanie shared in conversation_chunk_7, which included a picture of her pottery creation.",
+        "type": "1"
+    },
+    {
+        "conversation_idx": 0,
+        "question": "What activities has Melanie done with her family?",
+        "ground_truth": "Pottery, painting, camping, museum, swimming, hiking",
+        "generated_answer": "Based on the provided Memory Context, Melanie has done the following activities with her family:\n\n1. Camping trip (Details: We always look forward to our family camping trip. We roast marshmallows, tell stories around the campfire and just enjoy each other's company.)\n2. Beach trip (Details: We went to the beach recently. It was awesome! The kids had such a blast.)\n3. Pottery workshop (Details: Last Fri I finally took my kids to a pottery workshop. We all made our own pots, it was fun and therapeutic!)\n4. Museum visit (Details: Melanie: Yesterday I took the kids to the museum - it was so cool spending time with them and seeing their eyes light up!)\n5. Horseback riding (Details: Grew up horseback riding with dad)\n6. Camping at the beach (Details: Melanie: Here's a pic of my family camping at the beach. We love it, it brings us closer!)",
+        "type": "1"
+    },
+    {
+        "conversation_idx": 0,
+        "question": "In what ways is Caroline participating in the LGBTQ community?",
+        "ground_truth": "Joining activist group, going to pride parades, participating in an art show, mentoring program",
+        "generated_answer": "Based on the provided Memory Context, Caroline is participating in the LGBTQ community in the following ways:\n\n1. Joining a new LGBTQ activist group (Details: I just joined a new LGBTQ activist group last Tuesday. I'm meeting so many cool people who are as passionate as I am about rights and community support.)\n2. Attending a pride parade (Details: I went to a pride parade last Friday and it was awesome - so much energy and love everywhere.)\n3. Attending a pride parade (Details: Last weekend our city held a pride parade! So many people marched through the streets waving flags, holding signs and celebrating love and diversity.)\n4. Participating in a mentorship program for LGBTQ youth (Details: Last weekend I joined a mentorship program for LGBTQ youth - it's really rewarding to help the community.)\n5. Participating in an LGBTQ art show (Details: Next month I'm having an LGBTQ art show with my paintings - can't wait!)\n6. Volunteering and participating in LGBTQ advocacy events (Details: Caroline: I'm inspired seeing my work make a difference for the LGBTQ+ community. Knowing I'm helping create a more loving world is amazing. I'm really thankful for my friends, family and mentors' support.)\n7. Attending an LGBTQ pride event with a mentee (Details: We had a great time at the LGBT pride event last month.)\n8. Finding support in the trans community (Details: I found a community where I'm accepted, loved, and supported)\n9. Participating in a LGBTQ support group (Details: Caroline attended a LGBTQ support group and found it to be powerful and inspiring.)\n10. Mentoring LGBTQ youth (Details: The mentoring is going great! I've met some amazing young folks and supported them along the way.)\n11. Supporting LGBTQ+ individuals in adoption (Details: I chose them 'cause they help LGBTQ+ folks with adoption)\n12. Sharing personal experiences to promote understanding and acceptance (Details: talked about her transgender journey and encouraged students to get involved in the LGBTQ community)\n\nThese are the ways Caroline is participating in the LGBTQ community, as mentioned in the provided Memory Context.",
+        "type": "1"
+    },
+    {
+        "conversation_idx": 0,
+        "question": "How many times has Melanie gone to the beach in 2023?",
+        "ground_truth": 2,
+        "generated_answer": "I don't know.",
+        "type": "1"
+    },
+    {
+        "conversation_idx": 0,
+        "question": "When did Caroline join a new activist group?",
+        "ground_truth": "The Tuesday before 20 July 2023",
+        "generated_answer": "Caroline joined a new LGBTQ activist group last Tuesday.",
+        "type": "2"
+    },
+    {
+        "conversation_idx": 0,
+        "question": "Would Melanie be more interested in going to a national park or a theme park?",
+        "ground_truth": "National park; she likes the outdoors",
+        "generated_answer": "I don't know.",
+        "type": "3"
+    },
+    {
+        "conversation_idx": 0,
+        "question": "What kind of art does Caroline make?",
+        "ground_truth": "abstract art",
+        "generated_answer": "I don't know.",
+        "type": "1"
+    },
+    {
+        "conversation_idx": 0,
+        "question": "When is Melanie's daughter's birthday?",
+        "ground_truth": "13 August",
+        "generated_answer": "I don't know.",
+        "type": "2"
+    },
+    {
+        "conversation_idx": 0,
+        "question": "When did Caroline attend a pride parade in August?",
+        "ground_truth": "The Friday before 14 August 2023",
+        "generated_answer": "I don't know.",
+        "type": "2"
+    },
+    {
+        "conversation_idx": 0,
+        "question": "Would Melanie be considered an ally to the transgender community?",
+        "ground_truth": "Yes, she is supportive",
+        "generated_answer": "Based on the provided Memory Context, I can infer that Melanie is likely an ally to the transgender community. Here's why:\n\n1. In conversation_chunk_12, Caroline shares her painting, which represents her path as a trans woman and smashing the binary gender system. Melanie responds positively to the artwork, showing support and understanding.\n2. In conversation_chunk_6, Caroline mentions that she has been into art since she was 17 and finds it empowering and cathartic. Melanie asks about Caroline's artistic journey, indicating that she is interested in and supportive of Caroline's experiences.\n3. Melanie's artistic interests and hobbies are mentioned in conversation_chunk_7, where she shares her passion for painting and pottery. This suggests that she is familiar with and appreciates the therapeutic benefits of art, which is also a valuable aspect of supporting the transgender community.\n4. The conversation between Caroline and Melanie in conversation_chunk_5 and conversation_chunk_10 shows that they have a supportive and open relationship, where they share their creative pursuits and inspirations. This suggests that Melanie is a supportive and understanding friend.\n\nWhile the Memory Context does not explicitly state that Melanie is an ally to the transgender community, the conversations and interactions between Caroline and Melanie suggest that she is likely an ally.",
+        "type": "3"
+    },
+    {
+        "conversation_idx": 0,
+        "question": "Who supports Caroline when she has a negative experience?",
+        "ground_truth": "Her mentors, family, and friends",
+        "generated_answer": "Caroline's support network.",
+        "type": "1"
+    },
+    {
+        "conversation_idx": 0,
+        "question": "What types of pottery have Melanie and her kids made?",
+        "ground_truth": "bowls, cup",
+        "generated_answer": "I don't know.",
+        "type": "1"
+    },
+    {
+        "conversation_idx": 0,
+        "question": "When did Caroline and Melanie go to a pride fesetival together?",
+        "ground_truth": 2022,
+        "generated_answer": "I don't know.",
+        "type": "2"
+    },
+    {
+        "conversation_idx": 0,
+        "question": "What would Caroline's political leaning likely be?",
+        "ground_truth": "Liberal",
+        "generated_answer": "I don't know.",
+        "type": "3"
+    },
+    {
+        "conversation_idx": 0,
+        "question": "What has Melanie painted?",
+        "ground_truth": "Horse, sunset, sunrise",
+        "generated_answer": "Melanie has painted.",
+        "type": "1"
+    },
+    {
+        "conversation_idx": 0,
+        "question": "What are Melanie's pets' names?",
+        "ground_truth": "Oliver, Luna, Bailey",
+        "generated_answer": "I don't know.",
+        "type": "1"
+    },
+    {
+        "conversation_idx": 0,
+        "question": "When did Caroline apply to adoption agencies?",
+        "ground_truth": "The week of 23 August 2023",
+        "generated_answer": "I don't know.",
+        "type": "2"
+    },
+    {
+        "conversation_idx": 0,
+        "question": "When did Caroline draw a self-portrait?",
+        "ground_truth": "The week before 23 August 2023",
+        "generated_answer": "I don't know.",
+        "type": "2"
+    },
+    {
+        "conversation_idx": 0,
+        "question": "What subject have Caroline and Melanie both painted?",
+        "ground_truth": "Sunsets",
+        "generated_answer": "Based on the provided Memory Context, I can see that Caroline and Melanie both painted, but the specific subject is not explicitly mentioned in the context. However, I can infer that Caroline painted a piece to show her path as a trans woman, and Melanie shared her passion for painting and its therapeutic benefits, but I don't have enough information to determine what specific subject they both painted.\n\nI'll say: I don't know.",
+        "type": "1"
+    },
+    {
+        "conversation_idx": 0,
+        "question": "What symbols are important to Caroline?",
+        "ground_truth": "Rainbow flag, transgender symbol",
+        "generated_answer": "I don't know.",
+        "type": "1"
+    },
+    {
+        "conversation_idx": 0,
+        "question": "When did Caroline encounter people on a hike and have a negative experience?",
+        "ground_truth": "The week before 25 August 2023",
+        "generated_answer": "I don't know.",
+        "type": "2"
+    },
+    {
+        "conversation_idx": 0,
+        "question": "When did Melanie make a plate in pottery class?",
+        "ground_truth": "24 August 2023",
+        "generated_answer": "Melanie made a plate in pottery class yesterday.",
+        "type": "2"
+    },
+    {
+        "conversation_idx": 0,
+        "question": "Would Caroline be considered religious?",
+        "ground_truth": "Somewhat, but not extremely religious",
+        "generated_answer": "I don't know.",
+        "type": "3"
+    },
+    {
+        "conversation_idx": 0,
+        "question": "What instruments does Melanie play?",
+        "ground_truth": "clarinet and violin",
+        "generated_answer": "I don't know.",
+        "type": "1"
+    },
+    {
+        "conversation_idx": 0,
+        "question": "What musical artists/bands has Melanie seen?",
+        "ground_truth": "Summer Sounds, Matt Patterson",
+        "generated_answer": "I don't know.",
+        "type": "1"
+    },
+    {
+        "conversation_idx": 0,
+        "question": "When did Melanie go to the park?",
+        "ground_truth": "27 August 2023",
+        "generated_answer": "I don't know.",
+        "type": "2"
+    },
+    {
+        "conversation_idx": 0,
+        "question": "When is Caroline's youth center putting on a talent show?",
+        "ground_truth": "September 2023",
+        "generated_answer": "I don't know.",
+        "type": "2"
+    },
+    {
+        "conversation_idx": 0,
+        "question": "Would Melanie likely enjoy the song \"The Four Seasons\" by Vivaldi?",
+        "ground_truth": "Yes; it's classical music",
+        "generated_answer": "I don't know.",
+        "type": "3"
+    },
+    {
+        "conversation_idx": 0,
+        "question": "What are some changes Caroline has faced during her transition journey?",
+        "ground_truth": "Changes to her body, losing unsupportive friends",
+        "generated_answer": "I don't know.",
+        "type": "1"
+    },
+    {
+        "conversation_idx": 0,
+        "question": "What does Melanie do with her family on hikes?",
+        "ground_truth": "Roast marshmallows, tell stories",
+        "generated_answer": "I don't know.",
+        "type": "1"
+    },
+    {
+        "conversation_idx": 0,
+        "question": "When did Caroline go biking with friends?",
+        "ground_truth": "The weekend before 13 September 2023",
+        "generated_answer": "I don't know.",
+        "type": "2"
+    },
+    {
+        "conversation_idx": 0,
+        "question": "How long has Melanie been practicing art?",
+        "ground_truth": "Since 2016",
+        "generated_answer": "Seven years.",
+        "type": "2"
+    },
+    {
+        "conversation_idx": 0,
+        "question": "What personality traits might Melanie say Caroline has?",
+        "ground_truth": "Thoughtful, authentic, driven",
+        "generated_answer": "Based on the Memory Context, it seems that Melanie might say Caroline has a friendly and outgoing personality, as Caroline initiates the conversation with a casual greeting and mentions that \"Lots has been going on since then\", implying that Caroline is a social and engaging person.",
+        "type": "3"
+    },
+    {
+        "conversation_idx": 0,
+        "question": "What transgender-specific events has Caroline attended?",
+        "ground_truth": "Poetry reading, conference",
+        "generated_answer": "Based on the provided Memory Context, Caroline has attended the following transgender-specific events:\n\n1. Transgender conference (Details: I'm going to a transgender conference this month. I'm so excited to meet other people in the community and learn more about advocacy.)\n2. Transgender event (Details: talked about her transgender journey and encouraged students to get involved in the LGBTQ community)\n3. Pride parade (Details: I went to a pride parade last Friday and it was awesome - so much energy and love everywhere.)\n4. Pride parade experience (Details: Last week I went to an LGBTQ+ pride parade. Everyone was so happy and it made me feel like I belonged. It showed me how much our community has grown, it was amazing!)\n5. Pride parade (Details: Last weekend our city held a pride parade! So many people marched through the streets waving flags, holding signs and celebrating love and diversity.)\n6. LGBTQ support group (Details: Caroline attended a LGBTQ support group and found it to be powerful and inspiring.)\n7. LGBTQ support group (Details: Caroline attended a LGBTQ support group and found it to be powerful and inspiring.)",
+        "type": "1"
+    },
+    {
+        "conversation_idx": 0,
+        "question": "What book did Melanie read from Caroline's suggestion?",
+        "ground_truth": "\"Becoming Nicole\"",
+        "generated_answer": "I don't know.",
+        "type": "1"
+    },
+    {
+        "conversation_idx": 0,
+        "question": "When did Melanie's friend adopt a child?",
+        "ground_truth": 2022,
+        "generated_answer": "I don't know.",
+        "type": "2"
+    },
+    {
+        "conversation_idx": 0,
+        "question": "When did Melanie get hurt?",
+        "ground_truth": "September 2023",
+        "generated_answer": "I don't know.",
+        "type": "2"
+    },
+    {
+        "conversation_idx": 0,
+        "question": "When did Melanie's family go on a roadtrip?",
+        "ground_truth": "The weekend before 20 October 2023",
+        "generated_answer": "I don't know.",
+        "type": "2"
+    },
+    {
+        "conversation_idx": 0,
+        "question": "How many children does Melanie have?",
+        "ground_truth": 3,
+        "generated_answer": "I don't know.",
+        "type": "1"
+    },
+    {
+        "conversation_idx": 0,
+        "question": "When did Melanie go on a hike after the roadtrip?",
+        "ground_truth": "19 October 2023",
+        "generated_answer": "I don't know.",
+        "type": "1"
+    },
+    {
+        "conversation_idx": 0,
+        "question": "Would Melanie go on another roadtrip soon?",
+        "ground_truth": "Likely no; since this one went badly",
+        "generated_answer": "I don't know.",
+        "type": "3"
+    },
+    {
+        "conversation_idx": 0,
+        "question": "What items has Melanie bought?",
+        "ground_truth": "Figurines, shoes",
+        "generated_answer": "I don't know.",
+        "type": "1"
+    },
+    {
+        "conversation_idx": 0,
+        "question": "When did Caroline pass the adoption interview?",
+        "ground_truth": "The Friday before 22 October 2023",
+        "generated_answer": "I don't know.",
+        "type": "2"
+    },
+    {
+        "conversation_idx": 0,
+        "question": "When did Melanie buy the figurines?",
+        "ground_truth": "21 October 2023",
+        "generated_answer": "I don't know.",
+        "type": "2"
+    },
+    {
+        "conversation_idx": 0,
+        "question": "Would Caroline want to move back to her home country soon?",
+        "ground_truth": "No; she's in the process of adopting children.",
+        "generated_answer": "I don't know.",
+        "type": "3"
+    },
+    {
+        "conversation_idx": 0,
+        "question": "What did the charity race raise awareness for?",
+        "ground_truth": "mental health",
+        "generated_answer": "Mental health.",
+        "type": "4"
+    },
+    {
+        "conversation_idx": 0,
+        "question": "What did Melanie realize after the charity race?",
+        "ground_truth": "self-care is important",
+        "generated_answer": "I don't know.",
+        "type": "4"
+    },
+    {
+        "conversation_idx": 0,
+        "question": "How does Melanie prioritize self-care?",
+        "ground_truth": "by carving out some me-time each day for activities like running, reading, or playing the violin",
+        "generated_answer": "I don't know.",
+        "type": "4"
+    },
+    {
+        "conversation_idx": 0,
+        "question": "What are Caroline's plans for the summer?",
+        "ground_truth": "researching adoption agencies",
+        "generated_answer": "I don't know.",
+        "type": "4"
+    },
+    {
+        "conversation_idx": 0,
+        "question": "What type of individuals does the adoption agency Caroline is considering support?",
+        "ground_truth": "LGBTQ+ individuals",
+        "generated_answer": "LGBTQ+ individuals.",
+        "type": "4"
+    },
+    {
+        "conversation_idx": 0,
+        "question": "Why did Caroline choose the adoption agency?",
+        "ground_truth": "because of their inclusivity and support for LGBTQ+ individuals",
+        "generated_answer": "I don't know.",
+        "type": "4"
+    },
+    {
+        "conversation_idx": 0,
+        "question": "What is Caroline excited about in the adoption process?",
+        "ground_truth": "creating a family for kids who need one",
+        "generated_answer": "I don't know.",
+        "type": "4"
+    },
+    {
+        "conversation_idx": 0,
+        "question": "What does Melanie think about Caroline's decision to adopt?",
+        "ground_truth": "she thinks Caroline is doing something amazing and will be an awesome mom",
+        "generated_answer": "I don't know.",
+        "type": "4"
+    },
+    {
+        "conversation_idx": 0,
+        "question": "How long have Mel and her husband been married?",
+        "ground_truth": "Mel and her husband have been married for 5 years.",
+        "generated_answer": "I don't know.",
+        "type": "4"
+    },
+    {
+        "conversation_idx": 0,
+        "question": "What does Caroline's necklace symbolize?",
+        "ground_truth": "love, faith, and strength",
+        "generated_answer": "I don't know.",
+        "type": "4"
+    },
+    {
+        "conversation_idx": 0,
+        "question": "What country is Caroline's grandma from?",
+        "ground_truth": "Sweden",
+        "generated_answer": "I don't know.",
+        "type": "4"
+    },
+    {
+        "conversation_idx": 0,
+        "question": "What was grandma's gift to Caroline?",
+        "ground_truth": "necklace",
+        "generated_answer": "I don't know.",
+        "type": "4"
+    },
+    {
+        "conversation_idx": 0,
+        "question": "What is Melanie's hand-painted bowl a reminder of?",
+        "ground_truth": "art and self-expression",
+        "generated_answer": "I don't know.",
+        "type": "4"
+    },
+    {
+        "conversation_idx": 0,
+        "question": "What did Melanie and her family do while camping?",
+        "ground_truth": "explored nature, roasted marshmallows, and went on a hike",
+        "generated_answer": "Melanie and her family went camping at the beach.",
+        "type": "4"
+    },
+    {
+        "conversation_idx": 0,
+        "question": "What kind of counseling and mental health services is Caroline interested in pursuing?",
+        "ground_truth": "working with trans people, helping them accept themselves and supporting their mental health",
+        "generated_answer": "Caroline is interested in pursuing counseling and mental health services, specifically working with trans people, helping them accept themselves, and supporting their mental health.",
+        "type": "4"
+    },
+    {
+        "conversation_idx": 0,
+        "question": "What workshop did Caroline attend recently?",
+        "ground_truth": "LGBTQ+ counseling workshop",
+        "generated_answer": "Caroline attended a workshop on therapeutic methods and working with trans people.",
+        "type": "4"
+    },
+    {
+        "conversation_idx": 0,
+        "question": "What was discussed in the LGBTQ+ counseling workshop?",
+        "ground_truth": "therapeutic methods and how to best work with trans people",
+        "generated_answer": "The LGBTQ+ counseling workshop was about \"Professional development in LGBTQ+ counseling\" and included a workshop on \"Therapeutic methods and working with trans people\".",
+        "type": "4"
+    },
+    {
+        "conversation_idx": 0,
+        "question": "What motivated Caroline to pursue counseling?",
+        "ground_truth": "her own journey and the support she received, and how counseling improved her life",
+        "generated_answer": "Caroline's interest in counseling and mental health work, as well as her career aspirations, motivated her to pursue counseling.",
+        "type": "4"
+    },
+    {
+        "conversation_idx": 0,
+        "question": "What kind of place does Caroline want to create for people?",
+        "ground_truth": "a safe and inviting place for people to grow",
+        "generated_answer": "Based on the provided Memory Context, Caroline wants to create a place where people can talk to someone who understands them, and she is interested in pursuing a career in counseling and mental health.",
+        "type": "4"
+    },
+    {
+        "conversation_idx": 0,
+        "question": "Did Melanie make the black and white bowl in the photo?",
+        "ground_truth": "Yes",
+        "generated_answer": "I don't know.",
+        "type": "4"
+    },
+    {
+        "conversation_idx": 0,
+        "question": "What kind of books does Caroline have in her library?",
+        "ground_truth": "kids' books - classics, stories from different cultures, educational books",
+        "generated_answer": "I don't know.",
+        "type": "4"
+    },
+    {
+        "conversation_idx": 0,
+        "question": "What was Melanie's favorite book from her childhood?",
+        "ground_truth": "\"Charlotte's Web\"",
+        "generated_answer": "\"Charlotte's Web\"",
+        "type": "4"
+    },
+    {
+        "conversation_idx": 0,
+        "question": "What book did Caroline recommend to Melanie?",
+        "ground_truth": "\"Becoming Nicole\"",
+        "generated_answer": "I don't know.",
+        "type": "4"
+    },
+    {
+        "conversation_idx": 0,
+        "question": "What did Caroline take away from the book \"Becoming Nicole\"?",
+        "ground_truth": "Lessons on self-acceptance and finding support",
+        "generated_answer": "I don't know.",
+        "type": "4"
+    },
+    {
+        "conversation_idx": 0,
+        "question": "What are the new shoes that Melanie got used for?",
+        "ground_truth": "Running",
+        "generated_answer": "I don't know.",
+        "type": "4"
+    },
+    {
+        "conversation_idx": 0,
+        "question": "What is Melanie's reason for getting into running?",
+        "ground_truth": "To de-stress and clear her mind",
+        "generated_answer": "I don't know.",
+        "type": "4"
+    },
+    {
+        "conversation_idx": 0,
+        "question": "What does Melanie say running has been great for?",
+        "ground_truth": "Her mental health",
+        "generated_answer": "Running has been great for her headspace.",
+        "type": "4"
+    },
+    {
+        "conversation_idx": 0,
+        "question": "What did Mel and her kids make during the pottery workshop?",
+        "ground_truth": "pots",
+        "generated_answer": "I don't know.",
+        "type": "4"
+    },
+    {
+        "conversation_idx": 0,
+        "question": "What kind of pot did Mel and her kids make with clay?",
+        "ground_truth": "a cup with a dog face on it",
+        "generated_answer": "I don't know.",
+        "type": "4"
+    },
+    {
+        "conversation_idx": 0,
+        "question": "What creative project do Mel and her kids do together besides pottery?",
+        "ground_truth": "painting",
+        "generated_answer": "Based on the provided Memory Context, I don't know.",
+        "type": "4"
+    },
+    {
+        "conversation_idx": 0,
+        "question": "What did Mel and her kids paint in their latest project in July 2023?",
+        "ground_truth": "a sunset with a palm tree",
+        "generated_answer": "I don't know.",
+        "type": "4"
+    },
+    {
+        "conversation_idx": 0,
+        "question": "What did Caroline see at the council meeting for adoption?",
+        "ground_truth": "many people wanting to create loving homes for children in need",
+        "generated_answer": "I don't know.",
+        "type": "4"
+    },
+    {
+        "conversation_idx": 0,
+        "question": "What do sunflowers represent according to Caroline?",
+        "ground_truth": "warmth and happiness",
+        "generated_answer": "I don't know.",
+        "type": "4"
+    },
+    {
+        "conversation_idx": 0,
+        "question": "Why are flowers important to Melanie?",
+        "ground_truth": "They remind her to appreciate the small moments and were a part of her wedding decor",
+        "generated_answer": "I don't know.",
+        "type": "4"
+    },
+    {
+        "conversation_idx": 0,
+        "question": "What inspired Caroline's painting for the art show?",
+        "ground_truth": "visiting an LGBTQ center and wanting to capture unity and strength",
+        "generated_answer": "I don't know.",
+        "type": "4"
+    },
+    {
+        "conversation_idx": 0,
+        "question": "How often does Melanie go to the beach with her kids?",
+        "ground_truth": "once or twice a year",
+        "generated_answer": "I don't know.",
+        "type": "4"
+    },
+    {
+        "conversation_idx": 0,
+        "question": "What did Melanie and her family see during their camping trip last year?",
+        "ground_truth": "Perseid meteor shower",
+        "generated_answer": "They saw the Perseid meteor shower.",
+        "type": "4"
+    },
+    {
+        "conversation_idx": 0,
+        "question": "How did Melanie feel while watching the meteor shower?",
+        "ground_truth": "in awe of the universe",
+        "generated_answer": "Melanie felt it was \"so amazing\" while watching the Perseid meteor shower.",
+        "type": "4"
+    },
+    {
+        "conversation_idx": 0,
+        "question": "Whose birthday did Melanie celebrate recently?",
+        "ground_truth": "Melanie's daughter",
+        "generated_answer": "I don't know.",
+        "type": "4"
+    },
+    {
+        "conversation_idx": 0,
+        "question": "Who performed at the concert at Melanie's daughter's birthday?",
+        "ground_truth": "Matt Patterson",
+        "generated_answer": "I don't know.",
+        "type": "4"
+    },
+    {
+        "conversation_idx": 0,
+        "question": "Why did Melanie choose to use colors and patterns in her pottery project?",
+        "ground_truth": "She wanted to catch the eye and make people smile.",
+        "generated_answer": "I don't know.",
+        "type": "4"
+    },
+    {
+        "conversation_idx": 0,
+        "question": "What pet does Caroline have?",
+        "ground_truth": "guinea pig",
+        "generated_answer": "I don't know.",
+        "type": "4"
+    },
+    {
+        "conversation_idx": 0,
+        "question": "What pets does Melanie have?",
+        "ground_truth": "Two cats and a dog",
+        "generated_answer": "I don't know.",
+        "type": "4"
+    },
+    {
+        "conversation_idx": 0,
+        "question": "Where did Oliver hide his bone once?",
+        "ground_truth": "In Melanie's slipper",
+        "generated_answer": "I don't know.",
+        "type": "4"
+    },
+    {
+        "conversation_idx": 0,
+        "question": "What activity did Caroline used to do with her dad?",
+        "ground_truth": "Horseback riding",
+        "generated_answer": "I don't know.",
+        "type": "4"
+    },
+    {
+        "conversation_idx": 0,
+        "question": "What did Caroline make for a local church?",
+        "ground_truth": "a stained glass window",
+        "generated_answer": "I don't know.",
+        "type": "4"
+    },
+    {
+        "conversation_idx": 0,
+        "question": "What did Caroline find in her neighborhood during her walk?",
+        "ground_truth": "a rainbow sidewalk",
+        "generated_answer": "I don't know.",
+        "type": "4"
+    },
+    {
+        "conversation_idx": 0,
+        "question": "Which song motivates Caroline to be courageous?",
+        "ground_truth": "Brave by Sara Bareilles",
+        "generated_answer": "I don't know.",
+        "type": "4"
+    },
+    {
+        "conversation_idx": 0,
+        "question": "Which  classical musicians does Melanie enjoy listening to?",
+        "ground_truth": "Bach and Mozart",
+        "generated_answer": "I don't know.",
+        "type": "4"
+    },
+    {
+        "conversation_idx": 0,
+        "question": "Who is Melanie a fan of in terms of modern music?",
+        "ground_truth": "Ed Sheeran",
+        "generated_answer": "I don't know.",
+        "type": "4"
+    },
+    {
+        "conversation_idx": 0,
+        "question": "How long has Melanie been creating art?",
+        "ground_truth": "7 years",
+        "generated_answer": "Seven years.",
+        "type": "4"
+    },
+    {
+        "conversation_idx": 0,
+        "question": "What precautionary sign did Melanie see at the caf\u00e9?",
+        "ground_truth": "A sign stating that someone is not being able to leave",
+        "generated_answer": "I don't know.",
+        "type": "4"
+    },
+    {
+        "conversation_idx": 0,
+        "question": "What advice does Caroline give for getting started with adoption?",
+        "ground_truth": "Do research, find an adoption agency or lawyer, gather necessary documents, and prepare emotionally.",
+        "generated_answer": "According to the Memory Context, Caroline advises to \"Do your research and find an adoption agency or lawyer. They'll help with the process and provide all the info. Gather documents like references, financial info and medical checks. Don't forget to prepare emotionally, since the wait can be hard.\"",
+        "type": "4"
+    },
+    {
+        "conversation_idx": 0,
+        "question": "What setback did Melanie face in October 2023?",
+        "ground_truth": "She got hurt and had to take a break from pottery.",
+        "generated_answer": "I don't know.",
+        "type": "4"
+    },
+    {
+        "conversation_idx": 0,
+        "question": "What does Melanie do to keep herself busy during her pottery break?",
+        "ground_truth": "Read a book and paint.",
+        "generated_answer": "According to the Memory Context, Melanie says: \"Pottery's a great way to relax, so it must have been tough taking a break. Need any help?\"",
+        "type": "4"
+    },
+    {
+        "conversation_idx": 0,
+        "question": "What painting did Melanie show to Caroline on October 13, 2023?",
+        "ground_truth": "A painting inspired by sunsets with a pink sky.",
+        "generated_answer": "I don't know.",
+        "type": "4"
+    },
+    {
+        "conversation_idx": 0,
+        "question": "What kind of painting did Caroline share with Melanie on October 13, 2023?",
+        "ground_truth": "An abstract painting with blue streaks on a wall.",
+        "generated_answer": "I don't know.",
+        "type": "4"
+    },
+    {
+        "conversation_idx": 0,
+        "question": "What was the poetry reading that Caroline attended about?",
+        "ground_truth": "It was a transgender poetry reading where transgender people shared their stories.",
+        "generated_answer": "I don't know.",
+        "type": "4"
+    },
+    {
+        "conversation_idx": 0,
+        "question": "What did the posters at the poetry reading say?",
+        "ground_truth": "\"Trans Lives Matter\"",
+        "generated_answer": "I don't know.",
+        "type": "4"
+    },
+    {
+        "conversation_idx": 0,
+        "question": "What does Caroline's drawing symbolize for her?",
+        "ground_truth": "Freedom and being true to herself.",
+        "generated_answer": "I don't know.",
+        "type": "4"
+    },
+    {
+        "conversation_idx": 0,
+        "question": "How do Melanie and Caroline describe their journey through life together?",
+        "ground_truth": "An ongoing adventure of learning and growing.",
+        "generated_answer": "I don't know.",
+        "type": "4"
+    },
+    {
+        "conversation_idx": 0,
+        "question": "What happened to Melanie's son on their road trip?",
+        "ground_truth": "He got into an accident",
+        "generated_answer": "I don't know.",
+        "type": "4"
+    },
+    {
+        "conversation_idx": 0,
+        "question": "How did Melanie's son handle the accident?",
+        "ground_truth": "He was scared but reassured by his family",
+        "generated_answer": "I don't know.",
+        "type": "4"
+    },
+    {
+        "conversation_idx": 0,
+        "question": "How did Melanie feel about her family after the accident?",
+        "ground_truth": "They are important and mean the world to her",
+        "generated_answer": "I don't know.",
+        "type": "4"
+    },
+    {
+        "conversation_idx": 0,
+        "question": "How did Melanie's children handle the accident?",
+        "ground_truth": "They were scared but resilient",
+        "generated_answer": "I don't know.",
+        "type": "4"
+    },
+    {
+        "conversation_idx": 0,
+        "question": "How did Melanie feel after the accident?",
+        "ground_truth": "Grateful and thankful for her family",
+        "generated_answer": "I don't know.",
+        "type": "4"
+    },
+    {
+        "conversation_idx": 0,
+        "question": "What was Melanie's reaction to her children enjoying the Grand Canyon?",
+        "ground_truth": "She was happy and thankful",
+        "generated_answer": "I don't know.",
+        "type": "4"
+    },
+    {
+        "conversation_idx": 0,
+        "question": "What do Melanie's family give her?",
+        "ground_truth": "Strength and motivation",
+        "generated_answer": "I don't know.",
+        "type": "4"
+    },
+    {
+        "conversation_idx": 0,
+        "question": "How did Melanie feel about her family supporting her?",
+        "ground_truth": "She appreciated them a lot",
+        "generated_answer": "Based on the provided Memory Context, I can infer that Melanie values her family's support and connection. There are several instances where Melanie mentions spending quality time with her family, such as in [family_time], [beach_trip], and [family_camping]. These experiences suggest that Melanie cherishes her family time and appreciates the bond they share.\n\nAdditionally, in [conversation_chunk_12], Melanie shares her personal experience with art and identity, and how it has helped her feel proud of who she is. This implies that Melanie's family has been supportive of her journey and has helped her feel more confident in her identity.\n\nWhile there isn't a specific instance where Melanie explicitly states how her family supported her, the overall tone of her conversations and experiences suggests that she feels loved, accepted, and supported by her family.",
+        "type": "4"
+    },
+    {
+        "conversation_idx": 0,
+        "question": "What did Melanie do after the road trip to relax?",
+        "ground_truth": "Went on a nature walk or hike",
+        "generated_answer": "I don't know.",
+        "type": "4"
+    },
+    {
+        "conversation_idx": 0,
+        "question": "What did Caroline realize after her charity race?",
+        "ground_truth": "",
+        "generated_answer": "I don't know.",
+        "type": "5"
+    },
+    {
+        "conversation_idx": 0,
+        "question": "What are Melanie's plans for the summer with respect to adoption?",
+        "ground_truth": "",
+        "generated_answer": "I don't know.",
+        "type": "5"
+    },
+    {
+        "conversation_idx": 0,
+        "question": "What type of individuals does the adoption agency Melanie is considering support?",
+        "ground_truth": "",
+        "generated_answer": "The adoption agency Melanie is considering supports LGBTQ+ individuals.",
+        "type": "5"
+    },
+    {
+        "conversation_idx": 0,
+        "question": "Why did Melanie choose the adoption agency?",
+        "ground_truth": "",
+        "generated_answer": "I don't know.",
+        "type": "5"
+    },
+    {
+        "conversation_idx": 0,
+        "question": "What is Melanie excited about in her adoption process?",
+        "ground_truth": "",
+        "generated_answer": "I don't know.",
+        "type": "5"
+    },
+    {
+        "conversation_idx": 0,
+        "question": "What does Melanie's necklace symbolize?",
+        "ground_truth": "",
+        "generated_answer": "I don't know.",
+        "type": "5"
+    },
+    {
+        "conversation_idx": 0,
+        "question": "What country is Melanie's grandma from?",
+        "ground_truth": "",
+        "generated_answer": "I don't know.",
+        "type": "5"
+    },
+    {
+        "conversation_idx": 0,
+        "question": "What was grandma's gift to Melanie?",
+        "ground_truth": "",
+        "generated_answer": "I don't know.",
+        "type": "5"
+    },
+    {
+        "conversation_idx": 0,
+        "question": "What was grandpa's gift to Caroline?",
+        "ground_truth": "",
+        "generated_answer": "I don't know.",
+        "type": "5"
+    },
+    {
+        "conversation_idx": 0,
+        "question": "What is Caroline's hand-painted bowl a reminder of?",
+        "ground_truth": "",
+        "generated_answer": "I don't know.",
+        "type": "5"
+    },
+    {
+        "conversation_idx": 0,
+        "question": "What did Caroline and her family do while camping?",
+        "ground_truth": "",
+        "generated_answer": "I don't know.",
+        "type": "5"
+    },
+    {
+        "conversation_idx": 0,
+        "question": "What kind of counseling and mental health services is Melanie interested in pursuing?",
+        "ground_truth": "",
+        "generated_answer": "Based on the provided Memory Context, I can answer that Melanie is interested in pursuing therapeutic methods and working with trans people, specifically in the context of a professional development workshop on LGBTQ+ counseling.",
+        "type": "5"
+    },
+    {
+        "conversation_idx": 0,
+        "question": "What kind of counseling workshop did Melanie attend recently?",
+        "ground_truth": "",
+        "generated_answer": "I don't know.",
+        "type": "5"
+    },
+    {
+        "conversation_idx": 0,
+        "question": "What motivated Melanie to pursue counseling?",
+        "ground_truth": "",
+        "generated_answer": "I don't know.",
+        "type": "5"
+    },
+    {
+        "conversation_idx": 0,
+        "question": "What kind of place does Melanie want to create for people?",
+        "ground_truth": "",
+        "generated_answer": "I don't know.",
+        "type": "5"
+    },
+    {
+        "conversation_idx": 0,
+        "question": "Did Caroline make the black and white bowl in the photo?",
+        "ground_truth": "No",
+        "generated_answer": "I don't know.",
+        "type": "5"
+    },
+    {
+        "conversation_idx": 0,
+        "question": "What are the new shoes that Caroline got used for?",
+        "ground_truth": "",
+        "generated_answer": "I don't know.",
+        "type": "5"
+    },
+    {
+        "conversation_idx": 0,
+        "question": "What is Caroline's reason for getting into running?",
+        "ground_truth": "",
+        "generated_answer": "Caroline's reason for getting into running is de-stress.",
+        "type": "5"
+    },
+    {
+        "conversation_idx": 0,
+        "question": "What does Caroline say running has been great for?",
+        "ground_truth": "",
+        "generated_answer": "Running has been great for Caroline's headspace.",
+        "type": "5"
+    },
+    {
+        "conversation_idx": 0,
+        "question": "What did Melanie see at the council meeting for adoption?",
+        "ground_truth": "",
+        "generated_answer": "I don't know.",
+        "type": "5"
+    },
+    {
+        "conversation_idx": 0,
+        "question": "What inspired Melanie's painting for the art show?",
+        "ground_truth": "",
+        "generated_answer": "Melanie's painting was inspired by Caroline's artwork, specifically the red and blue colors used in Caroline's painting, which represented the binary gender system and the idea of smashing rigid thinking.",
+        "type": "5"
+    },
+    {
+        "conversation_idx": 0,
+        "question": "What inspired Caroline's sculpture for the art show?",
+        "ground_truth": "",
+        "generated_answer": "I don't know.",
+        "type": "5"
+    },
+    {
+        "conversation_idx": 0,
+        "question": "How often does Caroline go to the beach with her kids?",
+        "ground_truth": "",
+        "generated_answer": "I don't know.",
+        "type": "5"
+    },
+    {
+        "conversation_idx": 0,
+        "question": "What did Caroline and her family see during their camping trip last year?",
+        "ground_truth": "",
+        "generated_answer": "I don't know.",
+        "type": "5"
+    },
+    {
+        "conversation_idx": 0,
+        "question": "How did Caroline feel while watching the meteor shower?",
+        "ground_truth": "",
+        "generated_answer": "I don't know.",
+        "type": "5"
+    },
+    {
+        "conversation_idx": 0,
+        "question": "Why did Caroline choose to use colors and patterns in her pottery project?",
+        "ground_truth": "",
+        "generated_answer": "I don't know.",
+        "type": "5"
+    },
+    {
+        "conversation_idx": 0,
+        "question": "Is Oscar Melanie's pet?",
+        "ground_truth": "No",
+        "generated_answer": "I don't know.",
+        "type": "5"
+    },
+    {
+        "conversation_idx": 0,
+        "question": "Where did Oscar hide his bone once?",
+        "ground_truth": "",
+        "generated_answer": "I don't know.",
+        "type": "5"
+    },
+    {
+        "conversation_idx": 0,
+        "question": "What activity did Melanie used to do with her dad?",
+        "ground_truth": "",
+        "generated_answer": "I don't know.",
+        "type": "5"
+    },
+    {
+        "conversation_idx": 0,
+        "question": "What did Melanie make for a local church?",
+        "ground_truth": "",
+        "generated_answer": "I don't know.",
+        "type": "5"
+    },
+    {
+        "conversation_idx": 0,
+        "question": "What did Melanie find in her neighborhood during her walk?",
+        "ground_truth": "",
+        "generated_answer": "I don't know.",
+        "type": "5"
+    },
+    {
+        "conversation_idx": 0,
+        "question": "Which song motivates Melanie to be courageous?",
+        "ground_truth": "",
+        "generated_answer": "I don't know.",
+        "type": "5"
+    },
+    {
+        "conversation_idx": 0,
+        "question": "What type of instrument does Caroline play?",
+        "ground_truth": "",
+        "generated_answer": "I don't know.",
+        "type": "5"
+    },
+    {
+        "conversation_idx": 0,
+        "question": "Which classical musicians does Caroline enjoy listening to?",
+        "ground_truth": "",
+        "generated_answer": "I don't know.",
+        "type": "5"
+    },
+    {
+        "conversation_idx": 0,
+        "question": "Who is Caroline a fan of in terms of modern music?",
+        "ground_truth": "",
+        "generated_answer": "I don't know.",
+        "type": "5"
+    },
+    {
+        "conversation_idx": 0,
+        "question": "What precautionary sign did Caroline see at the caf\u00e9?",
+        "ground_truth": "",
+        "generated_answer": "I don't know.",
+        "type": "5"
+    },
+    {
+        "conversation_idx": 0,
+        "question": "What setback did Caroline face recently?",
+        "ground_truth": "",
+        "generated_answer": "I don't know.",
+        "type": "5"
+    },
+    {
+        "conversation_idx": 0,
+        "question": "What does Caroline do to keep herself busy during her pottery break?",
+        "ground_truth": "",
+        "generated_answer": "I don't know.",
+        "type": "5"
+    },
+    {
+        "conversation_idx": 0,
+        "question": "What was the poetry reading that Melanie attended about?",
+        "ground_truth": "",
+        "generated_answer": "I don't know.",
+        "type": "5"
+    },
+    {
+        "conversation_idx": 0,
+        "question": "What happened to Caroline's son on their road trip?",
+        "ground_truth": "",
+        "generated_answer": "I don't know.",
+        "type": "5"
+    },
+    {
+        "conversation_idx": 0,
+        "question": "How did Caroline's son handle the accident?",
+        "ground_truth": "",
+        "generated_answer": "I don't know.",
+        "type": "5"
+    },
+    {
+        "conversation_idx": 0,
+        "question": "How did Caroline feel about her family after the accident?",
+        "ground_truth": "",
+        "generated_answer": "I don't know.",
+        "type": "5"
+    },
+    {
+        "conversation_idx": 0,
+        "question": "How did Caroline's children handle the accident?",
+        "ground_truth": "",
+        "generated_answer": "I don't know.",
+        "type": "5"
+    },
+    {
+        "conversation_idx": 0,
+        "question": "How did Caroline feel after the accident?",
+        "ground_truth": "",
+        "generated_answer": "I don't know.",
+        "type": "5"
+    },
+    {
+        "conversation_idx": 0,
+        "question": "What was Caroline's reaction to her children enjoying the Grand Canyon?",
+        "ground_truth": "",
+        "generated_answer": "I don't know.",
+        "type": "5"
+    },
+    {
+        "conversation_idx": 0,
+        "question": "What did Caroline do after the road trip to relax?",
+        "ground_truth": "",
+        "generated_answer": "I don't know.",
+        "type": "5"
+    },
+    {
+        "conversation_idx": 0,
+        "question": "What does Caroline love most about camping with her family?",
+        "ground_truth": "",
+        "generated_answer": "I don't know.",
+        "type": "5"
+    },
+    {
+        "conversation_idx": 1,
+        "question": "When Jon has lost his job as a banker?",
+        "ground_truth": "19 January, 2023",
+        "generated_answer": "I don't know.",
+        "type": "2"
+    },
+    {
+        "conversation_idx": 1,
+        "question": "When Gina has lost her job at Door Dash?",
+        "ground_truth": "January, 2023",
+        "generated_answer": "I don't know.",
+        "type": "2"
+    },
+    {
+        "conversation_idx": 1,
+        "question": "How do Jon and Gina both like to destress?",
+        "ground_truth": "by dancing",
+        "generated_answer": "According to the Memory Context, Jon likes to destress by practicing dance routines, which keeps his mind focused and motivated.",
+        "type": "4"
+    },
+    {
+        "conversation_idx": 1,
+        "question": "What do Jon and Gina both have in common?",
+        "ground_truth": "They lost their jobs and decided to start their own businesses.",
+        "generated_answer": "Based on the provided Memory Context, Jon and Gina both have the following in common:\n\n1. They both have a passion for dance (Details: Gina: Ha, yeah, Jon. I've been one 'cause I lost my job. I opened an online clothing store and it's been great! Being my own boss and doing something I love is awesome.)\n2. They both have a business venture (Jon's dance studio and Gina's online clothing store)\n3. They both receive and provide motivational support to each other (Details: Gina: Way to go, Jon! Don't quit, remember, failures lead you closer to success. Here's a pic from when I was dancing - it was a tough road, but it was worth it!)\n4. They both value the importance of support and encouragement in their business endeavors (Details: Gina: Your backing means a lot. I'm trying to make my plan work, even though it's been tough. Your encouragement really helps.)\n5. They both share a common goal of success and perseverance (Details: Gina: Thanks, Jon! It was a huge jump, but totally worth it. My advice: stay passionate, focused and resilient. Challenges will come, but believe in yourself and keep going.)\n\nThese commonalities suggest that Jon and Gina have a strong and supportive relationship, both personally and professionally.",
+        "type": "1"
+    },
+    {
+        "conversation_idx": 1,
+        "question": "Why did Jon decide to start his dance studio?",
+        "ground_truth": "He lost his job and decided to start his own business to share his passion.",
+        "generated_answer": "Jon lost his job and decided to start his own dance studio.",
+        "type": "4"
+    },
+    {
+        "conversation_idx": 1,
+        "question": "What Jon thinks the ideal dance studio should look like?",
+        "ground_truth": "By the water, with natural light and Marley flooring",
+        "generated_answer": "I don't know.",
+        "type": "1"
+    },
+    {
+        "conversation_idx": 1,
+        "question": "When is Jon's group performing at a festival?",
+        "ground_truth": "February, 2023",
+        "generated_answer": "I don't know.",
+        "type": "2"
+    },
+    {
+        "conversation_idx": 1,
+        "question": "When did Gina launch an ad campaign for her store?",
+        "ground_truth": "29 January, 2023",
+        "generated_answer": "I don't know.",
+        "type": "2"
+    },
+    {
+        "conversation_idx": 1,
+        "question": "When was Jon in Paris?",
+        "ground_truth": "28 January 2023",
+        "generated_answer": "Yesterday.",
+        "type": "2"
+    },
+    {
+        "conversation_idx": 1,
+        "question": "Which city have both Jean and John visited?",
+        "ground_truth": "Rome",
+        "generated_answer": "I don't know.",
+        "type": "1"
+    },
+    {
+        "conversation_idx": 1,
+        "question": "When did Gina team up with a local artist for some cool designs?",
+        "ground_truth": "February, 2023",
+        "generated_answer": "I don't know.",
+        "type": "2"
+    },
+    {
+        "conversation_idx": 1,
+        "question": "When did Gina get her tattoo?",
+        "ground_truth": "A few years ago",
+        "generated_answer": "I don't know.",
+        "type": "2"
+    },
+    {
+        "conversation_idx": 1,
+        "question": "When did Jon start to go to the gym?",
+        "ground_truth": "March, 2023",
+        "generated_answer": "I don't know.",
+        "type": "2"
+    },
+    {
+        "conversation_idx": 1,
+        "question": "When did Gina open her online clothing store?",
+        "ground_truth": "16 March, 2023",
+        "generated_answer": "I don't know.",
+        "type": "2"
+    },
+    {
+        "conversation_idx": 1,
+        "question": "When did Jon start expanding his studio's social media presence?",
+        "ground_truth": "April, 2023",
+        "generated_answer": "I don't know.",
+        "type": "2"
+    },
+    {
+        "conversation_idx": 1,
+        "question": "When did Jon host a dance competition?",
+        "ground_truth": "May, 2023",
+        "generated_answer": "I don't know.",
+        "type": "2"
+    },
+    {
+        "conversation_idx": 1,
+        "question": "When did Jon go to a fair to get more exposure for his dance studio?",
+        "ground_truth": "24 April, 2023",
+        "generated_answer": "I don't know.",
+        "type": "2"
+    },
+    {
+        "conversation_idx": 1,
+        "question": "Why did Gina decide to start her own clothing store?",
+        "ground_truth": "She always loved fashion trends and finding unique pieces and she lost her job so decided it was time to start her own business.",
+        "generated_answer": "I don't know.",
+        "type": "1"
+    },
+    {
+        "conversation_idx": 1,
+        "question": "Do Jon and Gina start businesses out of what they love?",
+        "ground_truth": "Yes",
+        "generated_answer": "Yes, Jon and Gina start businesses out of what they love.",
+        "type": "1"
+    },
+    {
+        "conversation_idx": 1,
+        "question": "When did Gina interview for a design internship?",
+        "ground_truth": "10 May, 2023",
+        "generated_answer": "Yesterday.",
+        "type": "2"
+    },
+    {
+        "conversation_idx": 1,
+        "question": "When did Gina get accepted for the design internship?",
+        "ground_truth": "27 May, 2023",
+        "generated_answer": "Gina got accepted for the design internship on [date not specified in the memory context].",
+        "type": "2"
+    },
+    {
+        "conversation_idx": 1,
+        "question": "When did Jon start reading \"The Lean Startup\"?",
+        "ground_truth": "May, 2023",
+        "generated_answer": "I don't know.",
+        "type": "2"
+    },
+    {
+        "conversation_idx": 1,
+        "question": "When did Gina develop a video presentation to teach how to style her fashion pieces? ",
+        "ground_truth": "June, 2023",
+        "generated_answer": "I don't know.",
+        "type": "2"
+    },
+    {
+        "conversation_idx": 1,
+        "question": "How did Gina promote her clothes store?",
+        "ground_truth": "worked with an artist to make unique fashion pieces, made limited-edition sweatshirts, got some new offers and promotions for online store, developed a video presentation showing how to style her pieces",
+        "generated_answer": "I don't know.",
+        "type": "1"
+    },
+    {
+        "conversation_idx": 1,
+        "question": "Which events has Jon participated in to promote his business venture?",
+        "ground_truth": "fair, networking events, dance competition",
+        "generated_answer": "Based on the provided Memory Context, I found the following events related to Jon's business venture:\n\n1. [jon_explains_networking_event] Jon explains the success of his networking event, where he met some investors and got good advice.\n2. [jon_rehearses_hard] Jon's dedication to rehearsing and working on business plans, which is part of promoting his business venture.\n3. [jon_thanks_gina] Jon expressing gratitude to Gina, who has been supporting him in his business venture.\n\nThese events suggest that Jon has participated in networking events, worked hard on his business plans, and received support from Gina to promote his business venture.",
+        "type": "1"
+    },
+    {
+        "conversation_idx": 1,
+        "question": "What does Jon's dance studio offer?",
+        "ground_truth": "one-on-one metoring and training to dancers,  workshops and classes to local schools and centers",
+        "generated_answer": "I don't know.",
+        "type": "1"
+    },
+    {
+        "conversation_idx": 1,
+        "question": "When did Jon receive mentorship to promote his venture?",
+        "ground_truth": "15 June, 2023",
+        "generated_answer": "I don't know.",
+        "type": "2"
+    },
+    {
+        "conversation_idx": 1,
+        "question": "Did Jon and Gina both participate in dance competitions?",
+        "ground_truth": "Yes",
+        "generated_answer": "Yes, they both participated in a dance competition. According to the Memory Context, Gina competed in a dance competition and won first place with her team.",
+        "type": "1"
+    },
+    {
+        "conversation_idx": 1,
+        "question": "When was Jon in Rome?",
+        "ground_truth": "June 2023",
+        "generated_answer": "I don't know.",
+        "type": "2"
+    },
+    {
+        "conversation_idx": 1,
+        "question": "Which cities has Jon visited?",
+        "ground_truth": "Paris, Rome",
+        "generated_answer": "I don't know.",
+        "type": "1"
+    },
+    {
+        "conversation_idx": 1,
+        "question": "When Jon is planning to open his dance studio?",
+        "ground_truth": "20 June, 2023",
+        "generated_answer": "I don't know.",
+        "type": "2"
+    },
+    {
+        "conversation_idx": 1,
+        "question": "How long did it take for Jon to open his studio?",
+        "ground_truth": "six months",
+        "generated_answer": "I don't know.",
+        "type": "1"
+    },
+    {
+        "conversation_idx": 1,
+        "question": "When did Gina design a limited collection of hoodies?",
+        "ground_truth": "June 2023",
+        "generated_answer": "I don't know.",
+        "type": "2"
+    },
+    {
+        "conversation_idx": 1,
+        "question": "When did Jon visit networking events for his store?",
+        "ground_truth": "20 June, 2023",
+        "generated_answer": "Jon attended networking events to make things happen.",
+        "type": "2"
+    },
+    {
+        "conversation_idx": 1,
+        "question": "When did Gina start being recognized by fashion editors?",
+        "ground_truth": "July 2023",
+        "generated_answer": "Last week.",
+        "type": "2"
+    },
+    {
+        "conversation_idx": 1,
+        "question": "When did Jon start learning marketing and analytics tools?",
+        "ground_truth": "July, 2023",
+        "generated_answer": "I don't know.",
+        "type": "2"
+    },
+    {
+        "conversation_idx": 1,
+        "question": "When did Jon and Gina decide to collaborate to create dance content?",
+        "ground_truth": "21 July 2023",
+        "generated_answer": "I don't know.",
+        "type": "2"
+    },
+    {
+        "conversation_idx": 1,
+        "question": "When did Gina mention Shia Labeouf?",
+        "ground_truth": " 23 July, 2023",
+        "generated_answer": "I don't know.",
+        "type": "2"
+    },
+    {
+        "conversation_idx": 1,
+        "question": "When did Gina go to a dance class with a group of friends?",
+        "ground_truth": "21 July 2023",
+        "generated_answer": "Gina went to a dance class with a group of friends last Friday.",
+        "type": "2"
+    },
+    {
+        "conversation_idx": 1,
+        "question": "What is Gina's favorite style of dance?",
+        "ground_truth": "Contemporary",
+        "generated_answer": "Gina's favorite style of dance is contemporary dance.",
+        "type": "4"
+    },
+    {
+        "conversation_idx": 1,
+        "question": "What is Jon's favorite style of dance?",
+        "ground_truth": "Contemporary",
+        "generated_answer": "I don't know.",
+        "type": "4"
+    },
+    {
+        "conversation_idx": 1,
+        "question": "What was Gina's favorite dancing memory?",
+        "ground_truth": "Winning first place at a regionals dance competition",
+        "generated_answer": "I don't know.",
+        "type": "4"
+    },
+    {
+        "conversation_idx": 1,
+        "question": "What kind of dance piece did Gina's team perform to win first place?",
+        "ground_truth": "\"Finding Freedom\"",
+        "generated_answer": "I don't know.",
+        "type": "4"
+    },
+    {
+        "conversation_idx": 1,
+        "question": "What do the dancers in the photo represent?",
+        "ground_truth": "They are performing at the festival",
+        "generated_answer": "I don't know.",
+        "type": "4"
+    },
+    {
+        "conversation_idx": 1,
+        "question": "What does Gina say about the dancers in the photo?",
+        "ground_truth": "They look graceful",
+        "generated_answer": "I don't know.",
+        "type": "4"
+    },
+    {
+        "conversation_idx": 1,
+        "question": "What is Jon's attitude towards being part of the dance festival?",
+        "ground_truth": "Glad",
+        "generated_answer": "Jon's attitude towards being part of the dance festival is positive and enthusiastic, as evident from his statement \"Had that performance and it was awesome - so many people there complementing my dance moves.\"",
+        "type": "4"
+    },
+    {
+        "conversation_idx": 1,
+        "question": "What kind of flooring is Jon looking for in his dance studio?",
+        "ground_truth": "Marley flooring",
+        "generated_answer": "I don't know.",
+        "type": "4"
+    },
+    {
+        "conversation_idx": 1,
+        "question": "What did Gina find for her clothing store on 1 February, 2023?",
+        "ground_truth": "The perfect spot for her store",
+        "generated_answer": "I don't know.",
+        "type": "4"
+    },
+    {
+        "conversation_idx": 1,
+        "question": "What did Gina design for her store?",
+        "ground_truth": "the space, furniture, and decor",
+        "generated_answer": "I don't know.",
+        "type": "4"
+    },
+    {
+        "conversation_idx": 1,
+        "question": "What did Gina want her customers to feel in her store?",
+        "ground_truth": "cozy and comfortable",
+        "generated_answer": "I don't know.",
+        "type": "4"
+    },
+    {
+        "conversation_idx": 1,
+        "question": "What did Jon say about Gina's progress with her store?",
+        "ground_truth": "hard work's paying off",
+        "generated_answer": "I don't know.",
+        "type": "4"
+    },
+    {
+        "conversation_idx": 1,
+        "question": "What made Gina choose the furniture and decor for her store?",
+        "ground_truth": "personal style and customer comfort",
+        "generated_answer": "I don't know.",
+        "type": "4"
+    },
+    {
+        "conversation_idx": 1,
+        "question": "What did Jon say about creating a special experience for customers?",
+        "ground_truth": "It's the key to making them feel welcome and coming back",
+        "generated_answer": "Jon said \"Ah ha ha, yeah, JUST DOING IT!\"",
+        "type": "4"
+    },
+    {
+        "conversation_idx": 1,
+        "question": "What did Gina say about creating an experience for her customers?",
+        "ground_truth": "making them want to come back",
+        "generated_answer": "I don't know.",
+        "type": "4"
+    },
+    {
+        "conversation_idx": 1,
+        "question": "How is Gina's store doing?",
+        "ground_truth": "The store is doing great.",
+        "generated_answer": "I don't know.",
+        "type": "4"
+    },
+    {
+        "conversation_idx": 1,
+        "question": "What does Gina's tattoo symbolize?",
+        "ground_truth": "Freedom and expressing herself through dance",
+        "generated_answer": "Jon's tattoo stands for freedom - dancing without worrying what people think.",
+        "type": "4"
+    },
+    {
+        "conversation_idx": 1,
+        "question": "What did Jon and Gina compare their entrepreneurial journeys to?",
+        "ground_truth": "dancing together and supporting each other",
+        "generated_answer": "I don't know.",
+        "type": "4"
+    },
+    {
+        "conversation_idx": 1,
+        "question": "What advice does Gina give to Jon about running a successful business?",
+        "ground_truth": "build relationships with customers, create a strong brand image, stay positive",
+        "generated_answer": "Gina advises Jon to \"Believe in yourself, Jon! The process may be tough, but you got this.\"",
+        "type": "4"
+    },
+    {
+        "conversation_idx": 1,
+        "question": "Why did Jon shut down his bank account?",
+        "ground_truth": "for his business",
+        "generated_answer": "I don't know.",
+        "type": "4"
+    },
+    {
+        "conversation_idx": 1,
+        "question": "Why did Gina combine her clothing business with dance?",
+        "ground_truth": "she is passionate about dance and fashion",
+        "generated_answer": "Gina combined her clothing business with dance because she lost her job and being her own boss and doing something she loved was awesome.",
+        "type": "4"
+    },
+    {
+        "conversation_idx": 1,
+        "question": "What does Jon's dance make him?",
+        "ground_truth": "happy",
+        "generated_answer": "I don't know.",
+        "type": "4"
+    },
+    {
+        "conversation_idx": 1,
+        "question": "What did Gina receive from a dance contest?",
+        "ground_truth": "a trophy",
+        "generated_answer": "I don't know.",
+        "type": "4"
+    },
+    {
+        "conversation_idx": 1,
+        "question": "How does Gina stay confident in her business?",
+        "ground_truth": "By reminding herself of her successes and progress, having a support system, and focusing on why she started",
+        "generated_answer": "I don't know.",
+        "type": "4"
+    },
+    {
+        "conversation_idx": 1,
+        "question": "What kind of professional experience did Gina get accepted for on May 23, 2023?",
+        "ground_truth": "fashion internship",
+        "generated_answer": "I don't know.",
+        "type": "4"
+    },
+    {
+        "conversation_idx": 1,
+        "question": "Where is Gina's fashion internship?",
+        "ground_truth": "fashion department of an international company",
+        "generated_answer": "Gina's fashion internship is located in the fashion department of an international company.",
+        "type": "4"
+    },
+    {
+        "conversation_idx": 1,
+        "question": "What book is Jon currently reading?",
+        "ground_truth": "The Lean Startup",
+        "generated_answer": "I don't know.",
+        "type": "4"
+    },
+    {
+        "conversation_idx": 1,
+        "question": "What is Jon offering to the dancers at his dance studio?",
+        "ground_truth": "One-on-one mentoring and training",
+        "generated_answer": "I don't know.",
+        "type": "4"
+    },
+    {
+        "conversation_idx": 1,
+        "question": "How does Jon use the clipboard with a notepad attached to it?",
+        "ground_truth": "To set goals, track achievements, and find areas for improvement",
+        "generated_answer": "I don't know.",
+        "type": "4"
+    },
+    {
+        "conversation_idx": 1,
+        "question": "What does Jon tell Gina he won't do?",
+        "ground_truth": "quit",
+        "generated_answer": "Jon tells Gina he won't give up.",
+        "type": "4"
+    },
+    {
+        "conversation_idx": 1,
+        "question": "What did Jon take a trip to Rome for?",
+        "ground_truth": "To clear his mind",
+        "generated_answer": "Rome for stress relief.",
+        "type": "4"
+    },
+    {
+        "conversation_idx": 1,
+        "question": "What is Jon working on opening?",
+        "ground_truth": "a dance studio",
+        "generated_answer": "I don't know.",
+        "type": "4"
+    },
+    {
+        "conversation_idx": 1,
+        "question": "How does Gina describe the studio that Jon has opened?",
+        "ground_truth": "amazing",
+        "generated_answer": "I don't know.",
+        "type": "4"
+    },
+    {
+        "conversation_idx": 1,
+        "question": "How does Jon feel about the opening night of his dance studio?",
+        "ground_truth": "excited",
+        "generated_answer": "I don't know.",
+        "type": "4"
+    },
+    {
+        "conversation_idx": 1,
+        "question": "How does Gina describe the feeling that dance brings?",
+        "ground_truth": "magical",
+        "generated_answer": "Gina describes the feeling that dance brings as \"a great stress reliever\".",
+        "type": "4"
+    },
+    {
+        "conversation_idx": 1,
+        "question": "What does Jon plan to do at the grand opening of his dance studio?",
+        "ground_truth": "savor all the good vibes",
+        "generated_answer": "I don't know.",
+        "type": "4"
+    },
+    {
+        "conversation_idx": 1,
+        "question": "What does Gina say to Jon about the grand opening?",
+        "ground_truth": "Let's live it up and make some great memories",
+        "generated_answer": "I don't know.",
+        "type": "4"
+    },
+    {
+        "conversation_idx": 1,
+        "question": "What is the general sentiment about the upcoming grand opening?",
+        "ground_truth": "excitement",
+        "generated_answer": "The general sentiment about the upcoming grand opening is one of excitement and anticipation.",
+        "type": "4"
+    },
+    {
+        "conversation_idx": 1,
+        "question": "What did Gina make a limited edition line of?",
+        "ground_truth": "Hoodies",
+        "generated_answer": "I don't know.",
+        "type": "4"
+    },
+    {
+        "conversation_idx": 1,
+        "question": "According to Gina, what makes Jon a perfect mentor and guide?",
+        "ground_truth": "His positivity and determination",
+        "generated_answer": "I don't know.",
+        "type": "4"
+    },
+    {
+        "conversation_idx": 1,
+        "question": "What temporary job did Jon take to cover expenses?",
+        "ground_truth": "",
+        "generated_answer": "Jon took a temp job to help cover expenses while he looked for investors.",
+        "type": "5"
+    },
+    {
+        "conversation_idx": 1,
+        "question": "What plans does Jon have after receiving advice at the networking event?",
+        "ground_truth": "Sprucing up his business plan, tweaking his pitch to investors, and working on an online platform.",
+        "generated_answer": "I don't know.",
+        "type": "4"
+    },
+    {
+        "conversation_idx": 1,
+        "question": "What offer does Gina make to Jon regarding social media?",
+        "ground_truth": "Helping with making content and managing his social media accounts.",
+        "generated_answer": "Gina offers to manage Jon's social media accounts.",
+        "type": "4"
+    },
+    {
+        "conversation_idx": 1,
+        "question": "What is Jon's favorite style of painting?",
+        "ground_truth": "",
+        "generated_answer": "I don't know.",
+        "type": "5"
+    },
+    {
+        "conversation_idx": 1,
+        "question": "What was Jon's favorite dancing memory?",
+        "ground_truth": "",
+        "generated_answer": "I don't know.",
+        "type": "5"
+    },
+    {
+        "conversation_idx": 1,
+        "question": "What kind of dance piece did Jon's team perform to win first place?",
+        "ground_truth": "",
+        "generated_answer": "I don't know.",
+        "type": "5"
+    },
+    {
+        "conversation_idx": 1,
+        "question": "What is Gina's attitude towards participating in the dance festival?",
+        "ground_truth": "",
+        "generated_answer": "I don't know.",
+        "type": "5"
+    },
+    {
+        "conversation_idx": 1,
+        "question": "What kind of flooring is Gina looking for in her dance studio?",
+        "ground_truth": "",
+        "generated_answer": "Marley flooring.",
+        "type": "5"
+    },
+    {
+        "conversation_idx": 1,
+        "question": "What did Jon find for his clothing store on 1 February, 2023?",
+        "ground_truth": "",
+        "generated_answer": "I don't know.",
+        "type": "5"
+    },
+    {
+        "conversation_idx": 1,
+        "question": "What did Jon design for his store?",
+        "ground_truth": "",
+        "generated_answer": "I don't know.",
+        "type": "5"
+    },
+    {
+        "conversation_idx": 1,
+        "question": "What did Jon want his customers to feel in her store?",
+        "ground_truth": "",
+        "generated_answer": "I don't know.",
+        "type": "5"
+    },
+    {
+        "conversation_idx": 1,
+        "question": "What made Jon choose the furniture and decor for his store?",
+        "ground_truth": "",
+        "generated_answer": "I don't know.",
+        "type": "5"
+    },
+    {
+        "conversation_idx": 1,
+        "question": "How is Jon's store doing?",
+        "ground_truth": "",
+        "generated_answer": "I don't know.",
+        "type": "5"
+    },
+    {
+        "conversation_idx": 1,
+        "question": "What does Jon's tattoo symbolize?",
+        "ground_truth": "",
+        "generated_answer": "Jon's tattoo stands for freedom - dancing without worrying what people think.",
+        "type": "5"
+    },
+    {
+        "conversation_idx": 1,
+        "question": "Why did Gina shut down her bank account?",
+        "ground_truth": "",
+        "generated_answer": "I don't know.",
+        "type": "5"
+    },
+    {
+        "conversation_idx": 1,
+        "question": "Why did Jon combine his clothing business with dance?",
+        "ground_truth": "",
+        "generated_answer": "I don't know.",
+        "type": "5"
+    },
+    {
+        "conversation_idx": 1,
+        "question": "What did Gina receive from a dance contest?",
+        "ground_truth": "",
+        "generated_answer": "I don't know.",
+        "type": "5"
+    },
+    {
+        "conversation_idx": 1,
+        "question": "What kind of professional experience did Jon get accepted for on May 23, 2023?",
+        "ground_truth": "",
+        "generated_answer": "I don't know.",
+        "type": "5"
+    },
+    {
+        "conversation_idx": 1,
+        "question": "Where is Gina's HR internship?",
+        "ground_truth": "",
+        "generated_answer": "I don't know.",
+        "type": "5"
+    },
+    {
+        "conversation_idx": 1,
+        "question": "Where is Jon's fashion internship?",
+        "ground_truth": "",
+        "generated_answer": "I don't know.",
+        "type": "5"
+    },
+    {
+        "conversation_idx": 1,
+        "question": "What book is Gina currently reading?",
+        "ground_truth": "",
+        "generated_answer": "I don't know.",
+        "type": "5"
+    },
+    {
+        "conversation_idx": 1,
+        "question": "How does Gina use the clipboard with a notepad attached to it?",
+        "ground_truth": "",
+        "generated_answer": "I don't know.",
+        "type": "5"
+    },
+    {
+        "conversation_idx": 1,
+        "question": "What did Jon take a trip to Barcelona for?",
+        "ground_truth": "",
+        "generated_answer": "I don't know.",
+        "type": "5"
+    },
+    {
+        "conversation_idx": 1,
+        "question": "What did Jon make a limited edition line of?",
+        "ground_truth": "",
+        "generated_answer": "I don't know.",
+        "type": "5"
+    },
+    {
+        "conversation_idx": 1,
+        "question": "What temporary job did Gina take to cover expenses?",
+        "ground_truth": "",
+        "generated_answer": "I don't know.",
+        "type": "5"
+    },
+    {
+        "conversation_idx": 1,
+        "question": "What plans does Gina have after receiving advice at the networking event?",
+        "ground_truth": "",
+        "generated_answer": "I don't know.",
+        "type": "5"
+    }
+]
