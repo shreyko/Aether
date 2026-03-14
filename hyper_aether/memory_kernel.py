@@ -39,12 +39,19 @@ class HypergraphMemoryOS:
         return None
 
     def ingest_memory(self, node_id: str, abstraction: str, value: str, contexts: list[str]):
+        """
+        Node ID: id
+        Abstraction: broad categorization of the interaction with the agent
+        Value: detailed interaction with agent
+        Contexts: used to build hyperedges (essentially 2-3 broad contexts or situational envelopes)
+        """
         """Phase 1: Writing to the Hypergraph with Edge Consolidation"""
         self.memory_store[node_id] = {
             "abstraction": abstraction,
             "value": value
         }
         
+        # add the node to the hypergraph
         self.H.add_node(node_id)
         
         # --- Track the actual edge names we end up using ---
