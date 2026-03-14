@@ -3,7 +3,10 @@ name = "hyper-aether"
 version = "0.1.0"
 description = "A long term memory layer for multi agent systems using hypergraphs and large language models."
 authors = [
-    { name = "Shrey Kohli", email = "kohlishr@umich.edu"}]
+    { name = "Shrey Kohli", email = "kohlishr@umich.edu"},
+    { name = "Vansh Nagpal", email = "vnagpal@umich.edu"},
+    { name = "Pranav Gupta", email = "gpranav@umich.edu"},
+    { name = "Anshul Batish", email = "abatish@umich.edu"}]
 readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [
