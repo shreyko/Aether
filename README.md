@@ -1,2 +1,2 @@
 # Aether
-A long term memory layer for multi agent systems
+A long term memory layer for multi agent systems (WIP)
