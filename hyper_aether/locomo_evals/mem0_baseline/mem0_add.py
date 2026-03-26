@@ -24,12 +24,25 @@ class MemoryADD:
     def add_memory(self, user_id: str, messages: list[dict], metadata: dict, retries: int = 3):
         for attempt in range(retries):
             try:
-                self.mem.add(
-                    messages,
-                    user_id=user_id,
-                    metadata=metadata,
-                    instructions=CUSTOM_INSTRUCTIONS,
-                )
+                # mem0 OSS SDK has varied parameter names across versions.
+                # Prefer `custom_instructions` (current API) and fall back to `instructions`.
+                try:
+                    self.mem.add(
+                        messages,
+                        user_id=user_id,
+                        metadata=metadata,
+                        custom_instructions=CUSTOM_INSTRUCTIONS,
+                    )
+                except TypeError as te:
+                    if "custom_instructions" in str(te) and "unexpected keyword argument" in str(te):
+                        self.mem.add(
+                            messages,
+                            user_id=user_id,
+                            metadata=metadata,
+                            instructions=CUSTOM_INSTRUCTIONS,
+                        )
+                    else:
+                        raise
                 return
             except Exception as e:
                 if attempt < retries - 1:
