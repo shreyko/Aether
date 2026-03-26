@@ -15,6 +15,9 @@ Usage:
     # SCORES phase – aggregate scores by category
     python -m locomo_evals.mem0_baseline.run --method scores \
         --input_file locomo_evals/mem0_baseline/results/evaluation_metrics.json
+
+    # ALL phases – run add -> search -> eval -> scores end-to-end
+    python -m locomo_evals.mem0_baseline.run --method all --top_k 30
 """
 
 import argparse
@@ -29,7 +32,7 @@ def main():
     parser = argparse.ArgumentParser(description="mem0 baseline on LOCOMO")
     parser.add_argument(
         "--method",
-        choices=["add", "search", "eval", "scores"],
+        choices=["add", "search", "eval", "scores", "all"],
         required=True,
         help="Pipeline phase to run",
     )
@@ -70,6 +73,29 @@ def main():
         if input_file is None:
             input_file = os.path.join(args.output_dir, "evaluation_metrics.json")
         generate_scores(input_file)
+
+    elif args.method == "all":
+        from .eval import evaluate_results
+        from .generate_scores import generate_scores
+        from .mem0_add import MemoryADD
+        from .mem0_search import MemorySearch
+
+        search_output_file = os.path.join(args.output_dir, f"mem0_search_results_top{args.top_k}.json")
+        eval_output_file = os.path.join(args.output_dir, "evaluation_metrics.json")
+
+        print("[ALL] Step 1/4: ADD")
+        manager = MemoryADD(data_path=args.data_path)
+        manager.process_all_conversations()
+
+        print("[ALL] Step 2/4: SEARCH")
+        searcher = MemorySearch(output_path=search_output_file, top_k=args.top_k)
+        searcher.process_data_file(args.data_path)
+
+        print("[ALL] Step 3/4: EVAL")
+        evaluate_results(search_output_file, eval_output_file)
+
+        print("[ALL] Step 4/4: SCORES")
+        generate_scores(eval_output_file)
 
 
 if __name__ == "__main__":
