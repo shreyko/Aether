@@ -18,11 +18,12 @@ VLLM_BASE_URL="${VLLM_BASE_URL:-http://${VLLM_HOST}:${VLLM_PORT}/v1}"
 VLLM_HEALTH_TIMEOUT_SECS="${VLLM_HEALTH_TIMEOUT_SECS:-180}"
 VLLM_LOG_PATH="${VLLM_LOG_PATH:-${RESULTS_DIR}/vllm_server.log}"
 KEEP_VLLM_ALIVE="${KEEP_VLLM_ALIVE:-0}"
+UV_BIN="${UV_BIN:-uv}"
 
 # Optional: provide a fully custom serve command.
 # Example:
-#   VLLM_SERVE_CMD='vllm serve Qwen/Qwen3.5-9B --host 0.0.0.0 --port 8000'
-VLLM_SERVE_CMD="${VLLM_SERVE_CMD:-vllm serve ${VLLM_MODEL} --host ${VLLM_HOST} --port ${VLLM_PORT}}"
+#   VLLM_SERVE_CMD='uv run -- vllm serve Qwen/Qwen3.5-9B --host 0.0.0.0 --port 8000'
+VLLM_SERVE_CMD="${VLLM_SERVE_CMD:-${UV_BIN} run -- vllm serve ${VLLM_MODEL} --host ${VLLM_HOST} --port ${VLLM_PORT}}"
 
 mkdir -p "${RESULTS_DIR}"
 VLLM_PID=""
@@ -48,6 +49,7 @@ log "Project root: ${PROJECT_ROOT}"
 log "Using VLLM_BASE_URL=${VLLM_BASE_URL}"
 log "Using VLLM_MODEL=${VLLM_MODEL}"
 log "Using TOP_K=${TOP_K}"
+log "Using UV_BIN=${UV_BIN}"
 
 if is_vllm_healthy; then
   log "Detected healthy vLLM at ${VLLM_BASE_URL}; reusing existing server."
@@ -78,6 +80,6 @@ export VLLM_MODEL
 
 log "Running mem0 baseline (all phases)..."
 cd "${PROJECT_ROOT}"
-uv run -- python -m locomo_evals.mem0_baseline.run --method all --top_k "${TOP_K}"
+"${UV_BIN}" run -- python -m locomo_evals.mem0_baseline.run --method all --top_k "${TOP_K}"
 log "Pipeline completed successfully."
 
