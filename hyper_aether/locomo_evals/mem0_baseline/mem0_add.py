@@ -25,7 +25,7 @@ class MemoryADD:
         for attempt in range(retries):
             try:
                 # mem0 OSS SDK has varied parameter names across versions.
-                # Prefer `custom_instructions` (current API) and fall back to `instructions`.
+                # Try custom_instructions first, then instructions, then plain add.
                 try:
                     self.mem.add(
                         messages,
@@ -35,12 +35,22 @@ class MemoryADD:
                     )
                 except TypeError as te:
                     if "custom_instructions" in str(te) and "unexpected keyword argument" in str(te):
-                        self.mem.add(
-                            messages,
-                            user_id=user_id,
-                            metadata=metadata,
-                            instructions=CUSTOM_INSTRUCTIONS,
-                        )
+                        try:
+                            self.mem.add(
+                                messages,
+                                user_id=user_id,
+                                metadata=metadata,
+                                instructions=CUSTOM_INSTRUCTIONS,
+                            )
+                        except TypeError as te2:
+                            if "instructions" in str(te2) and "unexpected keyword argument" in str(te2):
+                                self.mem.add(
+                                    messages,
+                                    user_id=user_id,
+                                    metadata=metadata,
+                                )
+                            else:
+                                raise
                     else:
                         raise
                 return
