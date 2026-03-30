@@ -103,7 +103,7 @@ MEM0_CONFIG = {
         "config": {
             "model": "Qwen/Qwen3.5-9B",
             "vllm_base_url": "http://localhost:8000/v1",
-            "temperature": 0.1,
+            "temperature": 0.0,
             "max_tokens": 2000,
         }
     },
@@ -193,6 +193,9 @@ python -m locomo_evals.mem0_baseline.run --method eval --input_file results/mem0
 
 # SCORES phase
 python -m locomo_evals.mem0_baseline.run --method scores --input_file evaluation_metrics.json
+
+# ALL phases (add -> search -> eval -> scores)
+python -m locomo_evals.mem0_baseline.run --method all --top_k 30
 ```
 
 ## Dependencies to Add
@@ -206,3 +209,24 @@ In [pyproject.toml](hyper_aether/pyproject.toml):
 - `nltk` - BLEU score calculation
 - `pandas` - score aggregation
 - `tqdm` - progress bars
+
+## One-command nohup runner
+
+Use `run_all_with_vllm.sh` to start vLLM in the background, wait for health, run all baseline phases, and stop vLLM when done.
+
+```bash
+cd hyper_aether
+nohup bash locomo_evals/mem0_baseline/run_all_with_vllm.sh > mem0_all.nohup.log 2>&1 &
+```
+
+Optional overrides:
+
+```bash
+cd hyper_aether
+nohup env \
+  VLLM_MODEL="Qwen/Qwen3.5-9B" \
+  VLLM_PORT="8001" \
+  TOP_K="30" \
+  KEEP_VLLM_ALIVE="1" \
+  bash locomo_evals/mem0_baseline/run_all_with_vllm.sh > mem0_all.nohup.log 2>&1 &
+```
