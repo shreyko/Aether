@@ -40,6 +40,10 @@ is_vllm_healthy() {
   curl -fsS "${VLLM_BASE_URL}/models" >/dev/null 2>&1
 }
 
+vllm_supports_device_flag() {
+  "${UV_BIN}" run -- vllm serve -h 2>/dev/null | grep -q -- "--device"
+}
+
 cleanup() {
   if [[ "${STARTED_VLLM}" -eq 1 && -n "${VLLM_PID}" && "${KEEP_VLLM_ALIVE}" != "1" ]]; then
     log "Stopping vLLM process ${VLLM_PID}..."
@@ -65,10 +69,16 @@ log "Using VLLM_DEVICE=${VLLM_DEVICE}"
 
 if [[ -z "${VLLM_SERVE_CMD}" ]]; then
   chat_template_arg=""
+  device_arg=""
   if [[ -n "${VLLM_CHAT_TEMPLATE}" ]]; then
     chat_template_arg="--chat-template ${VLLM_CHAT_TEMPLATE}"
   fi
-  VLLM_SERVE_CMD="${UV_BIN} run -- vllm serve ${VLLM_MODEL} --host ${VLLM_HOST} --port ${VLLM_PORT} --device ${VLLM_DEVICE} ${chat_template_arg} ${VLLM_EXTRA_ARGS}"
+  if vllm_supports_device_flag; then
+    device_arg="--device ${VLLM_DEVICE}"
+  else
+    log "Detected vLLM CLI without --device support; skipping device flag."
+  fi
+  VLLM_SERVE_CMD="${UV_BIN} run -- vllm serve ${VLLM_MODEL} --host ${VLLM_HOST} --port ${VLLM_PORT} ${device_arg} ${chat_template_arg} ${VLLM_EXTRA_ARGS}"
 fi
 
 if is_vllm_healthy; then
