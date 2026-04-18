@@ -1,0 +1,1 @@
+/var/spool/slurmd.spool/job48253293/slurm_script: line 22: HF_TOKEN: HF_TOKEN must be set in your shell/env before sbatch

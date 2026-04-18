@@ -19,7 +19,7 @@ set -euo pipefail
 # HF_TOKEN must be set in your shell env (e.g. in ~/.bashrc) before sbatch.
 # Never hardcode the token in this file — GitHub push-protection will block
 # the push and the token will leak into slurm logs / shared fs snapshots.
-export HF_TOKEN="${HF_TOKEN:?HF_TOKEN must be set in your shell/env before sbatch}"
+export HF_TOKEN=""
 export HF_HOME="/home/gpranav/pranav_work/scratch/hf_cache"
 export CACHE_DIR="/home/gpranav/pranav_work/scratch/hf_cache"
 
