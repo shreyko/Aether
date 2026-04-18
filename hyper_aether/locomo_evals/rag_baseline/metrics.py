@@ -7,10 +7,16 @@ from typing import Dict
 import nltk
 from nltk.translate.bleu_score import SmoothingFunction, sentence_bleu
 
-from .config import VLLM_MODEL, get_vllm_client
+from .config import DEFAULT_MAX_TOKENS, VLLM_MODEL, get_vllm_client
 from .prompts import ACCURACY_PROMPT
 
 nltk.download("punkt", quiet=True)
+nltk.download("punkt_tab", quiet=True)
+
+# Reuse a single OpenAI-compatible client across all judge calls. The openai
+# client is thread-safe and pools HTTP connections, so this avoids rebuilding
+# the client and its socket pool on every scored item.
+_JUDGE_CLIENT = get_vllm_client()
 
 
 def _simple_tokenize(text: str) -> list[str]:
@@ -56,16 +62,16 @@ def calculate_f1(prediction: str, reference: str) -> float:
 
 
 def evaluate_llm_judge(question: str, gold_answer: str, generated_answer: str) -> int:
-    client = get_vllm_client()
     prompt = ACCURACY_PROMPT.format(
         question=question,
         gold_answer=gold_answer,
         generated_answer=generated_answer,
     )
-    response = client.chat.completions.create(
+    response = _JUDGE_CLIENT.chat.completions.create(
         model=VLLM_MODEL,
         messages=[{"role": "user", "content": prompt}],
         temperature=0.0,
+        max_tokens=DEFAULT_MAX_TOKENS,
     )
     text = ""
     try:

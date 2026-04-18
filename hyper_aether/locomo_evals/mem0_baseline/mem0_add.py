@@ -1,5 +1,7 @@
 import json
+import os
 import time
+from concurrent.futures import ThreadPoolExecutor, as_completed
 
 from mem0 import Memory
 from tqdm import tqdm
@@ -8,9 +10,24 @@ from .config import CUSTOM_INSTRUCTIONS, MEM0_CONFIG
 
 
 class MemoryADD:
-    def __init__(self, data_path: str, batch_size: int = 2):
+    def __init__(
+        self,
+        data_path: str,
+        batch_size: int | None = None,
+        max_workers: int | None = None,
+    ):
         self.mem = Memory.from_config(MEM0_CONFIG)
+        # Bigger batch_size => fewer mem0.add() round-trips (each of which
+        # fires ~2 LLM calls internally). Override via $MEM0_ADD_BATCH_SIZE.
+        if batch_size is None:
+            batch_size = int(os.getenv("MEM0_ADD_BATCH_SIZE", "8"))
         self.batch_size = batch_size
+        # Parallelism across independent user_ids. Each conversation yields
+        # 2 user_ids (speaker_a_N / speaker_b_N), all fully independent in
+        # mem0's chroma + vLLM backend.
+        if max_workers is None:
+            max_workers = int(os.getenv("MEM0_ADD_WORKERS", "10"))
+        self.max_workers = max_workers
         self.data_path = data_path
         self.data = None
         if data_path:
@@ -60,12 +77,19 @@ class MemoryADD:
                     continue
                 raise e
 
-    def add_memories_for_speaker(self, speaker: str, messages: list[dict], timestamp: str, desc: str):
-        for i in tqdm(range(0, len(messages), self.batch_size), desc=desc):
-            batch = messages[i : i + self.batch_size]
-            self.add_memory(speaker, batch, metadata={"timestamp": timestamp})
+    def _ingest_speaker_sequential(self, user_id: str, batches: list[tuple[list[dict], str]]):
+        """Ingest all (batch, timestamp) pairs for a single user_id in order.
 
-    def process_conversation(self, item: dict, idx: int):
+        We keep this sequential per user_id because mem0's add flow is
+        stateful (extract facts -> look up similar -> decide add/update),
+        and parallel writes against the same user_id can race on the
+        "similar memory" lookup. Parallelism across user_ids is safe.
+        """
+        for messages, timestamp in batches:
+            self.add_memory(user_id, messages, metadata={"timestamp": timestamp})
+
+    def _build_speaker_jobs(self, item: dict, idx: int) -> list[tuple[str, list[tuple[list[dict], str]]]]:
+        """Produce [(user_id, [(batch, timestamp), ...]), ...] for one conversation."""
         conversation = item["conversation"]
         speaker_a = conversation["speaker_a"]
         speaker_b = conversation["speaker_b"]
@@ -73,42 +97,78 @@ class MemoryADD:
         speaker_a_uid = f"{speaker_a}_{idx}"
         speaker_b_uid = f"{speaker_b}_{idx}"
 
-        self.mem.delete_all(user_id=speaker_a_uid)
-        self.mem.delete_all(user_id=speaker_b_uid)
+        batches_a: list[tuple[list[dict], str]] = []
+        batches_b: list[tuple[list[dict], str]] = []
 
         for key in conversation:
             if key in ("speaker_a", "speaker_b") or "date" in key or "timestamp" in key:
                 continue
-
-            date_key = f"{key}_date_time"
-            timestamp = conversation.get(date_key, "")
+            timestamp = conversation.get(f"{key}_date_time", "")
             chats = conversation[key]
 
-            messages_a: list[dict] = []
-            messages_b: list[dict] = []
-
+            msgs_a: list[dict] = []
+            msgs_b: list[dict] = []
             for chat in chats:
                 if chat["speaker"] == speaker_a:
-                    messages_a.append({"role": "user", "content": f"{speaker_a}: {chat['text']}"})
-                    messages_b.append({"role": "assistant", "content": f"{speaker_a}: {chat['text']}"})
+                    msgs_a.append({"role": "user", "content": f"{speaker_a}: {chat['text']}"})
+                    msgs_b.append({"role": "assistant", "content": f"{speaker_a}: {chat['text']}"})
                 elif chat["speaker"] == speaker_b:
-                    messages_a.append({"role": "assistant", "content": f"{speaker_b}: {chat['text']}"})
-                    messages_b.append({"role": "user", "content": f"{speaker_b}: {chat['text']}"})
+                    msgs_a.append({"role": "assistant", "content": f"{speaker_b}: {chat['text']}"})
+                    msgs_b.append({"role": "user", "content": f"{speaker_b}: {chat['text']}"})
 
-            self.add_memories_for_speaker(
-                speaker_a_uid, messages_a, timestamp, f"[Conv {idx}] Adding memories for {speaker_a}"
-            )
-            self.add_memories_for_speaker(
-                speaker_b_uid, messages_b, timestamp, f"[Conv {idx}] Adding memories for {speaker_b}"
-            )
+            for i in range(0, len(msgs_a), self.batch_size):
+                batches_a.append((msgs_a[i : i + self.batch_size], timestamp))
+            for i in range(0, len(msgs_b), self.batch_size):
+                batches_b.append((msgs_b[i : i + self.batch_size], timestamp))
 
-        print(f"[Conv {idx}] Memories added for {speaker_a_uid} and {speaker_b_uid}")
+        return [(speaker_a_uid, batches_a), (speaker_b_uid, batches_b)]
 
     def process_all_conversations(self):
         if not self.data:
             raise ValueError("No data loaded.")
+
+        # Clear existing memories for every user_id serially first so we
+        # don't race with in-flight writes from the worker pool. This is a
+        # no-op on a fresh mem0_db, but can be slow (minutes) if the
+        # underlying chroma DB has thousands of stale vectors from a
+        # previous run. Set MEM0_SKIP_DELETE_ALL=1 if you've already wiped
+        # mem0_db on disk and want to skip this entirely.
+        if os.getenv("MEM0_SKIP_DELETE_ALL", "0") == "1":
+            print("MEM0_SKIP_DELETE_ALL=1; skipping pre-wipe of existing memories.")
+        else:
+            print(
+                f"Clearing existing memories for {len(self.data)} conversations "
+                "(20 serial delete_all calls)...",
+                flush=True,
+            )
+            for idx, item in enumerate(self.data):
+                conv = item["conversation"]
+                self.mem.delete_all(user_id=f"{conv['speaker_a']}_{idx}")
+                self.mem.delete_all(user_id=f"{conv['speaker_b']}_{idx}")
+                print(f"  cleared conv {idx + 1}/{len(self.data)}", flush=True)
+
+        # Build the full (user_id, batches) job list across all conversations.
+        all_jobs: list[tuple[str, list[tuple[list[dict], str]]]] = []
         for idx, item in enumerate(self.data):
-            print(f"\n{'=' * 60}")
-            print(f"PROCESSING CONVERSATION {idx + 1}/{len(self.data)}")
-            print(f"{'=' * 60}")
-            self.process_conversation(item, idx)
+            all_jobs.extend(self._build_speaker_jobs(item, idx))
+
+        total_batches = sum(len(b) for _, b in all_jobs)
+        print(
+            f"Ingesting {total_batches} batches across {len(all_jobs)} user_ids "
+            f"with {self.max_workers} workers (batch_size={self.batch_size})..."
+        )
+
+        with ThreadPoolExecutor(max_workers=self.max_workers) as pool:
+            futures = {
+                pool.submit(self._ingest_speaker_sequential, uid, batches): (uid, len(batches))
+                for uid, batches in all_jobs
+            }
+            for fut in tqdm(as_completed(futures), total=len(futures), desc="Ingesting user_ids"):
+                uid, n = futures[fut]
+                try:
+                    fut.result()
+                except Exception as e:
+                    print(f"[ADD] user_id={uid} failed after {n} batches: {e}")
+                    raise
+
+        print(f"[ADD] Done: {total_batches} batches across {len(all_jobs)} user_ids.")

@@ -1,18 +1,25 @@
 import json
 import os
+import threading
 import time
 from collections import defaultdict
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from typing import Any
 
 import chromadb
-from chromadb.config import Settings
+from sentence_transformers import SentenceTransformer
+from tqdm import tqdm
 
 from .config import (
     DATASET_PATH,
+    DEFAULT_CHUNK_SIZE,
+    DEFAULT_LLM_CONCURRENCY,
+    DEFAULT_MAX_TOKENS,
+    DEFAULT_TOP_K,
+    EMBEDDER_DEVICE,
+    EMBEDDER_MODEL,
     RAG_CHROMA_COLLECTION_NAME,
     RAG_DB_PATH,
-    DEFAULT_TOP_K,
-    DEFAULT_CHUNK_SIZE,
     VLLM_MODEL,
     get_vllm_client,
 )
@@ -20,21 +27,38 @@ from .prompts import RAG_ANSWER_PROMPT
 
 
 class RAGSearch:
-    def __init__(self, output_path: str = "results.json", top_k: int = DEFAULT_TOP_K, chunk_size: int = DEFAULT_CHUNK_SIZE):
+    def __init__(
+        self,
+        output_path: str = "results.json",
+        top_k: int = DEFAULT_TOP_K,
+        chunk_size: int = DEFAULT_CHUNK_SIZE,
+        max_workers: int = DEFAULT_LLM_CONCURRENCY,
+        max_tokens: int = DEFAULT_MAX_TOKENS,
+    ):
         self.output_path = output_path
         self.top_k = top_k
         self.chunk_size = chunk_size
+        self.max_workers = max(1, int(max_workers))
+        self.max_tokens = int(max_tokens)
         self.client = get_vllm_client()
-        self.db_client = chromadb.Client(Settings(chroma_db_impl="duckdb+parquet", persist_directory=RAG_DB_PATH))
+        self.db_client = chromadb.PersistentClient(path=RAG_DB_PATH)
         self.collection = self.db_client.get_collection(name=RAG_CHROMA_COLLECTION_NAME)
+        self.embedder = SentenceTransformer(EMBEDDER_MODEL, device=EMBEDDER_DEVICE)
         self.results: dict[str, list[dict[str, Any]]] = defaultdict(list)
+        # Chroma's PersistentClient is not safe for concurrent writes; the
+        # embedder has internal state too. Guard both behind a lock so the
+        # thread pool only truly parallelizes the HTTP LLM calls.
+        self._retrieval_lock = threading.Lock()
+        self._save_lock = threading.Lock()
 
     def search_chunks(self, query: str) -> list[dict[str, Any]]:
-        query_result = self.collection.query(
-            query_texts=[query],
-            n_results=self.top_k,
-            include=["documents", "metadatas", "distances"],
-        )
+        with self._retrieval_lock:
+            query_embedding = self.embedder.encode([query], convert_to_numpy=True).tolist()
+            query_result = self.collection.query(
+                query_embeddings=query_embedding,
+                n_results=self.top_k,
+                include=["documents", "metadatas", "distances"],
+            )
 
         ids = query_result.get("ids", [[]])[0]
         docs = query_result.get("documents", [[]])[0]
@@ -60,6 +84,7 @@ class RAGSearch:
             model=VLLM_MODEL,
             messages=[{"role": "system", "content": prompt}],
             temperature=0.0,
+            max_tokens=self.max_tokens,
         )
         elapsed = time.time() - start
         content = ""
@@ -100,18 +125,60 @@ class RAGSearch:
         with open(file_path, "r") as f:
             data = json.load(f)
 
-        for idx, item in enumerate(data):
+        # Flatten everything into (conv_idx, qa_position, qa_item) so we can
+        # fan the whole workload out across the thread pool at once.
+        tasks: list[tuple[int, int, dict[str, Any]]] = []
+        for conv_idx, item in enumerate(data):
             qa_list = item.get("qa", [])
-            for qa_item in qa_list:
-                result = self.process_question(qa_item, idx)
-                self.results[str(idx)].append(result)
-            self._save()
+            for qa_pos, qa_item in enumerate(qa_list):
+                tasks.append((conv_idx, qa_pos, qa_item))
+
+        # Pre-size per-conversation result lists so we can drop results into
+        # their original positions regardless of completion order.
+        per_conv_len: dict[int, int] = defaultdict(int)
+        for conv_idx, qa_pos, _ in tasks:
+            per_conv_len[conv_idx] = max(per_conv_len[conv_idx], qa_pos + 1)
+        slots: dict[str, list[Any]] = {
+            str(conv_idx): [None] * n for conv_idx, n in per_conv_len.items()
+        }
+
+        completed = 0
+        save_every = max(1, len(tasks) // 20)  # ~20 incremental saves total
+
+        with ThreadPoolExecutor(max_workers=self.max_workers) as pool:
+            future_to_meta = {
+                pool.submit(self.process_question, qa_item, conv_idx): (conv_idx, qa_pos)
+                for conv_idx, qa_pos, qa_item in tasks
+            }
+            for future in tqdm(
+                as_completed(future_to_meta),
+                total=len(future_to_meta),
+                desc="RAG search",
+            ):
+                conv_idx, qa_pos = future_to_meta[future]
+                try:
+                    result = future.result()
+                except Exception as exc:
+                    result = {"error": f"{type(exc).__name__}: {exc}"}
+                slots[str(conv_idx)][qa_pos] = result
+                completed += 1
+                if completed % save_every == 0:
+                    self._flush(slots)
+
+        self._flush(slots)
+
+    def _flush(self, slots: dict[str, list[Any]]) -> None:
+        # Copy into self.results (dropping any still-empty slots) and persist.
+        self.results = defaultdict(list)
+        for conv_key, items in slots.items():
+            self.results[conv_key] = [it for it in items if it is not None]
         self._save()
 
     def _save(self) -> None:
-        os.makedirs(os.path.dirname(self.output_path) or ".", exist_ok=True)
-        with open(self.output_path, "w") as f:
-            json.dump(self.results, f, indent=4)
+        with self._save_lock:
+            os.makedirs(os.path.dirname(self.output_path) or ".", exist_ok=True)
+            with open(self.output_path, "w") as f:
+                json.dump(self.results, f, indent=4)
 
 
 def main() -> None:

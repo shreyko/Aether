@@ -6,16 +6,17 @@ import nltk
 from sentence_transformers import SentenceTransformer
 
 import chromadb
-from chromadb.config import Settings
 
 from .config import (
     DATASET_PATH,
+    EMBEDDER_DEVICE,
     EMBEDDER_MODEL,
     RAG_CHROMA_COLLECTION_NAME,
     RAG_DB_PATH,
 )
 
 nltk.download("punkt", quiet=True)
+nltk.download("punkt_tab", quiet=True)
 
 
 def _tokenize_text(text: str) -> list[str]:
@@ -56,8 +57,9 @@ class RAGIndexer:
     def __init__(self, dataset_path: str = DATASET_PATH, chunk_size: int = 512):
         self.dataset_path = dataset_path
         self.chunk_size = chunk_size
-        self.embedder = SentenceTransformer(EMBEDDER_MODEL)
-        self.client = chromadb.Client(Settings(chroma_db_impl="duckdb+parquet", persist_directory=RAG_DB_PATH))
+        self.embedder = SentenceTransformer(EMBEDDER_MODEL, device=EMBEDDER_DEVICE)
+        os.makedirs(RAG_DB_PATH, exist_ok=True)
+        self.client = chromadb.PersistentClient(path=RAG_DB_PATH)
         self.collection = self._prepare_collection()
 
     def _prepare_collection(self):
@@ -108,7 +110,6 @@ class RAGIndexer:
             metadatas=metadatas,
             embeddings=embeddings.tolist(),
         )
-        self.client.persist()
 
     def build(self) -> None:
         os.makedirs(RAG_DB_PATH, exist_ok=True)
