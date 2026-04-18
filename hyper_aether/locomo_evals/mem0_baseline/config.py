@@ -12,7 +12,11 @@ MEM0_CONFIG = {
             "model": VLLM_MODEL,
             "vllm_base_url": VLLM_BASE_URL,
             "temperature": 0.0,
-            "max_tokens": 2000,
+            # 4000 gives mem0's fact-extractor enough headroom to finish
+            # the JSON response for batch_size up to ~8; with 2000 we were
+            # seeing frequent mid-JSON truncation ("Expecting ',' delimiter"
+            # at char ~6800-8800) which silently drops the batch's memories.
+            "max_tokens": 4000,
         },
     },
     "embedder": {
@@ -20,6 +24,10 @@ MEM0_CONFIG = {
         "config": {
             "model": "all-MiniLM-L6-v2",
             "embedding_dims": 384,
+            # Pin the sentence-transformer to CPU so it doesn't fight vLLM for
+            # the GPU (vLLM grabs ~90% of VRAM by default). MiniLM is tiny, so
+            # CPU embedding is plenty fast for LOCOMO-scale workloads.
+            "model_kwargs": {"device": os.getenv("MEM0_EMBEDDER_DEVICE", "cpu")},
         },
     },
     "vector_store": {

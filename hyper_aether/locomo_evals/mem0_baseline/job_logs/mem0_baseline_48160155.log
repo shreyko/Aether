@@ -1,0 +1,55 @@
+[run_all_with_vllm] Project root: /home/gpranav/pranav_work/scratch/sca/Aether/hyper_aether
+[run_all_with_vllm] Using VLLM_BASE_URL=http://127.0.0.1:8000/v1
+[run_all_with_vllm] Using VLLM_MODEL=meta-llama/Llama-3.2-3B-Instruct
+[run_all_with_vllm] Using TOP_K=30
+[run_all_with_vllm] Using UV_BIN=uv
+[run_all_with_vllm] Using VLLM_DEVICE=cuda
+[run_all_with_vllm] Using MEM0_EMBEDDER_DEVICE=cpu
+[run_all_with_vllm] Using MEM0_ADD_WORKERS=10 MEM0_ADD_BATCH_SIZE=8
+[run_all_with_vllm] Using MEM0_SEARCH_WORKERS=32 MEM0_EVAL_WORKERS=32
+[run_all_with_vllm] Detected vLLM CLI without --device support; skipping device flag.
+[run_all_with_vllm] Starting vLLM in background...
+[run_all_with_vllm] Command: uv run -- vllm serve meta-llama/Llama-3.2-3B-Instruct --host 127.0.0.1 --port 8000   --dtype bfloat16 --max-model-len 32768 --max-num-seqs 128 --max-num-batched-tokens 8192 --gpu-memory-utilization 0.9
+[run_all_with_vllm] vLLM PID=388922; logs -> /home/gpranav/pranav_work/scratch/sca/Aether/hyper_aether/locomo_evals/mem0_baseline/results/vllm_server.log
+[run_all_with_vllm] vLLM is healthy.
+[run_all_with_vllm] Running mem0 baseline (all phases)...
+[ALL] Step 1/4: ADD
+Clearing existing memories for 10 conversations...
+Ingesting 1696 batches across 20 user_ids with 10 workers (batch_size=8)...
+Ingesting user_ids:   0%|          | 0/20 [00:00<?, ?it/s]Failed to load spaCy lemma model: spaCy is not installed. Install it with: pip install mem0ai[nlp]
+Failed to load spaCy full model: spaCy is not installed. Install it with: pip install mem0ai[nlp]
+Error parsing extraction response: Expecting ',' delimiter: line 77 column 88 (char 6820)
+Error parsing extraction response: Expecting ',' delimiter: line 65 column 126 (char 8205)
+Error parsing extraction response: Expecting ',' delimiter: line 55 column 154 (char 7663)
+Error parsing extraction response: Expecting ',' delimiter: line 56 column 174 (char 8134)
+Error parsing extraction response: Expecting ',' delimiter: line 49 column 173 (char 8437)
+Error parsing extraction response: Expecting ',' delimiter: line 52 column 189 (char 8257)
+Error parsing extraction response: Expecting ',' delimiter: line 47 column 122 (char 7508)
+Error parsing extraction response: Expecting ',' delimiter: line 46 column 164 (char 7921)
+Ingesting user_ids:   0%|          | 0/20 [11:06<?, ?it/s]
+Error parsing extraction response: Expecting ',' delimiter: line 46 column 206 (char 8788)
+Error parsing extraction response: Expecting ',' delimiter: line 51 column 177 (char 8832)
+Error parsing extraction response: Expecting ',' delimiter: line 70 column 132 (char 6863)
+Error parsing extraction response: Expecting ',' delimiter: line 73 column 89 (char 6583)
+Error parsing extraction response: Expecting ',' delimiter: line 68 column 92 (char 6841)
+Error parsing extraction response: Expecting ',' delimiter: line 51 column 204 (char 8530)
+Error parsing extraction response: Expecting ',' delimiter: line 49 column 203 (char 8183)
+Error parsing extraction response: Expecting ',' delimiter: line 61 column 117 (char 7470)
+Error parsing extraction response: Expecting ',' delimiter: line 39 column 241 (char 8894)
+Error parsing extraction response: Expecting ',' delimiter: line 48 column 166 (char 7280)
+Error parsing extraction response: Expecting ',' delimiter: line 49 column 132 (char 6643)
+Error parsing extraction response: Expecting ',' delimiter: line 51 column 152 (char 7991)
+Error parsing extraction response: Expecting ',' delimiter: line 50 column 170 (char 8145)
+Error parsing extraction response: Expecting ',' delimiter: line 52 column 152 (char 7593)
+Error parsing extraction response: Expecting ',' delimiter: line 3 column 218 (char 233)
+Error parsing extraction response: Expecting ',' delimiter: line 61 column 102 (char 6692)
+Error parsing extraction response: Expecting ',' delimiter: line 54 column 231 (char 8285)
+Error parsing extraction response: Expecting ',' delimiter: line 41 column 223 (char 8318)
+Error parsing extraction response: Expecting ',' delimiter: line 51 column 148 (char 7739)
+Error parsing extraction response: Expecting ',' delimiter: line 47 column 126 (char 8087)
+Error parsing extraction response: Expecting ',' delimiter: line 42 column 234 (char 8555)
+Error parsing extraction response: Expecting ',' delimiter: line 62 column 152 (char 7587)
+Error parsing extraction response: Expecting ',' delimiter: line 62 column 84 (char 7135)
+Error parsing extraction response: Expecting ',' delimiter: line 51 column 152 (char 7501)
+[2026-04-17T15:44:36.478] error: *** JOB 48160155 ON gl1719 CANCELLED AT 2026-04-17T15:44:36 DUE to SIGNAL Terminated ***
+[run_all_with_vllm] Stopping vLLM process 388922...
