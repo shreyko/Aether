@@ -28,6 +28,8 @@ dependencies = [
     # refactored in transformers 5.x. Pinning here keeps vLLM happy.
     "transformers>=4.45,<5",
     "xgi>=0.10.1",
+    "fastapi>=0.136.0",
+    "uvicorn>=0.44.0",
 ]
 
 [project.optional-dependencies]

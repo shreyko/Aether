@@ -49,7 +49,7 @@ class GeminiAPI:
         """
         
         response = self.client.models.generate_content(
-            model="gemini-2.5-flash", # Updated to a stable model name
+            model="gemini-2.5-flash", # Updated to a stable model
             contents=prompt,
         )
         

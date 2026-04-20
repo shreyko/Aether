@@ -2,6 +2,10 @@ import xgi
 import numpy as np
 from sentence_transformers import SentenceTransformer
 from sklearn.metrics.pairwise import cosine_similarity
+from dotenv import load_dotenv
+import os
+
+load_dotenv()
 
 # --- MEMORY BLOCK CLASSES ---
 
@@ -103,7 +107,7 @@ class HypergraphMemoryOSV2:
     def __init__(self):
         self.H = xgi.Hypergraph()
         self.memory_store = {}
-        
+        hf_token = os.getenv("HF_TOKEN")
         print("[Kernel v2.0] Loading local embedding model (all-MiniLM-L6-v2)...")
         self.embedder = SentenceTransformer('all-MiniLM-L6-v2')
         
