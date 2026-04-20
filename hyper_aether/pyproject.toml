@@ -10,10 +10,12 @@ authors = [
 readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [
+    "google-genai>=1.73.1",
+    "numpy>=2.4.3",
     "nltk>=3.9.4",
-    "numpy>=1.26.0",
     "ollama>=0.6.1",
     "pydantic>=2.12.5",
+    "python-dotenv>=1.2.2",
     "scikit-learn>=1.8.0",
     "sentence-transformers>=3.0.0",
     # Pinned to a range that matches the torch vLLM's prebuilt wheels are
