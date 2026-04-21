@@ -18,7 +18,7 @@ Aether is a hypergraph-based long-term memory system designed for Large Language
 
 Core Capabilities:
 * **Hypergraph Retrieval:** Captures implicit relationships by grouping concepts into contextual envelopes rather than rigid 1-to-1 edges.
-* **State Tracking:** Automatically detects "state changes" (e.g., a trip moving from April to May) to prioritize the most current facts over older records.
+* **State Tracking:** Automatically detects state changes (e.g., a trip moving from April to May) to prioritize the most current facts over older records.
 * **Typed Memory Blocks:** Parses entities, dates, locations, and user preferences into distinct, structured data classes.
 
 ## Installation
