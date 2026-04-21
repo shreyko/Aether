@@ -73,3 +73,14 @@ Aether includes a browser extension that allows you to inject your personal hype
 Our formal research paper detailing the hypergraph mathematical structures and latency evaluations is currently in progress and will be available soon.
 
 *\*Note: Aether is an active work in progress. Further support, edge-case refinement, and system improvements are continually being integrated.*
+
+### References
+Aether evaluates and builds upon foundational concepts in long-term memory for AI agents. We acknowledge the following related work:
+
+```bibtex
+@article{mem0,
+  title={Mem0: Building Production-Ready AI Agents with Scalable Long-Term Memory},
+  author={Chhikara, Prateek and Khant, Dev and Aryan, Saket and Singh, Taranjeet and Yadav, Deshraj},
+  journal={arXiv preprint arXiv:2504.19413},
+  year={2025}
+}
