@@ -2,6 +2,14 @@
   <img src="Aether.png" width="800" alt="Aether Architecture">
 </p>
 
+<p align="center">
+  <img src="https://img.shields.io/badge/Architecture-Hypergraph-success" alt="Hypergraph Architecture">
+  <img src="https://img.shields.io/badge/Google%20Gemini-8E75B2?logo=googlebard&logoColor=white" alt="Google Gemini API">
+  <img src="https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Embeddings-FFD21E" alt="Hugging Face Embeddings">
+  <img src="https://img.shields.io/badge/Chrome-Extension-4285F4?logo=googlechrome&logoColor=white" alt="Chrome Extension">
+  <img src="https://img.shields.io/badge/Status-Research%20%2F%20WIP-orange" alt="Status">
+</p>
+
 # Aether: Hypergraph Long Term Memory for LLMs 
 
 Aether is a hypergraph-based long-term memory system designed for Large Language Models. By moving beyond standard flat vector databases, Aether structures user interactions into overlapping contexts (hyperedges) and strongly-typed semantic nodes. This allows AI assistants to retrieve highly relevant, multi-hop information and strictly prioritize timeline updates to prevent hallucinations on stale facts.
