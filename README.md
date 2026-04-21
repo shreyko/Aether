@@ -52,7 +52,7 @@ Start the Aether backend. This runs the FastAPI server that manages your local h
 ```bash
 uv run server.py
 ```
-The application will spin up on `http://127.0.0.1:8000` and automatically create or load your local memory graph file (`saved_graphs/chrome_memory.pkl`). Leave this terminal running in the background.
+The application will spin up on `http://127.0.0.1:8000` and automatically create or load your local memory graph file (`saved_graphs/memory.pkl`). Leave this terminal running in the background.
 
 ## Chrome Extension Integration
 
