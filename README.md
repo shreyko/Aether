@@ -74,6 +74,8 @@ Our formal research paper detailing the hypergraph mathematical structures and l
 
 *\*Note: Aether is an active work in progress. Further support, edge-case refinement, and system improvements are continually being integrated.*
 
+---
+
 ### References
 Aether evaluates and builds upon foundational concepts in long-term memory for AI agents. We acknowledge the following related work:
 
