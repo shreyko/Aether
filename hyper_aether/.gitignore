@@ -1,7 +1,0 @@
-# Python cache files
-__pycache__/
-*.py[cod]
-*$py.class
-.env
-uv.lock
-saved_graphs/

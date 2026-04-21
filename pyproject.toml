@@ -1,0 +1,53 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hyper-aether"
+version = "0.1.0"
+description = "A long term memory layer for multi agent systems using hypergraphs and large language models."
+authors = [
+    { name = "Shrey Kohli", email = "kohlishr@umich.edu"},
+    { name = "Vansh Nagpal", email = "vnagpal@umich.edu"},
+    { name = "Pranav Gupta", email = "gpranav@umich.edu"},
+    { name = "Anshul Batish", email = "abatish@umich.edu"}
+]
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "google-genai>=1.73.1",
+    "numpy==1.26.0",
+    "nltk>=3.9.4",
+    "ollama>=0.6.1",
+    "pydantic>=2.12.5",
+    "python-dotenv>=1.2.2",
+    "scikit-learn>=1.8.0",
+    "sentence-transformers>=3.0.0",
+    # Pinned to a range that matches the torch vLLM's prebuilt wheels are
+    # built against. Leaving this unpinned lets resolvers pull torch 2.10,
+    # which has no matching vLLM wheel and forces a source build that fails
+    # on CUDA < 12.4.
+    "torch>=2.7,<2.9",
+    # vLLM 0.11.x still uses the transformers 4.x tokenizer API
+    # (e.g. `tokenizer.all_special_tokens_extended`), which was removed /
+    # refactored in transformers 5.x. Pinning here keeps vLLM happy.
+    "transformers>=4.45,<5",
+    "xgi>=0.10.1",
+    "fastapi>=0.136.0",
+    "uvicorn>=0.44.0",
+]
+
+[project.optional-dependencies]
+vllm = ["vllm>=0.10,<0.12"]
+mem0-baseline = [
+    "mem0ai>=0.1.0",
+    "chromadb>=0.5.0",
+    "openai>=1.0.0",
+    "jinja2>=3.1.0",
+    "nltk>=3.8.0",
+    "pandas>=2.0.0",
+    "tqdm>=4.60.0",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]

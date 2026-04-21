@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+src/Aether.egg-info/PKG-INFO
+src/Aether.egg-info/SOURCES.txt
+src/Aether.egg-info/dependency_links.txt
+src/Aether.egg-info/requires.txt
+src/Aether.egg-info/top_level.txt

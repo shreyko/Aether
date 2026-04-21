@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="Aether.png" width="800" alt="Aether Architecture">
+</p>
+
 # Aether: Hypergraph Long Term Memory for LLMs 
 
 Aether is a hypergraph-based long-term memory system designed for Large Language Models. By moving beyond standard flat vector databases, Aether structures user interactions into overlapping contexts (hyperedges) and strongly-typed semantic nodes. This allows AI assistants to retrieve highly relevant, multi-hop information and strictly prioritize timeline updates to prevent hallucinations on stale facts.
