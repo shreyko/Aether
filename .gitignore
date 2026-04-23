@@ -7,4 +7,3 @@ uv.lock
 saved_graphs/
 *.log
 job_logs/
-*.sh
