@@ -51,6 +51,18 @@ mem0-baseline = [
     "pandas>=2.0.0",
     "tqdm>=4.60.0",
 ]
+# Mem0 **graph** (Kuzu) baseline: mem0ai 2.x removed ``graph_store``; pin 1.x for KG evaluation.
+# Do not install together with an environment that resolves ``mem0ai>=2`` for the vector baseline
+# unless you use separate virtualenvs.
+mem0g-baseline = [
+    "mem0ai[graph]>=1.0.11,<2.0.0",
+    "chromadb>=0.5.0",
+    "openai>=1.0.0",
+    "jinja2>=3.1.0",
+    "nltk>=3.8.0",
+    "pandas>=2.0.0",
+    "tqdm>=4.60.0",
+]
 
 [tool.setuptools.packages.find]
 where = ["src"]
