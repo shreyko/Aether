@@ -32,6 +32,8 @@ from .config import (
     VLLM_MODEL,
     get_vllm_client,
 )
+from ..latency import write_search_latency_summary
+
 from .memory_kernel import HypergraphMemoryOS
 from .prompts import ANSWER_PROMPT
 
@@ -158,6 +160,9 @@ class MemorySearch:
             speaker_a_uid, speaker_b_uid, question
         )
 
+        search_latency = max(sp1_time, sp2_time)
+        total_latency = search_latency + resp_time
+
         return {
             "question": question,
             "answer": str(answer),
@@ -171,6 +176,9 @@ class MemorySearch:
             "speaker_1_memory_time": sp1_time,
             "speaker_2_memory_time": sp2_time,
             "response_time": resp_time,
+            "search_latency_sec": search_latency,
+            "generation_latency_sec": resp_time,
+            "total_latency_sec": total_latency,
         }
 
     def process_data_file(self, file_path: str):
@@ -225,6 +233,8 @@ class MemorySearch:
             print("  [resume] All QAs already answered; writing final output only.")
             with self._lock:
                 self._flush_slots(slots)
+                summary_path = write_search_latency_summary(self.output_path, self.results, baseline="aether")
+                print(f"  [latency] Wrote search latency summary to {summary_path}")
             return
 
         def _worker(job):
@@ -245,6 +255,8 @@ class MemorySearch:
 
         with self._lock:
             self._flush_slots(slots)
+            summary_path = write_search_latency_summary(self.output_path, self.results, baseline="aether")
+            print(f"  [latency] Wrote search latency summary to {summary_path}")
 
     def _flush_slots(self, slots: dict[int, list[dict | None]]):
         self.results = defaultdict(list)

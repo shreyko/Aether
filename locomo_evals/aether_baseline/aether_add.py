@@ -20,6 +20,8 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 
 from tqdm import tqdm
 
+from ..latency import write_add_latency_summary
+
 from .config import (
     AETHER_ADD_BATCH_SIZE,
     AETHER_ADD_WORKERS,
@@ -111,6 +113,8 @@ class AetherADD:
             self.load_data()
 
         os.makedirs(AETHER_DB_PATH, exist_ok=True)
+        self._batch_seconds: list[float] = []
+        self._batch_lock = threading.Lock()
 
     def load_data(self):
         with open(self.data_path, "r") as f:
@@ -171,6 +175,7 @@ class AetherADD:
         kernel = HypergraphMemoryOS()
         ingested = 0
         for messages, timestamp in batches:
+            t_batch0 = time.perf_counter()
             chunk_text = _format_chunk_text(messages, timestamp)
             for attempt in range(retries + 1):
                 memories = extract_hypergraph_nodes(
@@ -190,6 +195,8 @@ class AetherADD:
                     metadata={"timestamp": timestamp, "user_id": user_id},
                 )
                 ingested += 1
+            with self._batch_lock:
+                self._batch_seconds.append(time.perf_counter() - t_batch0)
 
         kernel.save(_kernel_path(user_id))
         return user_id, ingested
@@ -247,3 +254,10 @@ class AetherADD:
             f"[Aether-ADD] Done: {total_ingested} memories ingested across {len(all_jobs)} user_ids.",
             flush=True,
         )
+        add_summary_path = os.path.join(os.path.dirname(__file__), "results", "add_latency_summary.json")
+        path = write_add_latency_summary(
+            add_summary_path,
+            baseline="aether",
+            per_batch_seconds=self._batch_seconds,
+        )
+        print(f"[Aether-ADD] Wrote add/index latency summary to {path}", flush=True)
