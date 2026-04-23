@@ -23,6 +23,8 @@ from .config import (
     VLLM_MODEL,
     get_vllm_client,
 )
+from ..latency import write_search_latency_summary
+
 from .prompts import RAG_ANSWER_PROMPT
 
 
@@ -100,7 +102,9 @@ class RAGSearch:
         category = item.get("category", -1)
         evidence = item.get("evidence", [])
 
+        t_retrieve0 = time.perf_counter()
         top_chunks = self.search_chunks(question)
+        retrieval_latency = time.perf_counter() - t_retrieve0
         context_lines = []
         for chunk in top_chunks:
             meta = chunk["metadata"]
@@ -110,6 +114,7 @@ class RAGSearch:
         context = "\n\n".join(context_lines)
 
         response, generation_time = self.generate_answer(context, question)
+        total_latency = retrieval_latency + generation_time
         return {
             "question": question,
             "answer": answer,
@@ -119,6 +124,9 @@ class RAGSearch:
             "retrieved_chunks": top_chunks,
             "num_chunks": len(top_chunks),
             "generation_time": generation_time,
+            "search_latency_sec": retrieval_latency,
+            "generation_latency_sec": generation_time,
+            "total_latency_sec": total_latency,
         }
 
     def process_data_file(self, file_path: str = DATASET_PATH) -> None:
@@ -166,6 +174,8 @@ class RAGSearch:
                     self._flush(slots)
 
         self._flush(slots)
+        summary_path = write_search_latency_summary(self.output_path, self.results, baseline="rag")
+        print(f"  [latency] Wrote search latency summary to {summary_path}")
 
     def _flush(self, slots: dict[str, list[Any]]) -> None:
         # Copy into self.results (dropping any still-empty slots) and persist.

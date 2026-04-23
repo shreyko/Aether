@@ -1,11 +1,14 @@
 import json
 import os
+import time
 from typing import Any
 
 import nltk
 from sentence_transformers import SentenceTransformer
 
 import chromadb
+
+from ..latency import write_add_latency_summary
 
 from .config import (
     DATASET_PATH,
@@ -76,16 +79,19 @@ class RAGIndexer:
     def index_dataset(self) -> None:
         data = self.load_dataset()
 
-        chunk_texts: list[str] = []
-        chunk_ids: list[str] = []
-        metadatas: list[dict[str, Any]] = []
+        per_conversation_seconds: list[float] = []
 
         for conversation_idx, item in enumerate(data):
+            t_conv0 = time.perf_counter()
             conversation = item.get("conversation", {})
             speaker_a = conversation.get("speaker_a", "")
             speaker_b = conversation.get("speaker_b", "")
             session_text = _flatten_conversation(conversation)
             chunks = _chunk_text(session_text, self.chunk_size)
+
+            chunk_texts: list[str] = []
+            chunk_ids: list[str] = []
+            metadatas: list[dict[str, Any]] = []
 
             for chunk_idx, chunk in enumerate(chunks):
                 chunk_id = f"{conversation_idx}-{chunk_idx}-{self.chunk_size}"
@@ -103,13 +109,25 @@ class RAGIndexer:
                     }
                 )
 
-        embeddings = self.embedder.encode(chunk_texts, convert_to_numpy=True)
-        self.collection.add(
-            ids=chunk_ids,
-            documents=chunk_texts,
-            metadatas=metadatas,
-            embeddings=embeddings.tolist(),
+            embeddings = self.embedder.encode(chunk_texts, convert_to_numpy=True)
+            self.collection.add(
+                ids=chunk_ids,
+                documents=chunk_texts,
+                metadatas=metadatas,
+                embeddings=embeddings.tolist(),
+            )
+            per_conversation_seconds.append(time.perf_counter() - t_conv0)
+
+        baseline_dir = os.path.dirname(os.path.abspath(__file__))
+        add_summary_path = os.path.join(baseline_dir, "results", "add_latency_summary.json")
+        path = write_add_latency_summary(
+            add_summary_path,
+            baseline="rag",
+            per_batch_seconds=per_conversation_seconds,
+            primary_key="per_conversation_index_sec",
+            sample_unit="conversation",
         )
+        print(f"[RAG-INDEX] Wrote index latency summary to {path}")
 
     def build(self) -> None:
         os.makedirs(RAG_DB_PATH, exist_ok=True)
