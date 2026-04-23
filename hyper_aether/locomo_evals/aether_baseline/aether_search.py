@@ -97,9 +97,13 @@ class MemorySearch:
         formatted = []
         for m in envelope:
             ts = m.get("metadata", {}).get("timestamp", "")
+            block_type = m.get("type", "Generic")
             formatted.append(
                 {
-                    "memory": f"{m['abstraction']} (Details: {m['value']})",
+                    "memory": (
+                        f"[{block_type}] {m['abstraction']} (Details: {m['value']})"
+                    ),
+                    "type": block_type,
                     "timestamp": ts,
                     "score": round(float(m.get("score", 0.0)), 2),
                     "node_id": m.get("node_id", ""),

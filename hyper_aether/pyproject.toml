@@ -10,12 +10,14 @@ authors = [
 readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [
-    "google-genai>=1.73.1",
-    "numpy>=2.4.3",
     "nltk>=3.9.4",
+    # Capped below 2.3 because vLLM's pinned numba==0.61.2 requires
+    # numpy>=1.24,<2.3. Without this cap uv is free to pick numpy 2.3+,
+    # which reintroduces the "numpy>=2.4.3" resolver error on the vllm
+    # extra.
+    "numpy>=1.26.0,<2.3",
     "ollama>=0.6.1",
     "pydantic>=2.12.5",
-    "python-dotenv>=1.2.2",
     "scikit-learn>=1.8.0",
     "sentence-transformers>=3.0.0",
     # Pinned to a range that matches the torch vLLM's prebuilt wheels are

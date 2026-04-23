@@ -1,0 +1,43 @@
+[run_all_with_vllm] Project root: /home/gpranav/pranav_work/scratch/sca/Aether/hyper_aether
+[run_all_with_vllm] Using VLLM_BASE_URL=http://127.0.0.1:8000/v1
+[run_all_with_vllm] Using VLLM_MODEL=meta-llama/Llama-3.2-3B-Instruct
+[run_all_with_vllm] Using TOP_K=30
+[run_all_with_vllm] Using UV_BIN=uv
+[run_all_with_vllm] Using VLLM_DEVICE=cuda
+[run_all_with_vllm] Using AETHER_EMBEDDER_DEVICE=cpu
+[run_all_with_vllm] Using AETHER_ADD_WORKERS=24 AETHER_ADD_BATCH_SIZE=4
+[run_all_with_vllm] Using AETHER_SEARCH_WORKERS=32 AETHER_EVAL_WORKERS=32
+[run_all_with_vllm] Detected vLLM CLI without --device support; skipping device flag.
+[run_all_with_vllm] Detected healthy vLLM at http://127.0.0.1:8000/v1; reusing existing server.
+[run_all_with_vllm] Using PHASES=all
+[run_all_with_vllm] Running aether baseline...
+[run_all_with_vllm] ==== Phase: all ====
+  × No solution found when resolving dependencies for split (markers:
+  │ python_full_version >= '3.14' and sys_platform == 'win32'):
+  ╰─▶ Because numba==0.61.2 depends on numpy>=1.24,<2.3 and
+      vllm>=0.10.0,<=0.11.0 depends on numba==0.61.2, we can conclude that
+      vllm>=0.10.0,<=0.11.0 depends on numpy>=1.24,<2.3.
+      And because only the following versions of vllm are available:
+          vllm<=0.10.0
+          vllm==0.10.1
+          vllm==0.10.1.1
+          vllm==0.10.2
+          vllm==0.11.0
+          vllm==0.11.1
+          vllm==0.11.2
+          vllm>0.12
+      and vllm>=0.11.1,<=0.11.2 depends on torch==2.9.0, we can conclude that
+      all of:
+          numpy<1.24
+          numpy>=2.3
+      , torch!=2.9.0, vllm>=0.10.0,<0.12 are incompatible.
+      And because hyper-aether[vllm] depends on vllm>=0.10,<0.12 and your
+      project depends on numpy>=2.4.3, we can conclude that your project,
+      hyper-aether[vllm], torch!=2.9.0 are incompatible.
+      And because your project depends on torch>=2.7,<2.9 and your project
+      requires hyper-aether[vllm], we can conclude that your project's
+      requirements are unsatisfiable.
+
+      hint: While the active Python version is 3.11, the resolution failed for
+      other Python versions supported by your project. Consider limiting your
+      project's supported Python versions using `requires-python`.

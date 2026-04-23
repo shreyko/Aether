@@ -41,7 +41,21 @@ export CACHE_DIR="/home/gpranav/pranav_work/scratch/hf_cache"
 # then fall back to the repo path implied by the venv we just sourced.
 PROJECT_ROOT="${PROJECT_ROOT:-/home/gpranav/pranav_work/scratch/sca/Aether/hyper_aether}"
 SCRIPT_DIR="${SCRIPT_DIR:-${PROJECT_ROOT}/locomo_evals/aether_baseline}"
-RESULTS_DIR="${RESULTS_DIR:-${SCRIPT_DIR}/results}"
+
+# AETHER_RUN_TAG isolates this run's outputs and per-speaker hypergraphs into
+# their own subdirs (e.g. results_v2/, aether_db_v2/). Leave empty to use the
+# default "results/" + "aether_db/" layout. Setting a tag is the recommended
+# way to A/B compare kernels (V1 vs V2) without the search-resume cache or the
+# persisted pickles silently leaking between runs.
+AETHER_RUN_TAG="${AETHER_RUN_TAG:-}"
+if [[ -n "${AETHER_RUN_TAG}" ]]; then
+  RESULTS_DIR="${RESULTS_DIR:-${SCRIPT_DIR}/results_${AETHER_RUN_TAG}}"
+  AETHER_DB_PATH="${AETHER_DB_PATH:-${SCRIPT_DIR}/aether_db_${AETHER_RUN_TAG}}"
+else
+  RESULTS_DIR="${RESULTS_DIR:-${SCRIPT_DIR}/results}"
+  AETHER_DB_PATH="${AETHER_DB_PATH:-${SCRIPT_DIR}/aether_db}"
+fi
+export AETHER_DB_PATH
 
 TOP_K="${TOP_K:-30}"
 VLLM_MODEL="${VLLM_MODEL:-meta-llama/Llama-3.2-3B-Instruct}"
@@ -101,6 +115,9 @@ log "Using VLLM_BASE_URL=${VLLM_BASE_URL}"
 log "Using VLLM_MODEL=${VLLM_MODEL}"
 log "Using TOP_K=${TOP_K}"
 log "Using UV_BIN=${UV_BIN}"
+log "Using AETHER_RUN_TAG='${AETHER_RUN_TAG}'"
+log "Using RESULTS_DIR=${RESULTS_DIR}"
+log "Using AETHER_DB_PATH=${AETHER_DB_PATH}"
 
 if [[ "${VLLM_DEVICE}" == "auto" ]]; then
   if command -v nvidia-smi >/dev/null 2>&1 && nvidia-smi >/dev/null 2>&1; then
@@ -191,6 +208,9 @@ log "Running aether baseline..."
 cd "${PROJECT_ROOT}"
 for phase in ${PHASES}; do
   log "==== Phase: ${phase} ===="
-  "${UV_BIN}" run -- python -u -m locomo_evals.aether_baseline.run --method "${phase}" --top_k "${TOP_K}"
+  "${UV_BIN}" run -- python -u -m locomo_evals.aether_baseline.run \
+    --method "${phase}" \
+    --top_k "${TOP_K}" \
+    --output_dir "${RESULTS_DIR}"
 done
 log "Pipeline completed successfully."

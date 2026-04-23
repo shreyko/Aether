@@ -1,0 +1,49 @@
+INFO 04-20 01:49:36 [__init__.py:216] Automatically detected platform cuda.
+[1;36m(APIServer pid=247257)[0;0m INFO 04-20 01:50:26 [api_server.py:1839] vLLM API server version 0.11.0
+[1;36m(APIServer pid=247257)[0;0m INFO 04-20 01:50:26 [utils.py:233] non-default args: {'model_tag': 'Qwen/Qwen3.5-9B', 'host': '127.0.0.1', 'model': 'Qwen/Qwen3.5-9B', 'dtype': 'bfloat16', 'max_model_len': 32768, 'max_num_batched_tokens': 8192, 'max_num_seqs': 128}
+[1;36m(APIServer pid=247257)[0;0m Traceback (most recent call last):
+[1;36m(APIServer pid=247257)[0;0m   File "/gpfs/accounts/jjparkcv_root/jjparkcv0/gpranav/sca/Aether/hyper_aether/.venv/bin/vllm", line 10, in <module>
+[1;36m(APIServer pid=247257)[0;0m     sys.exit(main())
+[1;36m(APIServer pid=247257)[0;0m              ^^^^^^
+[1;36m(APIServer pid=247257)[0;0m   File "/gpfs/accounts/jjparkcv_root/jjparkcv0/gpranav/sca/Aether/hyper_aether/.venv/lib/python3.11/site-packages/vllm/entrypoints/cli/main.py", line 54, in main
+[1;36m(APIServer pid=247257)[0;0m     args.dispatch_function(args)
+[1;36m(APIServer pid=247257)[0;0m   File "/gpfs/accounts/jjparkcv_root/jjparkcv0/gpranav/sca/Aether/hyper_aether/.venv/lib/python3.11/site-packages/vllm/entrypoints/cli/serve.py", line 57, in cmd
+[1;36m(APIServer pid=247257)[0;0m     uvloop.run(run_server(args))
+[1;36m(APIServer pid=247257)[0;0m   File "/gpfs/accounts/jjparkcv_root/jjparkcv0/gpranav/sca/Aether/hyper_aether/.venv/lib/python3.11/site-packages/uvloop/__init__.py", line 92, in run
+[1;36m(APIServer pid=247257)[0;0m     return runner.run(wrapper())
+[1;36m(APIServer pid=247257)[0;0m            ^^^^^^^^^^^^^^^^^^^^^
+[1;36m(APIServer pid=247257)[0;0m   File "/sw/pkgs/arc/python3.11-anaconda/2024.02-1/lib/python3.11/asyncio/runners.py", line 118, in run
+[1;36m(APIServer pid=247257)[0;0m     return self._loop.run_until_complete(task)
+[1;36m(APIServer pid=247257)[0;0m            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[1;36m(APIServer pid=247257)[0;0m   File "uvloop/loop.pyx", line 1518, in uvloop.loop.Loop.run_until_complete
+[1;36m(APIServer pid=247257)[0;0m   File "/gpfs/accounts/jjparkcv_root/jjparkcv0/gpranav/sca/Aether/hyper_aether/.venv/lib/python3.11/site-packages/uvloop/__init__.py", line 48, in wrapper
+[1;36m(APIServer pid=247257)[0;0m     return await main
+[1;36m(APIServer pid=247257)[0;0m            ^^^^^^^^^^
+[1;36m(APIServer pid=247257)[0;0m   File "/gpfs/accounts/jjparkcv_root/jjparkcv0/gpranav/sca/Aether/hyper_aether/.venv/lib/python3.11/site-packages/vllm/entrypoints/openai/api_server.py", line 1884, in run_server
+[1;36m(APIServer pid=247257)[0;0m     await run_server_worker(listen_address, sock, args, **uvicorn_kwargs)
+[1;36m(APIServer pid=247257)[0;0m   File "/gpfs/accounts/jjparkcv_root/jjparkcv0/gpranav/sca/Aether/hyper_aether/.venv/lib/python3.11/site-packages/vllm/entrypoints/openai/api_server.py", line 1902, in run_server_worker
+[1;36m(APIServer pid=247257)[0;0m     async with build_async_engine_client(
+[1;36m(APIServer pid=247257)[0;0m   File "/sw/pkgs/arc/python3.11-anaconda/2024.02-1/lib/python3.11/contextlib.py", line 210, in __aenter__
+[1;36m(APIServer pid=247257)[0;0m     return await anext(self.gen)
+[1;36m(APIServer pid=247257)[0;0m            ^^^^^^^^^^^^^^^^^^^^^
+[1;36m(APIServer pid=247257)[0;0m   File "/gpfs/accounts/jjparkcv_root/jjparkcv0/gpranav/sca/Aether/hyper_aether/.venv/lib/python3.11/site-packages/vllm/entrypoints/openai/api_server.py", line 180, in build_async_engine_client
+[1;36m(APIServer pid=247257)[0;0m     async with build_async_engine_client_from_engine_args(
+[1;36m(APIServer pid=247257)[0;0m   File "/sw/pkgs/arc/python3.11-anaconda/2024.02-1/lib/python3.11/contextlib.py", line 210, in __aenter__
+[1;36m(APIServer pid=247257)[0;0m     return await anext(self.gen)
+[1;36m(APIServer pid=247257)[0;0m            ^^^^^^^^^^^^^^^^^^^^^
+[1;36m(APIServer pid=247257)[0;0m   File "/gpfs/accounts/jjparkcv_root/jjparkcv0/gpranav/sca/Aether/hyper_aether/.venv/lib/python3.11/site-packages/vllm/entrypoints/openai/api_server.py", line 206, in build_async_engine_client_from_engine_args
+[1;36m(APIServer pid=247257)[0;0m     vllm_config = engine_args.create_engine_config(usage_context=usage_context)
+[1;36m(APIServer pid=247257)[0;0m                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[1;36m(APIServer pid=247257)[0;0m   File "/gpfs/accounts/jjparkcv_root/jjparkcv0/gpranav/sca/Aether/hyper_aether/.venv/lib/python3.11/site-packages/vllm/engine/arg_utils.py", line 1142, in create_engine_config
+[1;36m(APIServer pid=247257)[0;0m     model_config = self.create_model_config()
+[1;36m(APIServer pid=247257)[0;0m                    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+[1;36m(APIServer pid=247257)[0;0m   File "/gpfs/accounts/jjparkcv_root/jjparkcv0/gpranav/sca/Aether/hyper_aether/.venv/lib/python3.11/site-packages/vllm/engine/arg_utils.py", line 994, in create_model_config
+[1;36m(APIServer pid=247257)[0;0m     return ModelConfig(
+[1;36m(APIServer pid=247257)[0;0m            ^^^^^^^^^^^^
+[1;36m(APIServer pid=247257)[0;0m   File "/gpfs/accounts/jjparkcv_root/jjparkcv0/gpranav/sca/Aether/hyper_aether/.venv/lib/python3.11/site-packages/pydantic/_internal/_dataclasses.py", line 121, in __init__
+[1;36m(APIServer pid=247257)[0;0m     s.__pydantic_validator__.validate_python(ArgsKwargs(args, kwargs), self_instance=s)
+[1;36m(APIServer pid=247257)[0;0m pydantic_core._pydantic_core.ValidationError: 1 validation error for ModelConfig
+[1;36m(APIServer pid=247257)[0;0m   Value error, The checkpoint you are trying to load has model type `qwen3_5` but Transformers does not recognize this architecture. This could be because of an issue with the checkpoint, or because your version of Transformers is out of date.
+[1;36m(APIServer pid=247257)[0;0m 
+[1;36m(APIServer pid=247257)[0;0m You can update Transformers with the command `pip install --upgrade transformers`. If this does not work, and the checkpoint is very new, then there may not be a release version that supports this model yet. In this case, you can get the most up-to-date code by installing Transformers from source with the command `pip install git+https://github.com/huggingface/transformers.git` [type=value_error, input_value=ArgsKwargs((), {'model': ...rocessor_plugin': None}), input_type=ArgsKwargs]
+[1;36m(APIServer pid=247257)[0;0m     For further information visit https://errors.pydantic.dev/2.13/v/value_error

@@ -1,0 +1,19 @@
+[run_all_with_vllm] Project root: /home/gpranav/pranav_work/scratch/sca/Aether/hyper_aether
+[run_all_with_vllm] Using VLLM_BASE_URL=http://127.0.0.1:8000/v1
+[run_all_with_vllm] Using VLLM_MODEL=Qwen/Qwen3.5-9B
+[run_all_with_vllm] Using TOP_K=30
+[run_all_with_vllm] Using UV_BIN=uv
+[run_all_with_vllm] Using AETHER_RUN_TAG='qwen'
+[run_all_with_vllm] Using RESULTS_DIR=/home/gpranav/pranav_work/scratch/sca/Aether/hyper_aether/locomo_evals/aether_baseline/results_qwen
+[run_all_with_vllm] Using AETHER_DB_PATH=/home/gpranav/pranav_work/scratch/sca/Aether/hyper_aether/locomo_evals/aether_baseline/aether_db_qwen
+[run_all_with_vllm] Using VLLM_DEVICE=cuda
+[run_all_with_vllm] Using AETHER_EMBEDDER_DEVICE=cpu
+[run_all_with_vllm] Using AETHER_ADD_WORKERS=24 AETHER_ADD_BATCH_SIZE=4
+[run_all_with_vllm] Using AETHER_SEARCH_WORKERS=32 AETHER_EVAL_WORKERS=32
+[run_all_with_vllm] Detected vLLM CLI without --device support; skipping device flag.
+[run_all_with_vllm] Starting vLLM in background...
+[run_all_with_vllm] Command: uv run -- vllm serve Qwen/Qwen3.5-9B --host 127.0.0.1 --port 8000   --dtype bfloat16 --max-model-len 32768 --max-num-seqs 128 --max-num-batched-tokens 8192 --gpu-memory-utilization 0.9
+[run_all_with_vllm] vLLM PID=247248; logs -> /home/gpranav/pranav_work/scratch/sca/Aether/hyper_aether/locomo_evals/aether_baseline/results_qwen/vllm_server_48328349.log
+[run_all_with_vllm] vLLM process 247248 exited before becoming healthy.
+[run_all_with_vllm] Check logs: /home/gpranav/pranav_work/scratch/sca/Aether/hyper_aether/locomo_evals/aether_baseline/results_qwen/vllm_server_48328349.log
+[run_all_with_vllm] Stopping vLLM process 247248...
