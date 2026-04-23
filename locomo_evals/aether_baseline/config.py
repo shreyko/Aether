@@ -9,8 +9,7 @@ DATASET_PATH = os.path.join(os.path.dirname(BASE_DIR), "datasets", "locomo10.jso
 AETHER_DB_PATH = os.getenv("AETHER_DB_PATH", os.path.join(BASE_DIR, "aether_db_qwen"))
 
 VLLM_BASE_URL = os.getenv("VLLM_BASE_URL", "http://localhost:8000/v1")
-#VLLM_MODEL = os.getenv("VLLM_MODEL", "meta-llama/Llama-3.2-3B-Instruct")
-VLLM_MODEL = os.getenv("VLLM_MODEL", "Qwen/Qwen3.5-9B")
+VLLM_MODEL = os.getenv("VLLM_MODEL", "Qwen/Qwen3.5-4B")
 
 EMBEDDER_MODEL = os.getenv("AETHER_EMBEDDER_MODEL", "all-MiniLM-L6-v2")
 EMBEDDER_DEVICE = os.getenv("AETHER_EMBEDDER_DEVICE", "cpu")

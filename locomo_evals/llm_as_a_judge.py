@@ -1,5 +1,6 @@
 import argparse
 import json
+import os
 from collections import defaultdict
 import numpy as np
 import ollama
@@ -29,8 +30,18 @@ First, provide a short (one sentence) explanation of your reasoning.
 Then, assign the label as exactly "CORRECT" or "WRONG".
 """
 
-def evaluate_llm_judge(question: str, gold_answer: str, generated_answer: str, model_name="llama3.2") -> int:
+_DEFAULT_OLLAMA_JUDGE = os.getenv("OLLAMA_JUDGE_MODEL", os.getenv("OLLAMA_MODEL", "qwen3.5:4b"))
+
+
+def evaluate_llm_judge(
+    question: str,
+    gold_answer: str,
+    generated_answer: str,
+    model_name: str | None = None,
+) -> int:
     """Evaluate the generated answer against the gold answer using local Ollama."""
+    if model_name is None:
+        model_name = _DEFAULT_OLLAMA_JUDGE
     prompt = ACCURACY_PROMPT.format(
         question=question, 
         gold_answer=gold_answer, 

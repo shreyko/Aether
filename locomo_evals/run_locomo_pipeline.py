@@ -11,7 +11,12 @@ sys.path.append(parent_dir)
 from memory_kernel import HypergraphMemoryOS
 from extractor import extract_hypergraph_nodes
 
-def generate_agent_answer(question: str, memory_context: str, model_name="llama3.2"):
+_DEFAULT_OLLAMA = os.getenv("OLLAMA_MODEL", "qwen3.5:4b")
+
+
+def generate_agent_answer(question: str, memory_context: str, model_name=None):
+    if model_name is None:
+        model_name = _DEFAULT_OLLAMA
     """
     The Search & Generate Phase: 
     Forces the agent to answer using only the retrieved Hypergraph envelope.
@@ -79,7 +84,7 @@ def main():
             for chat in chats:
                 transcript_chunk += f"{chat['speaker']}: {chat['text']}\n"
                 
-            # Use llama3.2 to extract Abstractions, Values, and Hyperedges
+            # Ollama model (default Qwen3.5 4B-class tag); use vLLM baselines for HF IDs
             if transcript_chunk.strip():
                 print(f"  -> Extracting facts from session: {key}...")
                 nodes = extract_hypergraph_nodes(transcript_chunk)

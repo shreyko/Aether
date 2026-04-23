@@ -1,4 +1,5 @@
 import json
+import os
 from enum import Enum
 
 import ollama
@@ -61,9 +62,12 @@ def _extract_via_vllm(prompt: str, llm) -> list[MemoryEntry]:
     return result.memories
 
 
+_DEFAULT_OLLAMA_EXTRACT = os.getenv("OLLAMA_EXTRACT_MODEL", os.getenv("OLLAMA_MODEL", "qwen3.5:4b"))
+
+
 def extract_hypergraph_nodes(
     transcript_chunk: str,
-    model_name: str = "llama3.2",
+    model_name: str | None = None,
     backend: Backend | str = Backend.OLLAMA,
     llm=None,
 ) -> list[MemoryEntry]:
@@ -72,13 +76,16 @@ def extract_hypergraph_nodes(
 
     Args:
         transcript_chunk: The conversation text to analyze.
-        model_name: Model identifier (e.g. "llama3.2" for Ollama,
-                     "Qwen/Qwen3.5-9B" for vLLM).
+        model_name: Model identifier (e.g. ``qwen3.5:4b`` for Ollama,
+            ``Qwen/Qwen3.5-4B`` for vLLM). Defaults to ``OLLAMA_EXTRACT_MODEL``
+            / ``OLLAMA_MODEL`` / ``qwen3.5:4b``.
         backend: Inference backend — "ollama" or "vllm".
         llm: A pre-initialized ``vllm.LLM`` instance (required when
              backend is "vllm").  Create once and reuse across calls
              to avoid reloading the model every time.
     """
+    if model_name is None:
+        model_name = _DEFAULT_OLLAMA_EXTRACT
     backend = Backend(backend)
     prompt = EXTRACTION_PROMPT.format(chunk=transcript_chunk)
 

@@ -4,7 +4,7 @@ from extractor import extract_hypergraph_nodes, Backend
 
 def run_simulation():
     BACKEND = Backend.VLLM
-    MODEL = "Qwen/Qwen3.5-9B"
+    MODEL = "Qwen/Qwen3.5-4B"
 
     llm = None
     if BACKEND == Backend.VLLM:

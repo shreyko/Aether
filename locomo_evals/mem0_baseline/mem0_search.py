@@ -84,7 +84,7 @@ class MemorySearch:
         t1 = time.time()
         # Cap output length. Without this, vLLM defaults to
         # max_model_len - prompt_tokens (~29k for our setup). At
-        # temperature=0, Llama-3.2-3B occasionally falls into repetition
+        # temperature=0, small LMs occasionally fall into repetition
         # loops and burns the full budget on a single answer, pinning a
         # worker thread and its KV-cache slab for 5-25 minutes. LOCOMO
         # ground-truth answers are 1-3 sentences, so 512 tokens is

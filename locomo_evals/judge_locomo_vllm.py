@@ -1,5 +1,6 @@
 import argparse
 import json
+import os
 import re
 from collections import defaultdict
 import numpy as np
@@ -11,9 +12,10 @@ nltk.download("punkt", quiet=True)
 nltk.download("punkt_tab", quiet=True)
 nltk.download("wordnet", quiet=True)
 
-# Connect to local vLLM server
-client = OpenAI(api_key="EMPTY", base_url="http://localhost:8000/v1")
-MODEL_NAME = "meta-llama/Llama-3.1-8B-Instruct"
+# Connect to local vLLM server (same defaults as LOCOMO baselines)
+_VLLM_BASE_URL = os.getenv("VLLM_BASE_URL", "http://localhost:8000/v1")
+MODEL_NAME = os.getenv("VLLM_MODEL", "Qwen/Qwen3.5-4B")
+client = OpenAI(api_key="EMPTY", base_url=_VLLM_BASE_URL)
 
 ACCURACY_PROMPT = """
 Your task is to label an answer to a question as 'CORRECT' or 'WRONG'. You will be given:
