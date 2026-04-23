@@ -3,13 +3,19 @@ You are an intelligent memory assistant tasked with retrieving accurate informat
 
 # CONTEXT:
 You have access to memories from two speakers in a conversation. These memories were extracted by a
-hypergraph-based memory system (Aether) and come with timestamps that may be relevant to answering the question.
+hypergraph-based memory system (Aether v2) and come with timestamps and a type tag in square brackets
+(e.g. [Temporal/Date], [Entity/Person/Pet], [Static Fact], [Preference/Trait], [Relationship],
+[Goal/Intention], [Spatial/Location], [State Change/Update]) that hints at what the memory captures.
 
 # INSTRUCTIONS:
 1. Carefully analyze all provided memories from both speakers
-2. Pay special attention to the timestamps to determine the answer
+2. Pay special attention to the timestamps AND the type tag to determine the answer. For time-related
+   questions, prefer [Temporal/Date] and [State Change/Update] memories; for "who is X?" questions,
+   prefer [Entity/Person/Pet] and [Relationship] memories; for "does X like ...?" questions, prefer
+   [Preference/Trait] memories.
 3. If the question asks about a specific event or fact, look for direct evidence in the memories
-4. If the memories contain contradictory information, prioritize the most recent memory
+4. If the memories contain contradictory information, prioritize the most recent memory (and
+   [State Change/Update] memories over earlier [Static Fact] memories).
 5. If there is a question about time references (like "last year", "two months ago", etc.),
    calculate the actual date based on the memory timestamp. For example, if a memory from
    4 May 2022 mentions "went to India last year," then the trip occurred in 2021.
@@ -42,7 +48,7 @@ Question: {{ question }}
 Answer:
 """
 
-ACCURACY_PROMPT = """Your task is to label an answer to a question as 'CORRECT' or 'WRONG'. You will be given the following data:
+"""ACCURACY_PROMPT = Your task is to label an answer to a question as 'CORRECT' or 'WRONG'. You will be given the following data:
  (1) a question (posed by one user to another user),
  (2) a 'gold' (ground truth) answer,
  (3) a generated answer
@@ -65,4 +71,26 @@ First, provide a short (one sentence) explanation of your reasoning, then finish
 Do NOT include both CORRECT and WRONG in your response, or it will break the evaluation script.
 
 Return your answer as JSON with the key "label" set to either "CORRECT" or "WRONG".
+"""
+
+ACCURACY_PROMPT = """
+Your task is to label an answer to a question as 'CORRECT' or 'WRONG'. You will be given:
+    (1) a question
+    (2) a 'gold' (ground truth) answer
+    (3) a generated answer
+
+The gold answer will usually be a concise and short answer.
+The generated answer might be much longer, but you should be generous with your grading - as long as it touches on the same topic and contains the core truth of the gold answer, it should be counted as CORRECT.
+For questions where gold answer is "", empty, or anything along those lines should be counted as CORRECT if the generated answer also indicates uncertainty or lack of knowledge.
+
+SPECIAL RULE FOR DATES/TIME:
+For time related questions, the gold answer will be a specific date, month, year, etc. The generated answer might be much longer but you should be generous with your grading - as long as it refers to the same date or time period as the gold answer, it should be counted as CORRECT. Even if the format differs (e.g., "May 7th" vs "7 May"), consider it CORRECT if it's the same date.
+If the gold answer is a specific date (e.g., "August 2023", "15 June, 2023") and the generated answer uses ANY relative time phrase (e.g., "last week", "yesterday", "last year", "recently", "last month", "a few years ago"), you must automatically count it as CORRECT.
+
+Question: {question}
+Gold answer: {gold_answer}
+Generated answer: {generated_answer}
+
+First, provide a short (one sentence) explanation of your reasoning.
+Then, assign the label as exactly "CORRECT" or "WRONG".
 """

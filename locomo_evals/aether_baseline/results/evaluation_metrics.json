@@ -304,7 +304,7 @@
             "category": "4",
             "bleu_score": 0.047619047619047616,
             "f1_score": 0.09090909090909091,
-            "llm_score": 0
+            "llm_score": 1
         },
         {
             "question": "What did Caroline make for a local church?",
@@ -484,7 +484,7 @@
             "category": "4",
             "bleu_score": 0,
             "f1_score": 0.0,
-            "llm_score": 0
+            "llm_score": 1
         },
         {
             "question": "What does Melanie do with her family on hikes?",
@@ -1087,7 +1087,7 @@
             "category": "2",
             "bleu_score": 0,
             "f1_score": 0.0,
-            "llm_score": 0
+            "llm_score": 1
         },
         {
             "question": "When did Melanie read the book \"nothing is impossible\"?",
@@ -1953,7 +1953,7 @@
             "category": "2",
             "bleu_score": 0.018518518518518517,
             "f1_score": 0.030303030303030304,
-            "llm_score": 0
+            "llm_score": 1
         },
         {
             "question": "When did Jon start expanding his studio's social media presence?",
@@ -1989,7 +1989,7 @@
             "category": "2",
             "bleu_score": 0,
             "f1_score": 0.0,
-            "llm_score": 0
+            "llm_score": 1
         },
         {
             "question": "When did Jon visit networking events for his store?",
@@ -2909,7 +2909,7 @@
             "category": "1",
             "bleu_score": 0.021897810218978107,
             "f1_score": 0.05633802816901409,
-            "llm_score": 0
+            "llm_score": 1
         },
         {
             "question": "What natural disaster affected John's old area on 7 July, 2023?",
@@ -3269,7 +3269,7 @@
             "category": "2",
             "bleu_score": 0.08333333333333333,
             "f1_score": 0.06896551724137931,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "When did Maria's grandmother pass away?",
@@ -3395,7 +3395,7 @@
             "category": "4",
             "bleu_score": 0.04444444444444445,
             "f1_score": 0.11538461538461536,
-            "llm_score": 0
+            "llm_score": 1
         },
         {
             "question": "Why did John start blogging about politics and policies?",
@@ -3422,7 +3422,7 @@
             "category": "4",
             "bleu_score": 0.47058823529411764,
             "f1_score": 0.5,
-            "llm_score": 0
+            "llm_score": 1
         },
         {
             "question": "Why did Maria sit with the little girl at the shelter event in February 2023?",
@@ -3892,7 +3892,7 @@
             "category": "4",
             "bleu_score": 0.047619047619047616,
             "f1_score": 0.09090909090909091,
-            "llm_score": 0
+            "llm_score": 1
         },
         {
             "question": "What did Joanna plan to do with the recipe Nate promised to share?",
@@ -4117,7 +4117,7 @@
             "category": "4",
             "bleu_score": 0.10416666666666666,
             "f1_score": 0.18181818181818182,
-            "llm_score": 0
+            "llm_score": 1
         },
         {
             "question": "What does the photo on Joanna's cork board remind her of?",
@@ -5017,7 +5017,7 @@
             "category": "2",
             "bleu_score": 0.025,
             "f1_score": 0.04081632653061225,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "When did Nate win a lot of money in a video game tournament?",
@@ -5125,7 +5125,7 @@
             "category": "2",
             "bleu_score": 0,
             "f1_score": 0.0,
-            "llm_score": 0
+            "llm_score": 1
         },
         {
             "question": "Where does Joanna get her ideas for the characters from?",
@@ -6965,7 +6965,7 @@
             "category": "4",
             "bleu_score": 0.16666666666666669,
             "f1_score": 0.16666666666666669,
-            "llm_score": 0
+            "llm_score": 1
         },
         {
             "question": "How does Audrey describe the new beds for her dogs?",
@@ -7100,7 +7100,7 @@
             "category": "4",
             "bleu_score": 0.003257328990228014,
             "f1_score": 0.013986013986013986,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "What activity do Andrew and Buddy enjoy doing together?",
@@ -7226,7 +7226,7 @@
             "category": "4",
             "bleu_score": 0,
             "f1_score": 0.0,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "What did Andrew and Audrey plan to do on the Saturday after October 28, 2023?",
@@ -12191,7 +12191,7 @@
             "category": "2",
             "bleu_score": 0.06666666666666667,
             "f1_score": 0.0425531914893617,
-            "llm_score": 0
+            "llm_score": 1
         },
         {
             "question": "When did Sam start working out at the gym?",
@@ -12398,7 +12398,7 @@
             "category": "1",
             "bleu_score": 0.02542372881355932,
             "f1_score": 0.0816326530612245,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "Who did Evan tell about his marriage?",
@@ -12814,7 +12814,7 @@
             "category": "4",
             "bleu_score": 0,
             "f1_score": 0.0,
-            "llm_score": 0
+            "llm_score": 1
         },
         {
             "question": "What did Dave open in May 2023?",
@@ -13381,7 +13381,7 @@
             "category": "2",
             "bleu_score": 0.029850746268656716,
             "f1_score": 0.09375000000000001,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "When did Calvin first get interested in cars?",
@@ -13462,7 +13462,7 @@
             "category": "2",
             "bleu_score": 0,
             "f1_score": 0.0,
-            "llm_score": 0
+            "llm_score": 1
         },
         {
             "question": "When did Dave buy a vintage camera?",
@@ -13615,7 +13615,7 @@
             "category": "4",
             "bleu_score": 0,
             "f1_score": 0.0,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "Where did Dave come back from with insights on car modification on 1st September 2023?",

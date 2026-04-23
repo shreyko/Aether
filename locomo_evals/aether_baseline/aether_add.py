@@ -28,8 +28,59 @@ from .config import (
     VLLM_MODEL,
     get_vllm_client,
 )
-from .extractor import extract_hypergraph_nodes
-from .memory_kernel import HypergraphMemoryOS
+from .extractor import MemoryEntry, extract_hypergraph_nodes
+from .memory_kernel import (
+    BaseMemoryBlock,
+    DateMemoryBlock,
+    EntityMemoryBlock,
+    FactMemoryBlock,
+    GoalMemoryBlock,
+    HypergraphMemoryOS,
+    LocationMemoryBlock,
+    PreferenceMemoryBlock,
+    RelationshipMemoryBlock,
+    StateChangeMemoryBlock,
+)
+
+
+def _build_block(mem: MemoryEntry) -> BaseMemoryBlock:
+    """Turn a typed ``MemoryEntry`` from the extractor into the right block subclass.
+
+    Unknown/empty ``block_type`` falls back to the generic base block so
+    ingestion cannot crash on an unexpected label from the LLM.
+    """
+    bt = (mem.block_type or "Generic").strip()
+    common = dict(
+        node_id=mem.node_id,
+        abstraction=mem.abstraction,
+        value=mem.value,
+        contexts=list(mem.contexts or []),
+    )
+    if bt == "Temporal/Date":
+        return DateMemoryBlock(**common, raw_date=mem.raw_date)
+    if bt == "Entity/Person/Pet":
+        return EntityMemoryBlock(
+            **common,
+            entity_name=mem.entity_name or "Unknown",
+            entity_type=mem.entity_type or "Person/Entity",
+        )
+    if bt == "Static Fact":
+        return FactMemoryBlock(**common, category=mem.category or "General")
+    if bt == "Preference/Trait":
+        return PreferenceMemoryBlock(**common)
+    if bt == "Relationship":
+        return RelationshipMemoryBlock(
+            **common,
+            source_entity=mem.source_entity or "User",
+            target_entity=mem.target_entity or "Unknown",
+        )
+    if bt == "Goal/Intention":
+        return GoalMemoryBlock(**common, status=mem.status or "Active")
+    if bt == "Spatial/Location":
+        return LocationMemoryBlock(**common)
+    if bt == "State Change/Update":
+        return StateChangeMemoryBlock(**common, previous_state=mem.previous_state)
+    return BaseMemoryBlock(**common)
 
 
 def _kernel_path(user_id: str) -> str:
@@ -133,11 +184,9 @@ class AetherADD:
                 time.sleep(0.5)
 
             for mem in memories:
-                kernel.ingest_memory(
-                    node_id=mem.node_id,
-                    abstraction=mem.abstraction,
-                    value=mem.value,
-                    contexts=mem.contexts,
+                block = _build_block(mem)
+                kernel.ingest_block(
+                    block,
                     metadata={"timestamp": timestamp, "user_id": user_id},
                 )
                 ingested += 1

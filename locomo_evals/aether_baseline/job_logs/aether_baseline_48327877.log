@@ -1,0 +1,13 @@
+[run_all_with_vllm] Project root: /home/gpranav/pranav_work/scratch/sca/Aether/hyper_aether
+[run_all_with_vllm] Using VLLM_BASE_URL=http://127.0.0.1:8000/v1
+[run_all_with_vllm] Using VLLM_MODEL=meta-llama/Llama-3.2-3B-Instruct
+[run_all_with_vllm] Using TOP_K=30
+[run_all_with_vllm] Using UV_BIN=uv
+[run_all_with_vllm] Using AETHER_RUN_TAG='v2'
+[run_all_with_vllm] Using RESULTS_DIR=/home/gpranav/pranav_work/scratch/sca/Aether/hyper_aether/locomo_evals/aether_baseline/results_v2
+[run_all_with_vllm] Using AETHER_DB_PATH=/home/gpranav/pranav_work/scratch/sca/Aether/hyper_aether/locomo_evals/aether_baseline/aether_db_v2
+[run_all_with_vllm] Using VLLM_DEVICE=cuda
+[run_all_with_vllm] Using AETHER_EMBEDDER_DEVICE=cpu
+[run_all_with_vllm] Using AETHER_ADD_WORKERS=24 AETHER_ADD_BATCH_SIZE=4
+[run_all_with_vllm] Using AETHER_SEARCH_WORKERS=32 AETHER_EVAL_WORKERS=32
+[2026-04-20T01:38:34.347] error: *** JOB 48327877 ON gl1700 CANCELLED AT 2026-04-20T01:38:34 DUE to SIGNAL Terminated ***

@@ -1,0 +1,64 @@
+[run_all_with_vllm] Project root: /home/gpranav/pranav_work/scratch/sca/Aether/hyper_aether
+[run_all_with_vllm] Using VLLM_BASE_URL=http://127.0.0.1:8000/v1
+[run_all_with_vllm] Using VLLM_MODEL=meta-llama/Llama-3.2-3B-Instruct
+[run_all_with_vllm] Using TOP_K=30
+[run_all_with_vllm] Using UV_BIN=uv
+[run_all_with_vllm] Using VLLM_DEVICE=cuda
+[run_all_with_vllm] Using AETHER_EMBEDDER_DEVICE=cpu
+[run_all_with_vllm] Using AETHER_ADD_WORKERS=24 AETHER_ADD_BATCH_SIZE=4
+[run_all_with_vllm] Using AETHER_SEARCH_WORKERS=32 AETHER_EVAL_WORKERS=32
+[run_all_with_vllm] Detected vLLM CLI without --device support; skipping device flag.
+[run_all_with_vllm] Starting vLLM in background...
+[run_all_with_vllm] Command: uv run -- vllm serve meta-llama/Llama-3.2-3B-Instruct --host 127.0.0.1 --port 8000   --dtype bfloat16 --max-model-len 32768 --max-num-seqs 128 --max-num-batched-tokens 8192 --gpu-memory-utilization 0.9
+[run_all_with_vllm] vLLM PID=3863912; logs -> /home/gpranav/pranav_work/scratch/sca/Aether/hyper_aether/locomo_evals/aether_baseline/results/vllm_server_48313537.log
+[run_all_with_vllm] vLLM is healthy.
+[run_all_with_vllm] Using PHASES=all
+[run_all_with_vllm] Running aether baseline...
+[run_all_with_vllm] ==== Phase: all ====
+<frozen runpy>:128: RuntimeWarning: 'locomo_evals.aether_baseline.run' found in sys.modules after import of package 'locomo_evals.aether_baseline', but prior to execution of 'locomo_evals.aether_baseline.run'; this may result in unpredictable behaviour
+[ALL] Step 1/4: ADD
+[Aether-ADD] Ingesting 3142 chunks across 20 user_ids with 24 workers (batch_size=4)...
+Ingesting user_ids:   0%|          | 0/20 [00:00<?, ?it/s][Extractor Error] extractor returned non-JSON response
+[Extractor Error] extractor returned non-JSON response
+[Extractor Error] extractor returned non-JSON response
+[Extractor Error] extractor returned non-JSON response
+[Extractor Error] extractor returned non-JSON response
+[Extractor Error] extractor returned non-JSON response
+[Extractor Error] extractor returned non-JSON response
+[Extractor Error] extractor returned non-JSON response
+[Extractor Error] extractor returned non-JSON response
+[Extractor Error] extractor returned non-JSON response
+[Extractor Error] extractor returned non-JSON response
+[Extractor Error] extractor returned non-JSON response
+[Extractor Error] extractor returned non-JSON response
+[Extractor Error] extractor returned non-JSON response
+Ingesting user_ids:   5%|▌         | 1/20 [22:10<7:01:14, 1330.25s/it]Ingesting user_ids:  10%|█         | 2/20 [22:38<2:49:16, 564.24s/it] Ingesting user_ids:  15%|█▌        | 3/20 [26:13<1:54:41, 404.82s/it]Ingesting user_ids:  20%|██        | 4/20 [26:37<1:07:53, 254.57s/it]Ingesting user_ids:  25%|██▌       | 5/20 [29:13<54:44, 218.95s/it]  [Extractor Error] extractor returned non-JSON response
+Ingesting user_ids:  30%|███       | 6/20 [29:39<35:45, 153.28s/it][Extractor Error] extractor returned non-JSON response
+[Extractor Error] extractor returned non-JSON response
+[Extractor Error] extractor returned non-JSON response
+Ingesting user_ids:  35%|███▌      | 7/20 [31:24<29:49, 137.63s/it]Ingesting user_ids:  40%|████      | 8/20 [31:44<20:03, 100.26s/it]Ingesting user_ids:  45%|████▌     | 9/20 [32:10<14:07, 77.01s/it] [Extractor Error] extractor returned non-JSON response
+Ingesting user_ids:  50%|█████     | 10/20 [32:24<09:35, 57.58s/it][Extractor Error] extractor returned non-JSON response
+Ingesting user_ids:  55%|█████▌    | 11/20 [33:58<10:16, 68.48s/it]Ingesting user_ids:  60%|██████    | 12/20 [34:22<07:21, 55.22s/it]Ingesting user_ids:  65%|██████▌   | 13/20 [34:29<04:42, 40.37s/it]Ingesting user_ids:  70%|███████   | 14/20 [34:44<03:17, 32.95s/it]Ingesting user_ids:  75%|███████▌  | 15/20 [36:22<04:22, 52.49s/it]Ingesting user_ids:  80%|████████  | 16/20 [36:26<02:31, 37.81s/it]Ingesting user_ids:  85%|████████▌ | 17/20 [36:33<01:25, 28.48s/it]Ingesting user_ids:  90%|█████████ | 18/20 [36:35<00:41, 20.67s/it]Ingesting user_ids:  95%|█████████▌| 19/20 [37:19<00:27, 27.73s/it]Ingesting user_ids: 100%|██████████| 20/20 [37:22<00:00, 20.10s/it]Ingesting user_ids: 100%|██████████| 20/20 [37:22<00:00, 112.11s/it]
+[Aether-ADD] Done: 10562 memories ingested across 20 user_ids.
+[ALL] Step 2/4: SEARCH
+  [resume] Loaded 1986 pre-answered QAs from /gpfs/accounts/jjparkcv_root/jjparkcv0/gpranav/sca/Aether/hyper_aether/locomo_evals/aether_baseline/results/aether_search_results_top30.json
+  [resume] All QAs already answered; writing final output only.
+[ALL] Step 3/4: EVAL
+Evaluating:   0%|          | 0/1986 [00:00<?, ?it/s]Evaluating:   0%|          | 1/1986 [00:00<13:26,  2.46it/s]Evaluating:   0%|          | 2/1986 [00:00<07:50,  4.22it/s]Evaluating:   0%|          | 5/1986 [00:00<03:14, 10.20it/s]Evaluating:   0%|          | 9/1986 [00:00<01:53, 17.46it/s]Evaluating:   1%|          | 12/1986 [00:00<01:37, 20.18it/s]Evaluating:   1%|          | 15/1986 [00:00<01:27, 22.56it/s]Evaluating:   1%|          | 20/1986 [00:01<01:07, 29.26it/s]Evaluating:   1%|          | 24/1986 [00:01<01:25, 22.85it/s]Evaluating:   2%|▏         | 41/1986 [00:01<00:35, 54.67it/s]Evaluating:   3%|▎         | 54/1986 [00:01<00:34, 56.78it/s]Evaluating:   3%|▎         | 61/1986 [00:01<00:48, 39.81it/s]Evaluating:   4%|▍         | 88/1986 [00:02<00:24, 78.10it/s]Evaluating:   5%|▌         | 100/1986 [00:02<00:41, 45.70it/s]Evaluating:   9%|▉         | 175/1986 [00:02<00:17, 105.60it/s]Evaluating:  10%|▉         | 189/1986 [00:03<00:21, 82.84it/s] Evaluating:  11%|█         | 213/1986 [00:03<00:21, 82.89it/s]Evaluating:  11%|█         | 223/1986 [00:03<00:26, 66.00it/s]Evaluating:  13%|█▎        | 249/1986 [00:04<00:23, 73.90it/s]Evaluating:  14%|█▍        | 274/1986 [00:04<00:21, 79.39it/s]Evaluating:  14%|█▍        | 283/1986 [00:04<00:21, 78.39it/s]Evaluating:  15%|█▌        | 306/1986 [00:04<00:19, 85.36it/s]Evaluating:  16%|█▌        | 315/1986 [00:05<00:27, 61.53it/s]Evaluating:  17%|█▋        | 341/1986 [00:05<00:24, 67.53it/s]Evaluating:  18%|█▊        | 349/1986 [00:05<00:33, 48.71it/s]Evaluating:  19%|█▉        | 376/1986 [00:06<00:25, 64.03it/s]Evaluating:  19%|█▉        | 384/1986 [00:06<00:31, 50.52it/s]Evaluating:  21%|██        | 411/1986 [00:06<00:24, 63.55it/s]Evaluating:  21%|██        | 419/1986 [00:07<00:31, 49.78it/s]Evaluating:  25%|██▍       | 488/1986 [00:07<00:13, 108.54it/s]Evaluating:  25%|██▌       | 501/1986 [00:07<00:18, 78.41it/s] Evaluating:  26%|██▋       | 523/1986 [00:08<00:18, 80.41it/s]Evaluating:  27%|██▋       | 533/1986 [00:08<00:23, 62.53it/s]Evaluating:  28%|██▊       | 558/1986 [00:08<00:17, 82.26it/s]Evaluating:  29%|██▊       | 570/1986 [00:09<00:25, 55.26it/s]Evaluating:  30%|██▉       | 594/1986 [00:09<00:21, 64.06it/s]Evaluating:  30%|███       | 603/1986 [00:09<00:27, 49.83it/s]Evaluating:  32%|███▏      | 631/1986 [00:10<00:21, 63.04it/s]Evaluating:  32%|███▏      | 639/1986 [00:10<00:27, 49.38it/s]Evaluating:  37%|███▋      | 728/1986 [00:10<00:09, 125.86it/s]Evaluating:  37%|███▋      | 744/1986 [00:11<00:13, 94.01it/s] Evaluating:  38%|███▊      | 763/1986 [00:11<00:13, 90.61it/s]Evaluating:  39%|███▉      | 774/1986 [00:11<00:17, 70.82it/s]Evaluating:  40%|████      | 802/1986 [00:11<00:14, 81.34it/s]Evaluating:  41%|████      | 812/1986 [00:12<00:18, 65.20it/s]Evaluating:  42%|████▏     | 837/1986 [00:12<00:15, 72.95it/s]Evaluating:  43%|████▎     | 846/1986 [00:12<00:19, 57.42it/s]Evaluating:  44%|████▍     | 873/1986 [00:13<00:16, 69.11it/s]Evaluating:  44%|████▍     | 881/1986 [00:13<00:20, 54.70it/s]Evaluating:  49%|████▉     | 970/1986 [00:13<00:07, 129.41it/s]Evaluating:  50%|████▉     | 984/1986 [00:14<00:10, 98.67it/s] Evaluating:  51%|█████     | 1004/1986 [00:14<00:10, 95.13it/s]Evaluating:  51%|█████     | 1015/1986 [00:14<00:12, 75.27it/s]Evaluating:  52%|█████▏    | 1024/1986 [00:14<00:12, 76.52it/s]Evaluating:  53%|█████▎    | 1043/1986 [00:14<00:11, 81.84it/s]Evaluating:  53%|█████▎    | 1053/1986 [00:15<00:13, 67.54it/s]Evaluating:  54%|█████▍    | 1080/1986 [00:15<00:09, 98.23it/s]Evaluating:  55%|█████▌    | 1094/1986 [00:15<00:14, 59.56it/s]Evaluating:  58%|█████▊    | 1145/1986 [00:15<00:07, 115.82it/s]Evaluating:  59%|█████▉    | 1167/1986 [00:16<00:10, 76.16it/s] Evaluating:  60%|██████    | 1192/1986 [00:16<00:09, 79.93it/s]Evaluating:  61%|██████    | 1207/1986 [00:17<00:12, 64.77it/s]Evaluating:  62%|██████▏   | 1226/1986 [00:17<00:10, 69.36it/s]Evaluating:  62%|██████▏   | 1237/1986 [00:17<00:13, 55.58it/s]Evaluating:  64%|██████▎   | 1262/1986 [00:18<00:10, 67.50it/s]Evaluating:  64%|██████▍   | 1271/1986 [00:18<00:12, 55.64it/s]Evaluating:  67%|██████▋   | 1339/1986 [00:18<00:05, 110.41it/s]Evaluating:  68%|██████▊   | 1352/1986 [00:18<00:07, 86.25it/s] Evaluating:  69%|██████▉   | 1377/1986 [00:19<00:06, 87.43it/s]Evaluating:  70%|██████▉   | 1387/1986 [00:19<00:09, 63.12it/s]Evaluating:  71%|███████   | 1415/1986 [00:19<00:07, 73.09it/s]Evaluating:  72%|███████▏  | 1424/1986 [00:20<00:09, 61.19it/s]Evaluating:  73%|███████▎  | 1456/1986 [00:20<00:07, 75.24it/s]Evaluating:  74%|███████▍  | 1465/1986 [00:20<00:08, 58.04it/s]Evaluating:  75%|███████▌  | 1490/1986 [00:21<00:07, 70.00it/s]Evaluating:  75%|███████▌  | 1498/1986 [00:21<00:09, 53.18it/s]Evaluating:  79%|███████▉  | 1572/1986 [00:21<00:03, 113.02it/s]Evaluating:  80%|███████▉  | 1585/1986 [00:22<00:04, 89.21it/s] Evaluating:  81%|████████  | 1610/1986 [00:22<00:04, 90.34it/s]Evaluating:  82%|████████▏ | 1620/1986 [00:22<00:05, 69.56it/s]Evaluating:  83%|████████▎ | 1645/1986 [00:22<00:04, 73.68it/s]Evaluating:  83%|████████▎ | 1653/1986 [00:23<00:05, 55.53it/s]Evaluating:  85%|████████▍ | 1681/1986 [00:23<00:04, 70.79it/s]Evaluating:  85%|████████▌ | 1689/1986 [00:23<00:05, 56.10it/s]Evaluating:  88%|████████▊ | 1756/1986 [00:24<00:02, 104.38it/s]Evaluating:  89%|████████▉ | 1767/1986 [00:24<00:02, 80.50it/s] Evaluating:  90%|█████████ | 1795/1986 [00:24<00:02, 85.95it/s]Evaluating:  91%|█████████ | 1805/1986 [00:25<00:02, 64.40it/s]Evaluating:  92%|█████████▏| 1831/1986 [00:25<00:02, 74.23it/s]Evaluating:  93%|█████████▎| 1840/1986 [00:25<00:02, 57.96it/s]Evaluating:  94%|█████████▍| 1865/1986 [00:26<00:01, 65.88it/s]Evaluating:  94%|█████████▍| 1873/1986 [00:26<00:02, 52.83it/s]Evaluating:  96%|█████████▌| 1897/1986 [00:26<00:01, 75.03it/s]Evaluating:  96%|█████████▌| 1909/1986 [00:27<00:01, 48.32it/s]Evaluating: 100%|██████████| 1986/1986 [00:27<00:00, 73.07it/s]
+Evaluation results saved to /gpfs/accounts/jjparkcv_root/jjparkcv0/gpranav/sca/Aether/hyper_aether/locomo_evals/aether_baseline/results/evaluation_metrics.json
+[ALL] Step 4/4: SCORES
+Mean Scores Per Category:
+          bleu_score  f1_score  llm_score  count
+category                                        
+1             0.0703    0.0826     0.7305    282
+2             0.0346    0.0613     0.7352    321
+3             0.0557    0.0830     0.6250     96
+4             0.0551    0.0976     0.6694    841
+
+Overall Mean Scores:
+bleu_score    0.0537
+f1_score      0.0863
+llm_score     0.6916
+dtype: float64
+[run_all_with_vllm] Pipeline completed successfully.
+[run_all_with_vllm] Stopping vLLM process 3863912...
