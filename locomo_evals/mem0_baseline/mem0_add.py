@@ -1,10 +1,13 @@
 import json
 import os
+import threading
 import time
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
 from mem0 import Memory
 from tqdm import tqdm
+
+from ..latency import write_add_latency_summary
 
 from .config import CUSTOM_INSTRUCTIONS, MEM0_CONFIG
 
@@ -32,6 +35,8 @@ class MemoryADD:
         self.data = None
         if data_path:
             self.load_data()
+        self._batch_seconds: list[float] = []
+        self._batch_lock = threading.Lock()
 
     def load_data(self):
         with open(self.data_path, "r") as f:
@@ -39,6 +44,7 @@ class MemoryADD:
         return self.data
 
     def add_memory(self, user_id: str, messages: list[dict], metadata: dict, retries: int = 3):
+        t0 = time.perf_counter()
         for attempt in range(retries):
             try:
                 # mem0 OSS SDK has varied parameter names across versions.
@@ -70,6 +76,8 @@ class MemoryADD:
                                 raise
                     else:
                         raise
+                with self._batch_lock:
+                    self._batch_seconds.append(time.perf_counter() - t0)
                 return
             except Exception as e:
                 if attempt < retries - 1:
@@ -172,3 +180,11 @@ class MemoryADD:
                     raise
 
         print(f"[ADD] Done: {total_batches} batches across {len(all_jobs)} user_ids.")
+
+        add_summary_path = os.path.join(os.path.dirname(__file__), "results", "add_latency_summary.json")
+        path = write_add_latency_summary(
+            add_summary_path,
+            baseline="mem0",
+            per_batch_seconds=self._batch_seconds,
+        )
+        print(f"[ADD] Wrote add/index latency summary to {path}")
