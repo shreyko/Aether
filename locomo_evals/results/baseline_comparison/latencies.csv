@@ -1,0 +1,9 @@
+source_file,baseline_recorded,phase,search_p50,search_p95,search_p99,generation_p50,generation_p95,generation_p99,total_p50,total_p95,total_p99,n_qa_latency,add_batch_n,rag_conversations_n,baseline_name,add_per_conversation_p50,add_per_conversation_p95,add_per_conversation_p99,add_per_batch_p50,add_per_batch_p95,add_per_batch_p99
+rag_search_results_chunksize512_top2.latency_summary.json,rag,search,2.5395,2.9159,3.0725,0.1523,1.4027,4.7993,2.8093,3.9714,5.1059,1986.0,,,rag,,,,,,
+add_latency_summary.json,rag,add,,,,,,,,,,,,10.0,rag,0.5121,1.5288,2.1406,,,
+mem0_search_results_top30.latency_summary.json,mem0,search,0.9367,3.0726,43.1332,2.6988,12.8835,26.0232,3.7708,21.9017,55.5826,1986.0,,,mem0,,,,,,
+add_latency_summary.json,mem0,add,,,,,,,,,,,3142.0,,mem0,,,,14.6929,35.684,45.8763
+mem0g_search_results_top30.latency_summary.json,mem0g,search,4.635,7.7553,9.3278,1.7274,6.0299,22.5629,6.5623,12.2782,28.1093,1986.0,,,mem0g,,,,,,
+add_latency_summary.json,mem0g,add,,,,,,,,,,,3142.0,,mem0g,,,,36.3166,61.5778,78.6091
+aether_search_results_top30.latency_summary.json,aether,search,8.6823,16.2828,20.1049,0.83,6.6013,7.7482,9.835,17.6542,21.7978,1986.0,,,aether,,,,,,
+add_latency_summary.json,aether,add,,,,,,,,,,,3142.0,,aether,,,,19.4032,33.6621,42.0509

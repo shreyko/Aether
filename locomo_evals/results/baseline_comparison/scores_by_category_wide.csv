@@ -1,0 +1,7 @@
+,locomo_category_label,rag,rag,rag,rag,mem0,mem0,mem0,mem0,mem0g,mem0g,mem0g,mem0g,aether,aether,aether,aether
+,,bleu_mean,f1_mean,llm_mean,n,bleu_mean,f1_mean,llm_mean,n,bleu_mean,f1_mean,llm_mean,n,bleu_mean,f1_mean,llm_mean,n
+category,,,,,,,,,,,,,,,,,
+1,Category 1 (single-hop factual),0.0745,0.0897,0.4291,282,0.0738,0.0878,0.5771,279,0.2586,0.3297,0.8121,282,0.0703,0.0826,0.4716,282
+2,Category 2 (temporal),0.0331,0.0358,0.1807,321,0.0219,0.0353,0.1956,317,0.2385,0.3075,0.433,321,0.0346,0.0613,0.4424,321
+3,Category 3 (multi-hop abstraction),0.0306,0.0299,0.2292,96,0.0561,0.0884,0.5684,95,0.137,0.1555,0.5625,96,0.0557,0.083,0.5833,96
+4,Category 4 (open-domain),0.0688,0.1131,0.4304,841,0.0466,0.083,0.3712,827,0.3026,0.3677,0.7574,841,0.0551,0.0976,0.6159,841
