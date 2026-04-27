@@ -54,6 +54,9 @@ mem0-baseline = [
 # Mem0 **graph** (Kuzu) baseline: mem0ai 2.x removed ``graph_store``; pin 1.x for KG evaluation.
 # Do not install together with an environment that resolves ``mem0ai>=2`` for the vector baseline
 # unless you use separate virtualenvs.
+# Plots for locomo baseline comparison (pandas + matplotlib + seaborn)
+locomo-plots = ["pandas>=2.0", "matplotlib>=3.8", "seaborn>=0.13"]
+
 mem0g-baseline = [
     "mem0ai[graph]>=1.0.11,<2.0.0",
     "chromadb>=0.5.0",

@@ -7,11 +7,10 @@ Requires-Python: >=3.11
 Description-Content-Type: text/markdown
 License-File: LICENSE
 Requires-Dist: google-genai>=1.73.1
-Requires-Dist: numpy==1.26.0
 Requires-Dist: nltk>=3.9.4
+Requires-Dist: numpy<2.3,>=1.26.0
 Requires-Dist: ollama>=0.6.1
 Requires-Dist: pydantic>=2.12.5
-Requires-Dist: python-dotenv>=1.2.2
 Requires-Dist: scikit-learn>=1.8.0
 Requires-Dist: sentence-transformers>=3.0.0
 Requires-Dist: torch<2.9,>=2.7
@@ -29,10 +28,26 @@ Requires-Dist: jinja2>=3.1.0; extra == "mem0-baseline"
 Requires-Dist: nltk>=3.8.0; extra == "mem0-baseline"
 Requires-Dist: pandas>=2.0.0; extra == "mem0-baseline"
 Requires-Dist: tqdm>=4.60.0; extra == "mem0-baseline"
+Provides-Extra: mem0g-baseline
+Requires-Dist: mem0ai[graph]<2.0.0,>=1.0.11; extra == "mem0g-baseline"
+Requires-Dist: chromadb>=0.5.0; extra == "mem0g-baseline"
+Requires-Dist: openai>=1.0.0; extra == "mem0g-baseline"
+Requires-Dist: jinja2>=3.1.0; extra == "mem0g-baseline"
+Requires-Dist: nltk>=3.8.0; extra == "mem0g-baseline"
+Requires-Dist: pandas>=2.0.0; extra == "mem0g-baseline"
+Requires-Dist: tqdm>=4.60.0; extra == "mem0g-baseline"
 Dynamic: license-file
 
 <p align="center">
   <img src="Aether.png" width="800" alt="Aether Architecture">
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Architecture-Hypergraph-success" alt="Hypergraph Architecture">
+  <img src="https://img.shields.io/badge/Google%20Gemini-8E75B2?logo=googlebard&logoColor=white" alt="Google Gemini API">
+  <img src="https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Embeddings-FFD21E" alt="Hugging Face Embeddings">
+  <img src="https://img.shields.io/badge/Chrome-Extension-4285F4?logo=googlechrome&logoColor=white" alt="Chrome Extension">
+  <img src="https://img.shields.io/badge/Status-Research%20%2F%20WIP-orange" alt="Status">
 </p>
 
 # Aether: Hypergraph Long Term Memory for LLMs 
@@ -43,7 +58,7 @@ Aether is a hypergraph-based long-term memory system designed for Large Language
 
 Core Capabilities:
 * **Hypergraph Retrieval:** Captures implicit relationships by grouping concepts into contextual envelopes rather than rigid 1-to-1 edges.
-* **State Tracking:** Automatically detects "state changes" (e.g., a trip moving from April to May) to prioritize the most current facts over older records.
+* **State Tracking:** Automatically detects state changes (e.g., a trip moving from April to May) to prioritize the most current facts over older records.
 * **Typed Memory Blocks:** Parses entities, dates, locations, and user preferences into distinct, structured data classes.
 
 ## Installation
@@ -77,7 +92,7 @@ Start the Aether backend. This runs the FastAPI server that manages your local h
 ```bash
 uv run server.py
 ```
-The application will spin up on `http://127.0.0.1:8000` and automatically create or load your local memory graph file (`saved_graphs/chrome_memory.pkl`). Leave this terminal running in the background.
+The application will spin up on `http://127.0.0.1:8000` and automatically create or load your local memory graph file (`saved_graphs/memory.pkl`). Leave this terminal running in the background.
 
 ## Chrome Extension Integration
 
@@ -98,3 +113,16 @@ Aether includes a browser extension that allows you to inject your personal hype
 Our formal research paper detailing the hypergraph mathematical structures and latency evaluations is currently in progress and will be available soon.
 
 *\*Note: Aether is an active work in progress. Further support, edge-case refinement, and system improvements are continually being integrated.*
+
+---
+
+### References
+Aether evaluates and builds upon foundational concepts in long-term memory for AI agents. We acknowledge the following related work:
+
+```bibtex
+@article{mem0,
+  title={Mem0: Building Production-Ready AI Agents with Scalable Long-Term Memory},
+  author={Chhikara, Prateek and Khant, Dev and Aryan, Saket and Singh, Taranjeet and Yadav, Deshraj},
+  journal={arXiv preprint arXiv:2504.19413},
+  year={2025}
+}
