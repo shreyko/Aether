@@ -33,6 +33,29 @@ def collect_qa_latency_rows(results: Mapping[str, list[dict[str, Any]]]) -> list
     return rows
 
 
+def _per_qa_search_gen_total_sec(r: dict[str, Any]) -> tuple[float | None, float | None, float | None]:
+    """Normalize per-QA latencies. Prefer ``*_sec`` fields; else mem0-style
+    ``speaker_*_memory_time`` + ``response_time`` (older checkpoint format).
+    """
+    if all(
+        k in r
+        for k in ("search_latency_sec", "generation_latency_sec", "total_latency_sec")
+    ):
+        return (
+            float(r["search_latency_sec"]),
+            float(r["generation_latency_sec"]),
+            float(r["total_latency_sec"]),
+        )
+    t1 = r.get("speaker_1_memory_time")
+    t2 = r.get("speaker_2_memory_time")
+    rt = r.get("response_time")
+    if t1 is not None and t2 is not None and rt is not None:
+        search = max(float(t1), float(t2))
+        gen = float(rt)
+        return (search, gen, search + gen)
+    return (None, None, None)
+
+
 def summarize_qa_latencies(results: Mapping[str, list[dict[str, Any]]]) -> dict[str, Any]:
     """Aggregate search / generation / total latency percentiles from per-QA result dicts."""
     rows = collect_qa_latency_rows(results)
@@ -40,12 +63,13 @@ def summarize_qa_latencies(results: Mapping[str, list[dict[str, Any]]]) -> dict[
     gen_v: list[float] = []
     total_v: list[float] = []
     for r in rows:
-        if "search_latency_sec" in r:
-            search_v.append(float(r["search_latency_sec"]))
-        if "generation_latency_sec" in r:
-            gen_v.append(float(r["generation_latency_sec"]))
-        if "total_latency_sec" in r:
-            total_v.append(float(r["total_latency_sec"]))
+        s, g, t = _per_qa_search_gen_total_sec(r)
+        if s is not None:
+            search_v.append(s)
+        if g is not None:
+            gen_v.append(g)
+        if t is not None:
+            total_v.append(t)
     out: dict[str, Any] = {"n_qa": len(rows)}
     for key, vals in (
         ("search_latency_sec", search_v),

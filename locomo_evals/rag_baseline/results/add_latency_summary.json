@@ -1,0 +1,11 @@
+{
+  "baseline": "rag",
+  "phase": "add",
+  "sample_unit": "conversation",
+  "per_conversation_index_sec_n": 10,
+  "per_conversation_index_sec": {
+    "p50": 0.512122230604291,
+    "p95": 1.52881318265572,
+    "p99": 2.1406161694414916
+  }
+}

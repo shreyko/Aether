@@ -8,6 +8,7 @@ RAG_DB_PATH = os.path.join(BASE_DIR, "mem_db")
 RAG_CHROMA_COLLECTION_NAME = os.getenv("RAG_CHROMA_COLLECTION_NAME", "locomo_rag")
 
 VLLM_BASE_URL = os.getenv("VLLM_BASE_URL", "http://localhost:8000/v1")
+# Default Qwen3.5: needs `qwen3_5` in Transformers (Aether pins vllm 0.19+ / transformers 5.5+).
 VLLM_MODEL = os.getenv("VLLM_MODEL", "Qwen/Qwen3.5-4B")
 EMBEDDER_MODEL = os.getenv("RAG_EMBEDDER_MODEL", "all-MiniLM-L6-v2")
 # The embedder is tiny (~90 MB); default to CPU so it never fights vLLM for

@@ -88,7 +88,7 @@
             "category": "2",
             "bleu_score": 0.018348623853211007,
             "f1_score": 0.08510638297872342,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "How long has Caroline had her current group of friends for?",
@@ -97,7 +97,7 @@
             "category": "2",
             "bleu_score": 0,
             "f1_score": 0.0,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "How long has Melanie been creating art?",
@@ -124,7 +124,7 @@
             "category": "1",
             "bleu_score": 0,
             "f1_score": 0.0,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "How many times has Melanie gone to the beach in 2023?",
@@ -133,7 +133,7 @@
             "category": "1",
             "bleu_score": 0,
             "f1_score": 0.0,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "How often does Melanie go to the beach with her kids?",
@@ -160,7 +160,7 @@
             "category": "1",
             "bleu_score": 0.05504587155963304,
             "f1_score": 0.13333333333333333,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "What activities does Melanie partake in?",
@@ -196,7 +196,7 @@
             "category": "4",
             "bleu_score": 0.030769230769230767,
             "f1_score": 0.037037037037037035,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "What are Caroline's plans for the summer?",
@@ -214,7 +214,7 @@
             "category": "1",
             "bleu_score": 0,
             "f1_score": 0.0,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "What are some changes Caroline has faced during her transition journey?",
@@ -223,7 +223,7 @@
             "category": "1",
             "bleu_score": 0.10869565217391305,
             "f1_score": 0.2,
-            "llm_score": 0
+            "llm_score": 1
         },
         {
             "question": "What are the new shoes that Melanie got used for?",
@@ -259,7 +259,7 @@
             "category": "1",
             "bleu_score": 0.04666666666666666,
             "f1_score": 0.028571428571428574,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "What career path has Caroline decided to persue?",
@@ -277,7 +277,7 @@
             "category": "4",
             "bleu_score": 0,
             "f1_score": 0.0,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "What creative project do Mel and her kids do together besides pottery?",
@@ -304,7 +304,7 @@
             "category": "4",
             "bleu_score": 0.07142857142857141,
             "f1_score": 0.11764705882352941,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "What did Caroline research?",
@@ -322,7 +322,7 @@
             "category": "4",
             "bleu_score": 0.03125,
             "f1_score": 0.11627906976744184,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "What did Caroline take away from the book \"Becoming Nicole\"?",
@@ -367,7 +367,7 @@
             "category": "4",
             "bleu_score": 0,
             "f1_score": 0.0,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "What did Melanie do after the road trip to relax?",
@@ -457,7 +457,7 @@
             "category": "4",
             "bleu_score": 0.041666666666666664,
             "f1_score": 0.061538461538461535,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "What does Melanie do to destress?",
@@ -547,7 +547,7 @@
             "category": "4",
             "bleu_score": 0.05555555555555554,
             "f1_score": 0.05405405405405406,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "What instruments does Melanie play?",
@@ -619,7 +619,7 @@
             "category": "1",
             "bleu_score": 0.012987012987012983,
             "f1_score": 0.039215686274509796,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "What kind of books does Caroline have in her library?",
@@ -682,7 +682,7 @@
             "category": "1",
             "bleu_score": 0.006097560975609754,
             "f1_score": 0.0,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "What personality traits might Melanie say Caroline has?",
@@ -700,7 +700,7 @@
             "category": "4",
             "bleu_score": 0,
             "f1_score": 0.0,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "What pets does Melanie have?",
@@ -718,7 +718,7 @@
             "category": "4",
             "bleu_score": 0.16666666666666669,
             "f1_score": 0.2222222222222222,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "What setback did Melanie face in October 2023?",
@@ -736,7 +736,7 @@
             "category": "1",
             "bleu_score": 0,
             "f1_score": 0.0,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "What symbols are important to Caroline?",
@@ -745,7 +745,7 @@
             "category": "1",
             "bleu_score": 0.031578947368421054,
             "f1_score": 0.06451612903225806,
-            "llm_score": 0
+            "llm_score": 1
         },
         {
             "question": "What type of individuals does the adoption agency Caroline is considering support?",
@@ -763,7 +763,7 @@
             "category": "1",
             "bleu_score": 0.012345679012345675,
             "f1_score": 0.0,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "What was Melanie's favorite book from her childhood?",
@@ -835,7 +835,7 @@
             "category": "2",
             "bleu_score": 0,
             "f1_score": 0.0,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "When did Caroline apply to adoption agencies?",
@@ -862,7 +862,7 @@
             "category": "2",
             "bleu_score": 0.026315789473684213,
             "f1_score": 0.06666666666666667,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "When did Caroline encounter people on a hike and have a negative experience?",
@@ -871,7 +871,7 @@
             "category": "2",
             "bleu_score": 0,
             "f1_score": 0.0,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "When did Caroline give a speech at a school?",
@@ -907,7 +907,7 @@
             "category": "2",
             "bleu_score": 0.010050251256281409,
             "f1_score": 0.02197802197802198,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "When did Caroline go to the LGBTQ support group?",
@@ -916,7 +916,7 @@
             "category": "2",
             "bleu_score": 0.11111111111111109,
             "f1_score": 0.25,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "When did Caroline go to the adoption meeting?",
@@ -934,7 +934,7 @@
             "category": "2",
             "bleu_score": 0,
             "f1_score": 0.0,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "When did Caroline join a mentorship program?",
@@ -970,7 +970,7 @@
             "category": "2",
             "bleu_score": 0.13157894736842102,
             "f1_score": 0.25,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "When did Melanie buy the figurines?",
@@ -979,7 +979,7 @@
             "category": "2",
             "bleu_score": 0,
             "f1_score": 0.0,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "When did Melanie get hurt?",
@@ -988,7 +988,7 @@
             "category": "2",
             "bleu_score": 0,
             "f1_score": 0.0,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "When did Melanie go camping in July?",
@@ -1024,7 +1024,7 @@
             "category": "2",
             "bleu_score": 0,
             "f1_score": 0.0,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "When did Melanie go to the pottery workshop?",
@@ -1051,7 +1051,7 @@
             "category": "2",
             "bleu_score": 0,
             "f1_score": 0.0,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "When did Melanie run a charity race?",
@@ -1069,7 +1069,7 @@
             "category": "2",
             "bleu_score": 0,
             "f1_score": 0.0,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "When did Melanie's family go on a roadtrip?",
@@ -1078,7 +1078,7 @@
             "category": "2",
             "bleu_score": 0.021428571428571425,
             "f1_score": 0.06557377049180327,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "When did Melanie's friend adopt a child?",
@@ -1114,7 +1114,7 @@
             "category": "2",
             "bleu_score": 0,
             "f1_score": 0.0,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "When is Melanie's daughter's birthday?",
@@ -1132,7 +1132,7 @@
             "category": "1",
             "bleu_score": 0,
             "f1_score": 0.0,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "Where did Oliver hide his bone once?",
@@ -1177,7 +1177,7 @@
             "category": "4",
             "bleu_score": 0,
             "f1_score": 0.0,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "Who performed at the concert at Melanie's daughter's birthday?",
@@ -1186,7 +1186,7 @@
             "category": "4",
             "bleu_score": 0,
             "f1_score": 0.0,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "Who supports Caroline when she has a negative experience?",
@@ -1204,7 +1204,7 @@
             "category": "4",
             "bleu_score": 0.08974358974358976,
             "f1_score": 0.19672131147540983,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "Why did Caroline choose the adoption agency?",
@@ -1240,7 +1240,7 @@
             "category": "3",
             "bleu_score": 0.01680672268907563,
             "f1_score": 0.04301075268817204,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "Would Caroline pursue writing as a career option?",
@@ -1303,7 +1303,7 @@
             "category": "3",
             "bleu_score": 0.03125,
             "f1_score": 0.0,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "Would Melanie likely enjoy the song \"The Four Seasons\" by Vivaldi?",
@@ -1323,7 +1323,7 @@
             "category": "4",
             "bleu_score": 0.0588235294117647,
             "f1_score": 0.13333333333333336,
-            "llm_score": 0
+            "llm_score": 1
         },
         {
             "question": "Did Jon and Gina both participate in dance competitions?",
@@ -1368,7 +1368,7 @@
             "category": "4",
             "bleu_score": 0,
             "f1_score": 0.0,
-            "llm_score": 0
+            "llm_score": 1
         },
         {
             "question": "How does Gina describe the studio that Jon has opened?",
@@ -1485,7 +1485,7 @@
             "category": "4",
             "bleu_score": 0.00558659217877095,
             "f1_score": 0.025974025974025976,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "What did Gina say about creating an experience for her customers?",
@@ -1530,7 +1530,7 @@
             "category": "4",
             "bleu_score": 0.041666666666666664,
             "f1_score": 0.06451612903225806,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "What did Jon take a trip to Rome for?",
@@ -1539,7 +1539,7 @@
             "category": "4",
             "bleu_score": 0.07692307692307693,
             "f1_score": 0.125,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "What do Jon and Gina both have in common?",
@@ -1557,7 +1557,7 @@
             "category": "4",
             "bleu_score": 0.02469135802469135,
             "f1_score": 0.07407407407407407,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "What does Gina say about the dancers in the photo?",
@@ -1584,7 +1584,7 @@
             "category": "4",
             "bleu_score": 0.03448275862068965,
             "f1_score": 0.09090909090909091,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "What does Jon plan to do at the grand opening of his dance studio?",
@@ -1602,7 +1602,7 @@
             "category": "4",
             "bleu_score": 0,
             "f1_score": 0.0,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "What does Jon's dance make him?",
@@ -1611,7 +1611,7 @@
             "category": "4",
             "bleu_score": 0,
             "f1_score": 0.0,
-            "llm_score": 0
+            "llm_score": 1
         },
         {
             "question": "What does Jon's dance studio offer?",
@@ -1656,7 +1656,7 @@
             "category": "4",
             "bleu_score": 0,
             "f1_score": 0.0,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "What is Jon's favorite style of dance?",
@@ -1665,7 +1665,7 @@
             "category": "4",
             "bleu_score": 0,
             "f1_score": 0.0,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "What is the general sentiment about the upcoming grand opening?",
@@ -1728,7 +1728,7 @@
             "category": "4",
             "bleu_score": 0.09473684210526317,
             "f1_score": 0.15584415584415584,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "What was Gina's favorite dancing memory?",
@@ -1746,7 +1746,7 @@
             "category": "2",
             "bleu_score": 0.01724137931034483,
             "f1_score": 0.0,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "When Jon has lost his job as a banker?",
@@ -1755,7 +1755,7 @@
             "category": "2",
             "bleu_score": 0.11111111111111109,
             "f1_score": 0.1111111111111111,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "When Jon is planning to open his dance studio?",
@@ -1773,7 +1773,7 @@
             "category": "2",
             "bleu_score": 0.02777777777777778,
             "f1_score": 0.048780487804878044,
-            "llm_score": 0
+            "llm_score": 1
         },
         {
             "question": "When did Gina develop a video presentation to teach how to style her fashion pieces? ",
@@ -1791,7 +1791,7 @@
             "category": "2",
             "bleu_score": 0.021276595744680854,
             "f1_score": 0.0,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "When did Gina get her tattoo?",
@@ -1800,7 +1800,7 @@
             "category": "2",
             "bleu_score": 0.07142857142857141,
             "f1_score": 0.11764705882352941,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "When did Gina go to a dance class with a group of friends?",
@@ -1809,7 +1809,7 @@
             "category": "2",
             "bleu_score": 0,
             "f1_score": 0.0,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "When did Gina interview for a design internship?",
@@ -1872,7 +1872,7 @@
             "category": "2",
             "bleu_score": 0.005952380952380954,
             "f1_score": 0.021505376344086023,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "When did Jon go to a fair to get more exposure for his dance studio?",
@@ -1899,7 +1899,7 @@
             "category": "2",
             "bleu_score": 0.12500000000000003,
             "f1_score": 0.125,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "When did Jon start expanding his studio's social media presence?",
@@ -1908,7 +1908,7 @@
             "category": "2",
             "bleu_score": 0.012987012987012983,
             "f1_score": 0.0,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "When did Jon start learning marketing and analytics tools?",
@@ -1935,7 +1935,7 @@
             "category": "2",
             "bleu_score": 0,
             "f1_score": 0.0,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "When did Jon visit networking events for his store?",
@@ -1944,7 +1944,7 @@
             "category": "2",
             "bleu_score": 0.013605442176870753,
             "f1_score": 0.029850746268656716,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "When was Jon in Paris?",
@@ -1953,7 +1953,7 @@
             "category": "2",
             "bleu_score": 0,
             "f1_score": 0.0,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "When was Jon in Rome?",
@@ -1980,7 +1980,7 @@
             "category": "1",
             "bleu_score": 0.11111111111111109,
             "f1_score": 0.13333333333333336,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "Which city have both Jean and John visited?",
@@ -2034,7 +2034,7 @@
             "category": "4",
             "bleu_score": 0.07692307692307693,
             "f1_score": 0.13333333333333333,
-            "llm_score": 1
+            "llm_score": 0
         }
     ],
     "2": [
@@ -2045,7 +2045,7 @@
             "category": "3",
             "bleu_score": 0.005555555555555555,
             "f1_score": 0.02150537634408602,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "How did John describe his kids' reaction at the military memorial?",
@@ -2054,7 +2054,7 @@
             "category": "4",
             "bleu_score": 0,
             "f1_score": 0.0,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "How did Maria start volunteering at the homeless shelter?",
@@ -2099,7 +2099,7 @@
             "category": "4",
             "bleu_score": 0.08695652173913045,
             "f1_score": 0.16666666666666666,
-            "llm_score": 0
+            "llm_score": 1
         },
         {
             "question": "How does John plan to honor the memories of his beloved pet?",
@@ -2126,7 +2126,7 @@
             "category": "4",
             "bleu_score": 0,
             "f1_score": 0.0,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "How long was Max a part of John's family?",
@@ -2135,7 +2135,7 @@
             "category": "4",
             "bleu_score": 0,
             "f1_score": 0.0,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "How many dogs has Maria adopted from the dog shelter she volunteers at?",
@@ -2162,7 +2162,7 @@
             "category": "4",
             "bleu_score": 0.007874015748031496,
             "f1_score": 0.02777777777777778,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "How often does John take his kids to the park?",
@@ -2171,7 +2171,7 @@
             "category": "4",
             "bleu_score": 0.01578947368421053,
             "f1_score": 0.04301075268817204,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "How often does John work out with his family?",
@@ -2180,7 +2180,7 @@
             "category": "4",
             "bleu_score": 0.0072992700729927,
             "f1_score": 0.03669724770642202,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "In what activity did Maria and her church friends participate in July 2023?",
@@ -2207,7 +2207,7 @@
             "category": "4",
             "bleu_score": 0.2465363036538235,
             "f1_score": 0.15384615384615383,
-            "llm_score": 0
+            "llm_score": 1
         },
         {
             "question": "What activities has Maria done with her church friends?",
@@ -2216,7 +2216,7 @@
             "category": "1",
             "bleu_score": 0.024390243902439022,
             "f1_score": 0.02666666666666667,
-            "llm_score": 0
+            "llm_score": 1
         },
         {
             "question": "What activity did John and Max enjoy together last summer?",
@@ -2243,7 +2243,7 @@
             "category": "4",
             "bleu_score": 0.007812500000000002,
             "f1_score": 0.028571428571428574,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "What activity did Maria take up with her friends from church in August 2023?",
@@ -2261,7 +2261,7 @@
             "category": "1",
             "bleu_score": 0.03278688524590164,
             "f1_score": 0.048780487804878044,
-            "llm_score": 0
+            "llm_score": 1
         },
         {
             "question": "What are the names of John's children?",
@@ -2270,7 +2270,7 @@
             "category": "1",
             "bleu_score": 0,
             "f1_score": 0.0,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "What area was hit by a flood?",
@@ -2342,7 +2342,7 @@
             "category": "4",
             "bleu_score": 0.04854368932038835,
             "f1_score": 0.16666666666666669,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "What damages have happened to John's car?",
@@ -2360,7 +2360,7 @@
             "category": "1",
             "bleu_score": 0.023809523809523808,
             "f1_score": 0.0,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "What did Jean go through before meeting Maria?",
@@ -2387,7 +2387,7 @@
             "category": "2",
             "bleu_score": 0.006024096385542172,
             "f1_score": 0.023529411764705882,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "What did John do that put a strain on his wallet?",
@@ -2405,7 +2405,7 @@
             "category": "4",
             "bleu_score": 0.013114754098360656,
             "f1_score": 0.05172413793103448,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "What did John do to help his community last year in his hometown?",
@@ -2423,7 +2423,7 @@
             "category": "4",
             "bleu_score": 0.032967032967032975,
             "f1_score": 0.10526315789473684,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "What did John receive a certificate for?",
@@ -2486,7 +2486,7 @@
             "category": "4",
             "bleu_score": 0.047058823529411764,
             "f1_score": 0.16,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "What did Maria plan to do later on the evening of 7 July, 2023?",
@@ -2531,7 +2531,7 @@
             "category": "4",
             "bleu_score": 0,
             "f1_score": 0.0,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "What does John think about trying new classes at the yoga studio?",
@@ -2567,7 +2567,7 @@
             "category": "4",
             "bleu_score": 0,
             "f1_score": 0.0,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "What event did John participate in to show support for veterans' rights?",
@@ -2603,7 +2603,7 @@
             "category": "1",
             "bleu_score": 0.05263157894736841,
             "f1_score": 0.1111111111111111,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "What events is Maria planning for the homeless shelter funraiser?",
@@ -2621,7 +2621,7 @@
             "category": "4",
             "bleu_score": 0.02941176470588235,
             "f1_score": 0.07142857142857142,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "What exercises has John done?",
@@ -2711,7 +2711,7 @@
             "category": "4",
             "bleu_score": 0,
             "f1_score": 0.0,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "What is the name of Maria's second puppy?",
@@ -2756,7 +2756,7 @@
             "category": "4",
             "bleu_score": 0.02083333333333333,
             "f1_score": 0.06557377049180328,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "What kind of event did John and his family attend in June 2023?",
@@ -2792,7 +2792,7 @@
             "category": "4",
             "bleu_score": 0.03225806451612903,
             "f1_score": 0.09523809523809523,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "What martial arts has John done?",
@@ -2801,7 +2801,7 @@
             "category": "1",
             "bleu_score": 0.14285714285714285,
             "f1_score": 0.14285714285714285,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "What might John's degree be in?",
@@ -2873,7 +2873,7 @@
             "category": "1",
             "bleu_score": 0.02777777777777778,
             "f1_score": 0.0,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "What recognition did Maria receive at the homeless shelter in August 2023?",
@@ -2945,7 +2945,7 @@
             "category": "4",
             "bleu_score": 0.03921568627450981,
             "f1_score": 0.1081081081081081,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "What types of yoga has Maria practiced?",
@@ -2963,7 +2963,7 @@
             "category": "4",
             "bleu_score": 0,
             "f1_score": 0.0,
-            "llm_score": 0
+            "llm_score": 1
         },
         {
             "question": "What was the focus of John's recent research and writing on his blog?",
@@ -2999,7 +2999,7 @@
             "category": "4",
             "bleu_score": 0.021276595744680854,
             "f1_score": 0.05263157894736842,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "When did John get his degree?",
@@ -3017,7 +3017,7 @@
             "category": "2",
             "bleu_score": 0,
             "f1_score": 0.0,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "When did John go on a camping trip with Max?",
@@ -3035,7 +3035,7 @@
             "category": "2",
             "bleu_score": 0.0075187969924812035,
             "f1_score": 0.024096385542168672,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "When did John have a party with veterans?",
@@ -3044,7 +3044,7 @@
             "category": "2",
             "bleu_score": 0.02083333333333333,
             "f1_score": 0.05128205128205128,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "When did John have his first firefighter call-out?",
@@ -3071,7 +3071,7 @@
             "category": "2",
             "bleu_score": 0.03174603174603174,
             "f1_score": 0.08333333333333333,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "When did John participate in a 5K charity run?",
@@ -3080,7 +3080,7 @@
             "category": "2",
             "bleu_score": 0.01428571428571428,
             "f1_score": 0.04444444444444445,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "When did John start boot camp with his family?",
@@ -3107,7 +3107,7 @@
             "category": "2",
             "bleu_score": 0.05263157894736841,
             "f1_score": 0.1090909090909091,
-            "llm_score": 0
+            "llm_score": 1
         },
         {
             "question": "When did Maria donate her car?",
@@ -3125,7 +3125,7 @@
             "category": "2",
             "bleu_score": 0.021978021978021976,
             "f1_score": 0.0392156862745098,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "When did Maria get in a car accident?",
@@ -3134,7 +3134,7 @@
             "category": "2",
             "bleu_score": 0.010135135135135132,
             "f1_score": 0.054054054054054064,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "When did Maria go hiking with her church friends?",
@@ -3143,7 +3143,7 @@
             "category": "2",
             "bleu_score": 0.015873015873015876,
             "f1_score": 0.0425531914893617,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "When did Maria go to the beach?",
@@ -3152,7 +3152,7 @@
             "category": "2",
             "bleu_score": 0,
             "f1_score": 0.0,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "When did Maria join a gym?",
@@ -3161,7 +3161,7 @@
             "category": "2",
             "bleu_score": 0.023809523809523808,
             "f1_score": 0.04081632653061224,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "When did Maria meet Jean?",
@@ -3170,7 +3170,7 @@
             "category": "2",
             "bleu_score": 0,
             "f1_score": 0.0,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "When did Maria receive a medal from the homeless shelter?",
@@ -3179,7 +3179,7 @@
             "category": "2",
             "bleu_score": 0.02352941176470588,
             "f1_score": 0.034482758620689655,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "When did Maria start volunteering at the homeless shelter?",
@@ -3197,7 +3197,7 @@
             "category": "2",
             "bleu_score": 0.10526315789473682,
             "f1_score": 0.1,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "When did Maria's grandmother pass away?",
@@ -3206,7 +3206,7 @@
             "category": "2",
             "bleu_score": 0,
             "f1_score": 0.0,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "When was John's old area hit with a flood?",
@@ -3269,7 +3269,7 @@
             "category": "2",
             "bleu_score": 0,
             "f1_score": 0.0,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "Who gave Maria's family money when she was younger and her family was going through tough times?",
@@ -3332,7 +3332,7 @@
             "category": "4",
             "bleu_score": 0.07142857142857141,
             "f1_score": 0.14285714285714285,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "Why did Maria need to help her cousin find a new place to live?",
@@ -3341,7 +3341,7 @@
             "category": "4",
             "bleu_score": 0.47058823529411764,
             "f1_score": 0.5,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "Why did Maria sit with the little girl at the shelter event in February 2023?",
@@ -3359,7 +3359,7 @@
             "category": "4",
             "bleu_score": 0.012658227848101266,
             "f1_score": 0.05970149253731343,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "Why does Maria think it's important for younger generations to visit military memorials?",
@@ -3397,7 +3397,7 @@
             "category": "4",
             "bleu_score": 0,
             "f1_score": 0.0,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "How did Joanna celebrate after sharing her book with her writers group?",
@@ -3442,7 +3442,7 @@
             "category": "4",
             "bleu_score": 0,
             "f1_score": 0.0,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "How did Nate feel about sharing his love for dairy-free desserts with Joanna?",
@@ -3469,7 +3469,7 @@
             "category": "4",
             "bleu_score": 0.2857142857142857,
             "f1_score": 0.4444444444444445,
-            "llm_score": 0
+            "llm_score": 1
         },
         {
             "question": "How does Nate feel about Joanna's ability to bounce back from setbacks?",
@@ -3514,7 +3514,7 @@
             "category": "3",
             "bleu_score": 0,
             "f1_score": 0.0,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "How many letters has Joanna recieved?",
@@ -3532,7 +3532,7 @@
             "category": "1",
             "bleu_score": 0,
             "f1_score": 0.0,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "How many people attended the gaming party hosted by Nate in June 2022?",
@@ -3541,7 +3541,7 @@
             "category": "4",
             "bleu_score": 0,
             "f1_score": 0.0,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "How many screenplays has Joanna written?",
@@ -3550,7 +3550,7 @@
             "category": "1",
             "bleu_score": 0,
             "f1_score": 0.0,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "How many times has Joanna found new hiking trails?",
@@ -3568,7 +3568,7 @@
             "category": "1",
             "bleu_score": 0,
             "f1_score": 0.0,
-            "llm_score": 0
+            "llm_score": 1
         },
         {
             "question": "How many times has Nate taken his turtles on a walk?",
@@ -3586,7 +3586,7 @@
             "category": "1",
             "bleu_score": 0,
             "f1_score": 0.0,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "How many turtles does Nate have?",
@@ -3631,7 +3631,7 @@
             "category": "3",
             "bleu_score": 0.03968253968253969,
             "f1_score": 0.09638554216867469,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "What Console does Nate own?",
@@ -3640,7 +3640,7 @@
             "category": "3",
             "bleu_score": 0.047619047619047616,
             "f1_score": 0.1411764705882353,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "What activities does Nate do with his turtles?",
@@ -3676,7 +3676,7 @@
             "category": "1",
             "bleu_score": 0.006493506493506491,
             "f1_score": 0.0,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "What are Joanna's hobbies?",
@@ -3730,7 +3730,7 @@
             "category": "1",
             "bleu_score": 0.07142857142857141,
             "f1_score": 0.0,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "What book recommendations has Joanna given to Nate?",
@@ -3739,7 +3739,7 @@
             "category": "1",
             "bleu_score": 0.04545454545454546,
             "f1_score": 0.04,
-            "llm_score": 0
+            "llm_score": 1
         },
         {
             "question": "What color did Nate choose for his hair?",
@@ -3748,7 +3748,7 @@
             "category": "4",
             "bleu_score": 0,
             "f1_score": 0.0,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "What creative activity does Nate joke about pursuing after being inspired by their hikes with Jo?",
@@ -3757,7 +3757,7 @@
             "category": "4",
             "bleu_score": 0.07407407407407407,
             "f1_score": 0.12121212121212122,
-            "llm_score": 0
+            "llm_score": 1
         },
         {
             "question": "What dessert did Joanna share a photo of that has an almond flour crust, chocolate ganache, and fresh raspberries?",
@@ -3775,7 +3775,7 @@
             "category": "4",
             "bleu_score": 0,
             "f1_score": 0.0,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "What did Joanna discover at the library in Woodhaven?",
@@ -3811,7 +3811,7 @@
             "category": "4",
             "bleu_score": 0.01219512195121951,
             "f1_score": 0.03846153846153846,
-            "llm_score": 0
+            "llm_score": 1
         },
         {
             "question": "What did Joanna receive from her brother that brought back childhood memories?",
@@ -3847,7 +3847,7 @@
             "category": "4",
             "bleu_score": 0,
             "f1_score": 0.0,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "What did Joanna write yesterday that appeared on the big screen?",
@@ -3928,7 +3928,7 @@
             "category": "4",
             "bleu_score": 0.02272727272727273,
             "f1_score": 0.06896551724137931,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "What does Joanna do to remember happy memories?",
@@ -3946,7 +3946,7 @@
             "category": "4",
             "bleu_score": 0,
             "f1_score": 0.0,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "What does Joanna recommend to make a living room comfy like hers?",
@@ -4009,7 +4009,7 @@
             "category": "4",
             "bleu_score": 0.046242774566473986,
             "f1_score": 0.16666666666666663,
-            "llm_score": 0
+            "llm_score": 1
         },
         {
             "question": "What does the photo on Joanna's cork board remind her of?",
@@ -4027,7 +4027,7 @@
             "category": "1",
             "bleu_score": 0.08888888888888888,
             "f1_score": 0.0,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "What encouragement does Nate give to Joanna after her setback?",
@@ -4054,7 +4054,7 @@
             "category": "4",
             "bleu_score": 0,
             "f1_score": 0.0,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "What flavor of ice cream did Nate make for his friend on 25 February, 2022?",
@@ -4063,7 +4063,7 @@
             "category": "4",
             "bleu_score": 0.00641025641025641,
             "f1_score": 0.02666666666666667,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "What game did Nate play at the game convention he attended on 9 October, 2022?",
@@ -4090,7 +4090,7 @@
             "category": "4",
             "bleu_score": 0,
             "f1_score": 0.0,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "What game was the second tournament that Nate won based on?",
@@ -4099,7 +4099,7 @@
             "category": "4",
             "bleu_score": 0,
             "f1_score": 0.0,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "What genre is Joanna's first screenplay?",
@@ -4117,7 +4117,7 @@
             "category": "4",
             "bleu_score": 0,
             "f1_score": 0.0,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "What ingredient did Nate use to make the ice cream lactose-free?",
@@ -4171,7 +4171,7 @@
             "category": "4",
             "bleu_score": 0.08510638297872339,
             "f1_score": 0.1702127659574468,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "What is \"Little Women\" about according to Joanna?",
@@ -4189,7 +4189,7 @@
             "category": "1",
             "bleu_score": 0.09615384615384615,
             "f1_score": 0.10526315789473685,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "What is Joanna inspired by?",
@@ -4207,7 +4207,7 @@
             "category": "4",
             "bleu_score": 0.013157894736842106,
             "f1_score": 0.0,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "What is Joanna's third screenplay about?",
@@ -4243,7 +4243,7 @@
             "category": "4",
             "bleu_score": 0,
             "f1_score": 0.0,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "What is Nate's favorite genre of movies?",
@@ -4252,7 +4252,7 @@
             "category": "4",
             "bleu_score": 0.008333333333333335,
             "f1_score": 0.028571428571428574,
-            "llm_score": 0
+            "llm_score": 1
         },
         {
             "question": "What is Nate's favorite movie trilogy?",
@@ -4261,7 +4261,7 @@
             "category": "4",
             "bleu_score": 0.02272727272727273,
             "f1_score": 0.0625,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "What is Nate's favorite video game?",
@@ -4288,7 +4288,7 @@
             "category": "4",
             "bleu_score": 0.0196078431372549,
             "f1_score": 0.048780487804878044,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "What is one of Nate's favorite dairy-free treats besides coconut milk ice cream?",
@@ -4333,7 +4333,7 @@
             "category": "4",
             "bleu_score": 0.03797468354430379,
             "f1_score": 0.11538461538461539,
-            "llm_score": 0
+            "llm_score": 1
         },
         {
             "question": "What kind of content did Joanna share that someone wrote her a letter about?",
@@ -4396,7 +4396,7 @@
             "category": "1",
             "bleu_score": 0.15789473684210523,
             "f1_score": 0.0,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "What major achievement did Joanna accomplish in January 2022?",
@@ -4441,7 +4441,7 @@
             "category": "4",
             "bleu_score": 0,
             "f1_score": 0.0,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "What movies have both Joanna and Nate seen?",
@@ -4450,7 +4450,7 @@
             "category": "1",
             "bleu_score": 0.02258064516129032,
             "f1_score": 0.034482758620689655,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "What new content is Nate creating for YouTube?",
@@ -4459,7 +4459,7 @@
             "category": "4",
             "bleu_score": 0,
             "f1_score": 0.0,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "What nickname does Nate use for Joanna?",
@@ -4486,7 +4486,7 @@
             "category": "3",
             "bleu_score": 0.09821428571428573,
             "f1_score": 0.1149425287356322,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "What physical transformation did Nate undergo in April 2022?",
@@ -4612,7 +4612,7 @@
             "category": "4",
             "bleu_score": 0,
             "f1_score": 0.0,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "What things has Nate reccomended to Joanna?",
@@ -4621,7 +4621,7 @@
             "category": "1",
             "bleu_score": 0.12162162162162164,
             "f1_score": 0.10526315789473682,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "What two main ingredients are part of the dessert Joanna shared a photo of with blueberries, coconut milk, and a gluten-free crust?",
@@ -4666,7 +4666,7 @@
             "category": "4",
             "bleu_score": 0.01428571428571428,
             "f1_score": 0.05555555555555555,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "What underlying condition might Joanna have based on her allergies?",
@@ -4684,7 +4684,7 @@
             "category": "1",
             "bleu_score": 0.1263898051634325,
             "f1_score": 0.1111111111111111,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "What was Joanna's audition for?",
@@ -4702,7 +4702,7 @@
             "category": "2",
             "bleu_score": 0.1875,
             "f1_score": 0.2222222222222222,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "When did Joanna finish up the writing for her book?",
@@ -4711,7 +4711,7 @@
             "category": "2",
             "bleu_score": 0.15,
             "f1_score": 0.19047619047619047,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "When did Joanna first watch \"Eternal Sunshine of the Spotless Mind?",
@@ -4720,7 +4720,7 @@
             "category": "2",
             "bleu_score": 0,
             "f1_score": 0.0,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "When did Joanna have an audition for a writing gig?",
@@ -4729,7 +4729,7 @@
             "category": "2",
             "bleu_score": 0.0909090909090909,
             "f1_score": 0.0,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "When did Joanna hike with her buddies?",
@@ -4738,7 +4738,7 @@
             "category": "2",
             "bleu_score": 0.014652014652014654,
             "f1_score": 0.016129032258064516,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "When did Joanna make a chocolate tart with raspberries?",
@@ -4756,7 +4756,7 @@
             "category": "2",
             "bleu_score": 0.025210084033613446,
             "f1_score": 0.06153846153846154,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "When did Joanna plan on going to Nate's to watch him play with his turtles?",
@@ -4765,7 +4765,7 @@
             "category": "2",
             "bleu_score": 0,
             "f1_score": 0.0,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "When did Joanna plan to go over to Nate's and share recipes?",
@@ -4774,7 +4774,7 @@
             "category": "2",
             "bleu_score": 0.019736842105263153,
             "f1_score": 0.0,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "When did Joanna share her book with her writers group?",
@@ -4783,7 +4783,7 @@
             "category": "2",
             "bleu_score": 0.0261437908496732,
             "f1_score": 0.05263157894736842,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "When did Joanna start writing her third screenplay?",
@@ -4792,7 +4792,7 @@
             "category": "2",
             "bleu_score": 0.003816793893129772,
             "f1_score": 0.020833333333333336,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "When did Joanna's laptop crash?",
@@ -4819,7 +4819,7 @@
             "category": "2",
             "bleu_score": 0.03125,
             "f1_score": 0.046511627906976744,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "When did Nate get Tilly for Joanna?",
@@ -4846,7 +4846,7 @@
             "category": "2",
             "bleu_score": 0.0909090909090909,
             "f1_score": 0.0,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "When did Nate go to a convention and meet new people?",
@@ -4855,7 +4855,7 @@
             "category": "2",
             "bleu_score": 0.0380952380952381,
             "f1_score": 0.06666666666666667,
-            "llm_score": 0
+            "llm_score": 1
         },
         {
             "question": "When did Nate make vegan icecream and share it with a vegan diet group?",
@@ -4873,7 +4873,7 @@
             "category": "2",
             "bleu_score": 0,
             "f1_score": 0.0,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "When did Nate take time off to chill with his pets?",
@@ -4909,7 +4909,7 @@
             "category": "2",
             "bleu_score": 0.008620689655172415,
             "f1_score": 0.0,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "When did Nate win his first video game tournament?",
@@ -4927,7 +4927,7 @@
             "category": "2",
             "bleu_score": 0.06097560975609755,
             "f1_score": 0.07272727272727272,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "When did Nate win his second tournament?",
@@ -4954,7 +4954,7 @@
             "category": "2",
             "bleu_score": 0.07692307692307693,
             "f1_score": 0.0,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "When is Joanna going to make Nate's ice cream for her family?",
@@ -4963,7 +4963,7 @@
             "category": "2",
             "bleu_score": 0.0625,
             "f1_score": 0.0,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "When is Nate hosting a gaming party?",
@@ -4972,7 +4972,7 @@
             "category": "2",
             "bleu_score": 0.04201680672268907,
             "f1_score": 0.058823529411764705,
-            "llm_score": 0
+            "llm_score": 1
         },
         {
             "question": "When was Joanna's second movie script shown on the big screens?",
@@ -4981,7 +4981,7 @@
             "category": "2",
             "bleu_score": 0.04504504504504504,
             "f1_score": 0.07272727272727272,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "Where did Joanna go for a road trip for research?",
@@ -5008,7 +5008,7 @@
             "category": "4",
             "bleu_score": 0.11111111111111109,
             "f1_score": 0.08695652173913043,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "Which activity helps Nate escape and stimulates his imagination?",
@@ -5080,7 +5080,7 @@
             "category": "4",
             "bleu_score": 0.0144927536231884,
             "f1_score": 0.047619047619047616,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "Who was the new addition to Nate's family in May 2022?",
@@ -5089,7 +5089,7 @@
             "category": "2",
             "bleu_score": 0,
             "f1_score": 0.0,
-            "llm_score": 0
+            "llm_score": 1
         },
         {
             "question": "Why did Joanna name the stuffed animal dog Tilly?",
@@ -5107,7 +5107,7 @@
             "category": "4",
             "bleu_score": 0,
             "f1_score": 0.0,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "Why did Nate get a third turtle?",
@@ -5116,7 +5116,7 @@
             "category": "4",
             "bleu_score": 0.07667036788577694,
             "f1_score": 0.08333333333333334,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "Why does Nate like turtles as pets?",
@@ -5172,7 +5172,7 @@
             "category": "2",
             "bleu_score": 0,
             "f1_score": 0.0,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "How did \"The Alchemist\" impact John's perspective on following dreams?",
@@ -5244,7 +5244,7 @@
             "category": "4",
             "bleu_score": 0.057142857142857134,
             "f1_score": 0.12121212121212123,
-            "llm_score": 0
+            "llm_score": 1
         },
         {
             "question": "How does John feel about being seen as a mentor by some of the younger players?",
@@ -5262,7 +5262,7 @@
             "category": "4",
             "bleu_score": 0.03125,
             "f1_score": 0.07142857142857142,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "How does John say his team handles tough opponents?",
@@ -5289,7 +5289,7 @@
             "category": "4",
             "bleu_score": 0.003546099290780141,
             "f1_score": 0.021505376344086023,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "How long does John usually hold the yoga pose he shared with Tim?",
@@ -5307,7 +5307,7 @@
             "category": "4",
             "bleu_score": 0,
             "f1_score": 0.0,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "How long has Tim been playing the piano for, as of December 2023?",
@@ -5316,7 +5316,7 @@
             "category": "4",
             "bleu_score": 0.06976744186046512,
             "f1_score": 0.20689655172413793,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "How many games has John mentioned winning?",
@@ -5334,7 +5334,7 @@
             "category": "1",
             "bleu_score": 0.009259259259259257,
             "f1_score": 0.03225806451612903,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "How was John's experience in New York City?",
@@ -5370,7 +5370,7 @@
             "category": "2",
             "bleu_score": 0.005747126436781609,
             "f1_score": 0.033898305084745756,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "What achievement did John share with Tim in January 2024?",
@@ -5559,7 +5559,7 @@
             "category": "4",
             "bleu_score": 0.00900900900900901,
             "f1_score": 0.029411764705882356,
-            "llm_score": 0
+            "llm_score": 1
         },
         {
             "question": "What did John's teammates give him when they met on Aug 15th?",
@@ -5604,7 +5604,7 @@
             "category": "1",
             "bleu_score": 0.05263157894736841,
             "f1_score": 0.0,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "What does John find rewarding about mentoring the younger players?",
@@ -5667,7 +5667,7 @@
             "category": "1",
             "bleu_score": 0.03686635944700461,
             "f1_score": 0.11363636363636365,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "What forum did Tim join recently?",
@@ -5730,7 +5730,7 @@
             "category": "1",
             "bleu_score": 0.02083333333333333,
             "f1_score": 0.0,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "What is John trying out to improve his strength and flexibility after recovery from ankle injury?",
@@ -5766,7 +5766,7 @@
             "category": "4",
             "bleu_score": 0,
             "f1_score": 0.0,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "What is Tim excited to see at Universal Studios?",
@@ -5802,7 +5802,7 @@
             "category": "4",
             "bleu_score": 0.020408163265306117,
             "f1_score": 0.07547169811320754,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "What is one of Tim's favorite fantasy TV shows, as mentioned on November 11, 2023?",
@@ -5811,7 +5811,7 @@
             "category": "4",
             "bleu_score": 0,
             "f1_score": 0.0,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "What is the main intention behind Tim wanting to attend the book conference?",
@@ -5829,7 +5829,7 @@
             "category": "4",
             "bleu_score": 0.0909090909090909,
             "f1_score": 0.1739130434782609,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "What items does John collect?",
@@ -5847,7 +5847,7 @@
             "category": "4",
             "bleu_score": 0.040816326530612235,
             "f1_score": 0.08,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "What kind of deal did John get in December?",
@@ -5865,7 +5865,7 @@
             "category": "4",
             "bleu_score": 0.08108108108108107,
             "f1_score": 0.2181818181818182,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "What kind of fiction stories does Tim write?",
@@ -5910,7 +5910,7 @@
             "category": "4",
             "bleu_score": 0.010309278350515464,
             "f1_score": 0.041666666666666664,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "What kind of writing does Tim do?",
@@ -5946,7 +5946,7 @@
             "category": "4",
             "bleu_score": 0.06451612903225806,
             "f1_score": 0.1702127659574468,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "What motivates John's team to get better, according to John?",
@@ -5955,7 +5955,7 @@
             "category": "4",
             "bleu_score": 0,
             "f1_score": 0.0,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "What new activity has Tim started learning in August 2023?",
@@ -5973,7 +5973,7 @@
             "category": "4",
             "bleu_score": 0.13333333333333333,
             "f1_score": 0.11111111111111112,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "What organization is John teaming up with for his charity work?",
@@ -6027,7 +6027,7 @@
             "category": "1",
             "bleu_score": 0.016949152542372878,
             "f1_score": 0.047619047619047616,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "What special memory does \"Harry Potter and the Philosopher's Stone\" bring to Tim?",
@@ -6081,7 +6081,7 @@
             "category": "4",
             "bleu_score": 0.03125,
             "f1_score": 0.0975609756097561,
-            "llm_score": 0
+            "llm_score": 1
         },
         {
             "question": "What type of venue did John and his girlfriend choose for their wedding ceremony?",
@@ -6099,7 +6099,7 @@
             "category": "4",
             "bleu_score": 0,
             "f1_score": 0.0,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "What was Johns's reaction to sealing the deal with the beverage company?",
@@ -6108,7 +6108,7 @@
             "category": "4",
             "bleu_score": 0.049180327868852444,
             "f1_score": 0.08695652173913045,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "What was Tim's huge writing issue last week,as mentioned on November 6, 2023?",
@@ -6126,7 +6126,7 @@
             "category": "4",
             "bleu_score": 0.0072992700729927,
             "f1_score": 0.03076923076923077,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "What was the setback Tim faced in his writing project on 21 November, 2023?",
@@ -6171,7 +6171,7 @@
             "category": "2",
             "bleu_score": 0,
             "f1_score": 0.034482758620689655,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "When did John achieve a career-high assist performance?",
@@ -6198,7 +6198,7 @@
             "category": "2",
             "bleu_score": 0.023255813953488372,
             "f1_score": 0.037037037037037035,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "When did John get an ankle injury in 2023?",
@@ -6207,7 +6207,7 @@
             "category": "1",
             "bleu_score": 0.030303030303030304,
             "f1_score": 0.08450704225352113,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "When did John get married at a greenhouse?",
@@ -6261,7 +6261,7 @@
             "category": "2",
             "bleu_score": 0,
             "f1_score": 0.04878048780487806,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "When did Tim start playing the violin?",
@@ -6279,7 +6279,7 @@
             "category": "2",
             "bleu_score": 0.011299435028248593,
             "f1_score": 0.022727272727272724,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "When is Tim attending a book conference?",
@@ -6288,7 +6288,7 @@
             "category": "2",
             "bleu_score": 0.005154639175257732,
             "f1_score": 0.025316455696202535,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "When was John in Seattle for a game?",
@@ -6297,7 +6297,7 @@
             "category": "2",
             "bleu_score": 0.00934579439252336,
             "f1_score": 0.0,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "When will Tim leave for Ireland?",
@@ -6306,7 +6306,7 @@
             "category": "2",
             "bleu_score": 0.016129032258064516,
             "f1_score": 0.03448275862068965,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "Where are John and his teammates planning to explore on a team trip?",
@@ -6324,7 +6324,7 @@
             "category": "4",
             "bleu_score": 0,
             "f1_score": 0.0,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "Where was Tim in the week before 16 November 2023?",
@@ -6333,7 +6333,7 @@
             "category": "2",
             "bleu_score": 0.0011778563015312127,
             "f1_score": 0.013245033112582783,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "Where was the forest picture shared by John on December 1,2023 taken?",
@@ -6360,7 +6360,7 @@
             "category": "4",
             "bleu_score": 0,
             "f1_score": 0.0,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "Which Star Wars-related locations would Tim enjoy during his visit to Ireland?",
@@ -6369,7 +6369,7 @@
             "category": "3",
             "bleu_score": 0.0892857142857143,
             "f1_score": 0.11363636363636365,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "Which TV series does Tim mention watching?",
@@ -6378,7 +6378,7 @@
             "category": "1",
             "bleu_score": 0.04651162790697675,
             "f1_score": 0.0606060606060606,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "Which US cities does John mention visiting to Tim?",
@@ -6423,7 +6423,7 @@
             "category": "1",
             "bleu_score": 0.0196078431372549,
             "f1_score": 0.0625,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "Which career-high performances did John achieve in 2023?",
@@ -6450,7 +6450,7 @@
             "category": "4",
             "bleu_score": 0,
             "f1_score": 0.0,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "Which city is John excited to have a game at?",
@@ -6468,7 +6468,7 @@
             "category": "2",
             "bleu_score": 0,
             "f1_score": 0.0,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "Which country was Tim visiting in the second week of November?",
@@ -6495,7 +6495,7 @@
             "category": "1",
             "bleu_score": 0.05263157894736841,
             "f1_score": 0.049999999999999996,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "Which language is Tim learning?",
@@ -6522,7 +6522,7 @@
             "category": "4",
             "bleu_score": 0,
             "f1_score": 0.0,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "Which movie's theme is Tim's favorite to play on the piano?",
@@ -6567,7 +6567,7 @@
             "category": "4",
             "bleu_score": 0.043478260869565216,
             "f1_score": 0.09090909090909091,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "Which two fantasy novels does Tim particularly enjoy writing about?",
@@ -6594,7 +6594,7 @@
             "category": "3",
             "bleu_score": 0.06295853427918728,
             "f1_score": 0.0,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "Who is Tim and John's favorite basketball player?",
@@ -6612,7 +6612,7 @@
             "category": "4",
             "bleu_score": 0,
             "f1_score": 0.0,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "Why did John's teammates sign the basketball they gave him?",
@@ -6677,7 +6677,7 @@
             "category": "2",
             "bleu_score": 0,
             "f1_score": 0.0,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "Did Audrey and Andrew grow up with a pet dog?",
@@ -6695,7 +6695,7 @@
             "category": "1",
             "bleu_score": 0.02,
             "f1_score": 0.05714285714285715,
-            "llm_score": 0
+            "llm_score": 1
         },
         {
             "question": "How did Audrey calm down her dog after the leash incident?",
@@ -6722,7 +6722,7 @@
             "category": "4",
             "bleu_score": 0.021428571428571425,
             "f1_score": 0.0967741935483871,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "How do Audrey's dogs react to snow?",
@@ -6740,7 +6740,7 @@
             "category": "4",
             "bleu_score": 0,
             "f1_score": 0.0,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "How does Andrew suggest helping the planet while also training the body?",
@@ -6749,7 +6749,7 @@
             "category": "4",
             "bleu_score": 0.030303030303030304,
             "f1_score": 0.07142857142857144,
-            "llm_score": 0
+            "llm_score": 1
         },
         {
             "question": "How does Audrey describe her dogs' response to snow?",
@@ -6758,7 +6758,7 @@
             "category": "4",
             "bleu_score": 0.2727272727272727,
             "f1_score": 0.2105263157894737,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "How does Audrey describe the new beds for her dogs?",
@@ -6776,7 +6776,7 @@
             "category": "4",
             "bleu_score": 0,
             "f1_score": 0.0,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "How long did the trail hike that Audrey went on with her pups take?",
@@ -6785,7 +6785,7 @@
             "category": "4",
             "bleu_score": 0,
             "f1_score": 0.0,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "How long does Audrey typically walk her dogs for?",
@@ -6803,7 +6803,7 @@
             "category": "2",
             "bleu_score": 0,
             "f1_score": 0.0,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "How many dogs does Andrew have?",
@@ -6812,7 +6812,7 @@
             "category": "1",
             "bleu_score": 0,
             "f1_score": 0.0,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "How many months passed between Andrew adopting Buddy and Scout",
@@ -6848,7 +6848,7 @@
             "category": "2",
             "bleu_score": 0,
             "f1_score": 0.0,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "How many years passed between Audrey adopting Pixie and her other three dogs?",
@@ -6857,7 +6857,7 @@
             "category": "2",
             "bleu_score": 0.012987012987012983,
             "f1_score": 0.05882352941176471,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "How often does Audrey meet up with other dog owners for tips and playdates?",
@@ -6875,7 +6875,7 @@
             "category": "4",
             "bleu_score": 0.006134969325153374,
             "f1_score": 0.023255813953488372,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "How often does Audrey take her pups to the park for practice?",
@@ -6884,7 +6884,7 @@
             "category": "4",
             "bleu_score": 0.008547008547008546,
             "f1_score": 0.03278688524590164,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "What activity do Andrew and Buddy enjoy doing together?",
@@ -6893,7 +6893,7 @@
             "category": "4",
             "bleu_score": 0,
             "f1_score": 0.0,
-            "llm_score": 0
+            "llm_score": 1
         },
         {
             "question": "What activity do Audrey's dogs like to do in the dog park?",
@@ -6902,7 +6902,7 @@
             "category": "1",
             "bleu_score": 0.13513513513513517,
             "f1_score": 0.2222222222222222,
-            "llm_score": 0
+            "llm_score": 1
         },
         {
             "question": "What advice did Audrey give to Andrew regarding grooming Toby?",
@@ -6920,7 +6920,7 @@
             "category": "1",
             "bleu_score": 0.13333333333333333,
             "f1_score": 0.17142857142857143,
-            "llm_score": 0
+            "llm_score": 1
         },
         {
             "question": "What are some of the personalities of Audrey's four fur babies?",
@@ -6956,7 +6956,7 @@
             "category": "1",
             "bleu_score": 0.09302325581395347,
             "f1_score": 0.10526315789473684,
-            "llm_score": 0
+            "llm_score": 1
         },
         {
             "question": "What are the names of Andrew's dogs?",
@@ -6965,7 +6965,7 @@
             "category": "1",
             "bleu_score": 0.16666666666666669,
             "f1_score": 0.23529411764705882,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "What are the names of Audrey's dogs?",
@@ -6974,7 +6974,7 @@
             "category": "1",
             "bleu_score": 0.3499999999999999,
             "f1_score": 0.4210526315789473,
-            "llm_score": 0
+            "llm_score": 1
         },
         {
             "question": "What aspect of autumn does Andrew find beautiful?",
@@ -7019,7 +7019,7 @@
             "category": "4",
             "bleu_score": 0,
             "f1_score": 0.0,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "What did Andrew and his GF do on the Monday before July 24, 2023?",
@@ -7028,7 +7028,7 @@
             "category": "4",
             "bleu_score": 0.0090702947845805,
             "f1_score": 0.07920792079207921,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "What did Andrew express missing about exploring nature trails with his family's dog?",
@@ -7091,7 +7091,7 @@
             "category": "4",
             "bleu_score": 0,
             "f1_score": 0.0,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "What did Audrey do with her pups over the weekend before 4th October, 2023?",
@@ -7100,7 +7100,7 @@
             "category": "4",
             "bleu_score": 0.017543859649122806,
             "f1_score": 0.041666666666666664,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "What did Audrey eat for dinner on October 24, 2023?",
@@ -7109,7 +7109,7 @@
             "category": "2",
             "bleu_score": 0,
             "f1_score": 0.0,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "What did Audrey get wtih having so many dogs?",
@@ -7145,7 +7145,7 @@
             "category": "4",
             "bleu_score": 0.006968641114982577,
             "f1_score": 0.046511627906976744,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "What did Audrey share to show ways to keep dogs active in the city?",
@@ -7199,7 +7199,7 @@
             "category": "1",
             "bleu_score": 0,
             "f1_score": 0.0,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "What has Andrew done with his dogs?",
@@ -7298,7 +7298,7 @@
             "category": "3",
             "bleu_score": 0.10344827586206899,
             "f1_score": 0.1081081081081081,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "What is something that Andrew really misses while working in the city?",
@@ -7379,7 +7379,7 @@
             "category": "4",
             "bleu_score": 0,
             "f1_score": 0.0,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "What kind of indoor activities has Andrew pursued with his girlfriend?",
@@ -7388,7 +7388,7 @@
             "category": "1",
             "bleu_score": 0.1153846153846154,
             "f1_score": 0.13953488372093023,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "What kind of pastries did Andrew and his girlfriend have at the cafe?",
@@ -7424,7 +7424,7 @@
             "category": "4",
             "bleu_score": 0,
             "f1_score": 0.0,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "What outdoor activities does Andrew plan on trying after the rock climbing class?",
@@ -7478,7 +7478,7 @@
             "category": "4",
             "bleu_score": 0.04545454545454546,
             "f1_score": 0.11764705882352941,
-            "llm_score": 0
+            "llm_score": 1
         },
         {
             "question": "What type of date is Andrew going on Sunday?",
@@ -7532,7 +7532,7 @@
             "category": "4",
             "bleu_score": 0,
             "f1_score": 0.0,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "When did Andrew adopt Scout?",
@@ -7541,7 +7541,7 @@
             "category": "2",
             "bleu_score": 0.008928571428571432,
             "f1_score": 0.03125,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "When did Andrew and his girlfriend go fishing?",
@@ -7559,7 +7559,7 @@
             "category": "2",
             "bleu_score": 0,
             "f1_score": 0.0,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "When did Andrew go rock climbing?",
@@ -7577,7 +7577,7 @@
             "category": "2",
             "bleu_score": 0.10526315789473682,
             "f1_score": 0.0,
-            "llm_score": 0
+            "llm_score": 1
         },
         {
             "question": "When did Andrew start his new job as a financial analyst?",
@@ -7613,7 +7613,7 @@
             "category": "2",
             "bleu_score": 0,
             "f1_score": 0.0,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "When did Audrey move to a new place?",
@@ -7622,7 +7622,7 @@
             "category": "2",
             "bleu_score": 0,
             "f1_score": 0.0,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "When did Audrey see a hummingbird?",
@@ -7658,7 +7658,7 @@
             "category": "2",
             "bleu_score": 0,
             "f1_score": 0.0,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "When is Andrew planning to go to the beach with his girlfriend?",
@@ -7667,7 +7667,7 @@
             "category": "2",
             "bleu_score": 0,
             "f1_score": 0.0,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "Where did Andrew go during the first weekend of August 2023?",
@@ -7676,7 +7676,7 @@
             "category": "2",
             "bleu_score": 0,
             "f1_score": 0.0,
-            "llm_score": 0
+            "llm_score": 1
         },
         {
             "question": "Where did Audrey get Pixie from?",
@@ -7685,7 +7685,7 @@
             "category": "1",
             "bleu_score": 0,
             "f1_score": 0.0,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "Where does Andrew want to live to give their dog a large, open space to run around?",
@@ -7703,7 +7703,7 @@
             "category": "3",
             "bleu_score": 0,
             "f1_score": 0.0,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "Which meat does Audrey prefer eating more than others?",
@@ -7712,7 +7712,7 @@
             "category": "3",
             "bleu_score": 0,
             "f1_score": 0.0,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "Which national park could Audrey and Andrew be referring to in their conversations?",
@@ -7721,7 +7721,7 @@
             "category": "3",
             "bleu_score": 0.004210526315789474,
             "f1_score": 0.02816901408450704,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "Which specific type of bird mesmerizes Andrew?",
@@ -7748,7 +7748,7 @@
             "category": "2",
             "bleu_score": 0,
             "f1_score": 0.0,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "Why did Audrey sign up for a workshop about bonding with pets?",
@@ -7795,7 +7795,7 @@
             "category": "3",
             "bleu_score": 0,
             "f1_score": 0.0,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "Did John and James study together?",
@@ -7822,7 +7822,7 @@
             "category": "3",
             "bleu_score": 0,
             "f1_score": 0.0,
-            "llm_score": 0
+            "llm_score": 1
         },
         {
             "question": "How did John relax in his free time on 9 July, 2022?",
@@ -7831,7 +7831,7 @@
             "category": "4",
             "bleu_score": 0,
             "f1_score": 0.0,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "How does James communicate with his gaming team?",
@@ -7858,7 +7858,7 @@
             "category": "2",
             "bleu_score": 0,
             "f1_score": 0.0,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "How long did John practice chess for before winning the chess tournament?",
@@ -7885,7 +7885,7 @@
             "category": "4",
             "bleu_score": 0,
             "f1_score": 0.0,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "How many charity tournaments has John organized till date?",
@@ -7903,7 +7903,7 @@
             "category": "2",
             "bleu_score": 0.0026315789473684206,
             "f1_score": 0.02247191011235955,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "How many pets does James have?",
@@ -7930,7 +7930,7 @@
             "category": "2",
             "bleu_score": 0,
             "f1_score": 0.0,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "In which state is the shelter from which James adopted the puppy?",
@@ -7948,7 +7948,7 @@
             "category": "3",
             "bleu_score": 0.05797101449275362,
             "f1_score": 0.15533980582524273,
-            "llm_score": 0
+            "llm_score": 1
         },
         {
             "question": "What additional country did James visit during his trip to Canada?",
@@ -8011,7 +8011,7 @@
             "category": "4",
             "bleu_score": 0,
             "f1_score": 0.0,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "What career milestone did John achieve recently in September 2022?",
@@ -8020,7 +8020,7 @@
             "category": "4",
             "bleu_score": 0.01869158878504673,
             "f1_score": 0.07272727272727272,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "What decision did James and Samantha make on 31 October, 2022?",
@@ -8038,7 +8038,7 @@
             "category": "4",
             "bleu_score": 0.010050251256281409,
             "f1_score": 0.05,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "What did James and Samantha discover they both enjoy at McGee's bar?",
@@ -8191,7 +8191,7 @@
             "category": "4",
             "bleu_score": 0,
             "f1_score": 0.0,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "What game genre did John start exploring instead of shooters?",
@@ -8200,7 +8200,7 @@
             "category": "4",
             "bleu_score": 0.07142857142857141,
             "f1_score": 0.125,
-            "llm_score": 0
+            "llm_score": 1
         },
         {
             "question": "What game is John hooked on playing on 5 November, 2022?",
@@ -8245,7 +8245,7 @@
             "category": "1",
             "bleu_score": 0.047619047619047616,
             "f1_score": 0.041666666666666664,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "What happened to James's puppy during the recent visit to the clinic?",
@@ -8263,7 +8263,7 @@
             "category": "1",
             "bleu_score": 0.23076923076923078,
             "f1_score": 0.17647058823529413,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "What has John been teaching his siblings?",
@@ -8281,7 +8281,7 @@
             "category": "4",
             "bleu_score": 0,
             "f1_score": 0.0,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "What impresses John about Japan?",
@@ -8299,7 +8299,7 @@
             "category": "4",
             "bleu_score": 0,
             "f1_score": 0.0,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "What inspired James to create the game character in the virtual world?",
@@ -8317,7 +8317,7 @@
             "category": "4",
             "bleu_score": 0,
             "f1_score": 0.0,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "What instrument is John learning to play as of 27 March, 2022?",
@@ -8326,7 +8326,7 @@
             "category": "4",
             "bleu_score": 0.010309278350515464,
             "f1_score": 0.038461538461538464,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "What is James planning to do after receiving Samantha's phone number?",
@@ -8344,7 +8344,7 @@
             "category": "4",
             "bleu_score": 0,
             "f1_score": 0.0,
-            "llm_score": 0
+            "llm_score": 1
         },
         {
             "question": "What is Max good at doing according to James?",
@@ -8353,7 +8353,7 @@
             "category": "4",
             "bleu_score": 0,
             "f1_score": 0.0,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "What is the board game where you have to find the imposter that John mentions to James?",
@@ -8362,7 +8362,7 @@
             "category": "3",
             "bleu_score": 0,
             "f1_score": 0.0,
-            "llm_score": 0
+            "llm_score": 1
         },
         {
             "question": "What is the game with different colored cards that was John talking about with James?",
@@ -8371,7 +8371,7 @@
             "category": "3",
             "bleu_score": 0,
             "f1_score": 0.0,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "What is the main focus of the organization that James volunteered with?",
@@ -8380,7 +8380,7 @@
             "category": "4",
             "bleu_score": 0.0044052863436123335,
             "f1_score": 0.01834862385321101,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "What is the name of John's cousin's dog?",
@@ -8389,7 +8389,7 @@
             "category": "4",
             "bleu_score": 0,
             "f1_score": 0.0,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "What is the name of the board game John tried in September 2022?",
@@ -8398,7 +8398,7 @@
             "category": "4",
             "bleu_score": 0.030303030303030304,
             "f1_score": 0.07142857142857142,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "What is the name of the pup that was adopted by James?",
@@ -8452,7 +8452,7 @@
             "category": "1",
             "bleu_score": 0.0625,
             "f1_score": 0.0,
-            "llm_score": 0
+            "llm_score": 1
         },
         {
             "question": "What kind of games is James excited to play with his new video card?",
@@ -8488,7 +8488,7 @@
             "category": "1",
             "bleu_score": 0.060606060606060615,
             "f1_score": 0.07692307692307693,
-            "llm_score": 0
+            "llm_score": 1
         },
         {
             "question": "What kind of programs are John's siblings making?",
@@ -8560,7 +8560,7 @@
             "category": "4",
             "bleu_score": 0.0625,
             "f1_score": 0.06060606060606061,
-            "llm_score": 0
+            "llm_score": 1
         },
         {
             "question": "What sparked James' passion for gaming when he was a kid?",
@@ -8596,7 +8596,7 @@
             "category": "4",
             "bleu_score": 0.009523809523809526,
             "f1_score": 0.029411764705882353,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "What type of pizza is James' favorite?",
@@ -8659,7 +8659,7 @@
             "category": "2",
             "bleu_score": 0.04109589041095891,
             "f1_score": 0.14634146341463414,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "When did James and his family visit Mark and Josh?",
@@ -8668,7 +8668,7 @@
             "category": "2",
             "bleu_score": 0,
             "f1_score": 0.0,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "When did James ask Samantha to be his girlfriend?",
@@ -8677,7 +8677,7 @@
             "category": "2",
             "bleu_score": 0,
             "f1_score": 0.0,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "When did James buy himself a new adventure book?",
@@ -8704,7 +8704,7 @@
             "category": "2",
             "bleu_score": 0.017094017094017092,
             "f1_score": 0.03125,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "When did James plan to return from his trip to Toronto and Vancouver?",
@@ -8722,7 +8722,7 @@
             "category": "2",
             "bleu_score": 0.012987012987012983,
             "f1_score": 0.0,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "When did James start taking cooking classes?",
@@ -8731,7 +8731,7 @@
             "category": "2",
             "bleu_score": 0.018867924528301883,
             "f1_score": 0.05555555555555555,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "When did James take his 3 dogs to the beach?",
@@ -8740,7 +8740,7 @@
             "category": "2",
             "bleu_score": 0.009615384615384618,
             "f1_score": 0.026666666666666665,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "When did James try Cyberpunk 2077 game?",
@@ -8758,7 +8758,7 @@
             "category": "2",
             "bleu_score": 0,
             "f1_score": 0.0,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "When did James volunteer at an organization?",
@@ -8776,7 +8776,7 @@
             "category": "2",
             "bleu_score": 0,
             "f1_score": 0.0,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "When did James, Samantha and John go to the baseball game together?",
@@ -8785,7 +8785,7 @@
             "category": "2",
             "bleu_score": 0.006302521008403361,
             "f1_score": 0.023809523809523808,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "When did James, his family and his dogs start on a road trip together?",
@@ -8803,7 +8803,7 @@
             "category": "2",
             "bleu_score": 0,
             "f1_score": 0.0,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "When did John and his gaming friends organize the charity tournament?",
@@ -8812,7 +8812,7 @@
             "category": "2",
             "bleu_score": 0.18181818181818182,
             "f1_score": 0.25,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "When did John and his programming friends host an online programming competition?",
@@ -8821,7 +8821,7 @@
             "category": "2",
             "bleu_score": 0.033898305084745756,
             "f1_score": 0.08450704225352113,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "When did John first organize a charity tournament with his friends?",
@@ -8830,7 +8830,7 @@
             "category": "2",
             "bleu_score": 0.10000000000000002,
             "f1_score": 0.1,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "When did John plan his next meeting with his siblings?",
@@ -8875,7 +8875,7 @@
             "category": "2",
             "bleu_score": 0.005494505494505496,
             "f1_score": 0.023809523809523808,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "When did John work with a game developer on a project?",
@@ -8893,7 +8893,7 @@
             "category": "2",
             "bleu_score": 0.01351351351351352,
             "f1_score": 0.05405405405405406,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "Where did James and Samantha decide to live together on 31 October, 2022?",
@@ -8929,7 +8929,7 @@
             "category": "2",
             "bleu_score": 0.008797653958944282,
             "f1_score": 0.05797101449275362,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "Which RPG game is John playing and enjoying on 10 August, 2022?",
@@ -8947,7 +8947,7 @@
             "category": "1",
             "bleu_score": 0.09523809523809525,
             "f1_score": 0.07142857142857142,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "Which company's headphones did John choose for gaming?",
@@ -8974,7 +8974,7 @@
             "category": "1",
             "bleu_score": 0.12244897959183675,
             "f1_score": 0.1176470588235294,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "Which country did James book tickets for in July 2022?",
@@ -8992,7 +8992,7 @@
             "category": "4",
             "bleu_score": 0,
             "f1_score": 0.0,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "Which football club does John support?",
@@ -9028,7 +9028,7 @@
             "category": "1",
             "bleu_score": 0.012048192771084333,
             "f1_score": 0.0,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "Which places or events have John and James planned to meet at?",
@@ -9037,7 +9037,7 @@
             "category": "1",
             "bleu_score": 0.02597402597402598,
             "f1_score": 0.0,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "Which recreational activity was James pursuing on March 16, 2022?",
@@ -9046,7 +9046,7 @@
             "category": "2",
             "bleu_score": 0.041666666666666664,
             "f1_score": 0.1111111111111111,
-            "llm_score": 0
+            "llm_score": 1
         },
         {
             "question": "Who does James support in football matches?",
@@ -9055,7 +9055,7 @@
             "category": "4",
             "bleu_score": 0.009615384615384618,
             "f1_score": 0.03125,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "Who is Jill?",
@@ -9082,7 +9082,7 @@
             "category": "4",
             "bleu_score": 0.011235955056179777,
             "f1_score": 0.04081632653061225,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "Why did James and Samantha choose an apartment near McGee's bar?",
@@ -9100,7 +9100,7 @@
             "category": "4",
             "bleu_score": 0.031914893617021274,
             "f1_score": 0.06349206349206349,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "Why did James sign up for a cooking class?",
@@ -9118,7 +9118,7 @@
             "category": "3",
             "bleu_score": 0.14285714285714285,
             "f1_score": 0.08695652173913043,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "Will there be an interview required to volunteer with the organization James volunteered for?",
@@ -9228,7 +9228,7 @@
             "category": "4",
             "bleu_score": 0.02409638554216868,
             "f1_score": 0.07272727272727272,
-            "llm_score": 0
+            "llm_score": 1
         },
         {
             "question": "How did Jolene and her partner initially meet?",
@@ -9237,7 +9237,7 @@
             "category": "4",
             "bleu_score": 0.009090909090909087,
             "f1_score": 0.025,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "How did Jolene come to have her pet, Susie?",
@@ -9246,7 +9246,7 @@
             "category": "4",
             "bleu_score": 0.07142857142857141,
             "f1_score": 0.0,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "How did Jolene feel about her progress in practicing mindfulness and gratitude?",
@@ -9300,7 +9300,7 @@
             "category": "4",
             "bleu_score": 0,
             "f1_score": 0.0,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "How does Jolene plan to involve local engineers in her idea of teaching STEM to underprivileged kids?",
@@ -9309,7 +9309,7 @@
             "category": "4",
             "bleu_score": 0.009708737864077669,
             "f1_score": 0.031746031746031744,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "How does Jolene plan to pursue her dream of learning to surf?",
@@ -9390,7 +9390,7 @@
             "category": "3",
             "bleu_score": 0.00704225352112676,
             "f1_score": 0.020618556701030927,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "How old is Max?",
@@ -9399,7 +9399,7 @@
             "category": "4",
             "bleu_score": 0.010000000000000004,
             "f1_score": 0.05063291139240506,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "In what country did Jolene buy snake Seraphim?",
@@ -9408,7 +9408,7 @@
             "category": "3",
             "bleu_score": 0.0072463768115942,
             "f1_score": 0.033898305084745756,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "In what country did Jolene's mother buy her the pendant?",
@@ -9417,7 +9417,7 @@
             "category": "3",
             "bleu_score": 0.0625,
             "f1_score": 0.125,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "In what country was Jolene during summer 2022?",
@@ -9426,7 +9426,7 @@
             "category": "3",
             "bleu_score": 0,
             "f1_score": 0.0,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "Is Deborah married?",
@@ -9498,7 +9498,7 @@
             "category": "4",
             "bleu_score": 0.007462686567164181,
             "f1_score": 0.028571428571428574,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "What album does Deborah recommend for meditation and deep relaxation?",
@@ -9507,7 +9507,7 @@
             "category": "4",
             "bleu_score": 0,
             "f1_score": 0.0,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "What are Jolene's favorite books?",
@@ -9552,7 +9552,7 @@
             "category": "3",
             "bleu_score": 0,
             "f1_score": 0.0,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "What cool stuff did Jolene accomplish at the retreat on 9 February, 2023?",
@@ -9570,7 +9570,7 @@
             "category": "4",
             "bleu_score": 0,
             "f1_score": 0.0,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "What did Deb share a photo of, which brought a smile to Jolene's face?",
@@ -9633,7 +9633,7 @@
             "category": "4",
             "bleu_score": 0,
             "f1_score": 0.0,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "What did Jolene and Deb discuss as a helpful strategy for studying and time management?",
@@ -9642,7 +9642,7 @@
             "category": "4",
             "bleu_score": 0.07142857142857141,
             "f1_score": 0.0,
-            "llm_score": 0
+            "llm_score": 1
         },
         {
             "question": "What did Jolene ask Deb to help with on 13 March, 2023?",
@@ -9687,7 +9687,7 @@
             "category": "4",
             "bleu_score": 0,
             "f1_score": 0.0,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "What do Deborah and Jolene plan to try when they meet in a new cafe?",
@@ -9795,7 +9795,7 @@
             "category": "4",
             "bleu_score": 0.03658536585365854,
             "f1_score": 0.0,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "What games does Jolene recommend for Deborah?",
@@ -9822,7 +9822,7 @@
             "category": "1",
             "bleu_score": 0.12500000000000003,
             "f1_score": 0.09302325581395349,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "What group activity did Deborah start with Anna?",
@@ -9831,7 +9831,7 @@
             "category": "4",
             "bleu_score": 0.016129032258064516,
             "f1_score": 0.06153846153846154,
-            "llm_score": 0
+            "llm_score": 1
         },
         {
             "question": "What habits does Jolene practice to feel balanced?",
@@ -9966,7 +9966,7 @@
             "category": "2",
             "bleu_score": 0.008695652173913042,
             "f1_score": 0.043478260869565216,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "What kind of yoga routine does Deborah recommend to Jolene?",
@@ -10011,7 +10011,7 @@
             "category": "4",
             "bleu_score": 0.03846153846153846,
             "f1_score": 0.0,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "What music pieces does Deborah listen to during her yoga practice?",
@@ -10020,7 +10020,7 @@
             "category": "4",
             "bleu_score": 0.03846153846153846,
             "f1_score": 0.0,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "What new activity did Deborah and her neighbor organize for the community on 16 September, 2023?",
@@ -10065,7 +10065,7 @@
             "category": "4",
             "bleu_score": 0,
             "f1_score": 0.0,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "What picture did Jolene share related to feeling overwhelmed?",
@@ -10110,7 +10110,7 @@
             "category": "4",
             "bleu_score": 0.006944444444444444,
             "f1_score": 0.029411764705882356,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "What projects is Jolene planning for next year?",
@@ -10182,7 +10182,7 @@
             "category": "4",
             "bleu_score": 0.03846153846153846,
             "f1_score": 0.0625,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "What was Deborah's mom passionate about?",
@@ -10272,7 +10272,7 @@
             "category": "2",
             "bleu_score": 0,
             "f1_score": 0.0,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "When did Deborah go for her first morning jog in a nearby park?",
@@ -10308,7 +10308,7 @@
             "category": "2",
             "bleu_score": 0,
             "f1_score": 0.0,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "When did Deborah lead a meditation session during the sunset?",
@@ -10326,7 +10326,7 @@
             "category": "2",
             "bleu_score": 0,
             "f1_score": 0.0,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "When did Deborah receive an appreciation letter from her community?",
@@ -10335,7 +10335,7 @@
             "category": "2",
             "bleu_score": 0.02777777777777778,
             "f1_score": 0.0,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "When did Deborah start the yoga class in the neighborhood?",
@@ -10362,7 +10362,7 @@
             "category": "2",
             "bleu_score": 0.05000000000000001,
             "f1_score": 0.0,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "When did Deborah`s mother pass away?",
@@ -10371,7 +10371,7 @@
             "category": "2",
             "bleu_score": 0.02684563758389262,
             "f1_score": 0.0975609756097561,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "When did Jolene adopt her snake Susie?",
@@ -10380,7 +10380,7 @@
             "category": "2",
             "bleu_score": 0,
             "f1_score": 0.0,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "When did Jolene and her partner return home from Rio de Janeiro?",
@@ -10389,7 +10389,7 @@
             "category": "2",
             "bleu_score": 0.017543859649122806,
             "f1_score": 0.023809523809523808,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "When did Jolene and her partner try scuba diving lessons?",
@@ -10398,7 +10398,7 @@
             "category": "2",
             "bleu_score": 0,
             "f1_score": 0.0,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "When did Jolene buy a new aquarium for Seraphim?",
@@ -10416,7 +10416,7 @@
             "category": "2",
             "bleu_score": 0,
             "f1_score": 0.0,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "When did Jolene buy her pet snake?",
@@ -10425,7 +10425,7 @@
             "category": "4",
             "bleu_score": 0.08333333333333333,
             "f1_score": 0.14285714285714288,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "When did Jolene do yoga at Talkeetna?",
@@ -10434,7 +10434,7 @@
             "category": "2",
             "bleu_score": 0,
             "f1_score": 0.0,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "When did Jolene finish her robotics project?",
@@ -10452,7 +10452,7 @@
             "category": "2",
             "bleu_score": 0.02298850574712644,
             "f1_score": 0.0,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "When did Jolene have a dinner and drinks with her friends?",
@@ -10470,7 +10470,7 @@
             "category": "2",
             "bleu_score": 0.022222222222222227,
             "f1_score": 0.0,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "When did Jolene lose a lot of progress in her work?",
@@ -10488,7 +10488,7 @@
             "category": "2",
             "bleu_score": 0,
             "f1_score": 0.0,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "When did Jolene's mom gift her a pendant?",
@@ -10542,7 +10542,7 @@
             "category": "2",
             "bleu_score": 0,
             "f1_score": 0.0,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "When was Deborah in Bali?",
@@ -10569,7 +10569,7 @@
             "category": "2",
             "bleu_score": 0.013698630136986304,
             "f1_score": 0.044444444444444446,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "When was the last photo of Deborah and Karlie taken?",
@@ -10587,7 +10587,7 @@
             "category": "4",
             "bleu_score": 0.15384615384615385,
             "f1_score": 0.1818181818181818,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "Where did Deborah get her cats?",
@@ -10596,7 +10596,7 @@
             "category": "4",
             "bleu_score": 0.15384615384615385,
             "f1_score": 0.1818181818181818,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "Where did Deborah get married?",
@@ -10605,7 +10605,7 @@
             "category": "4",
             "bleu_score": 0,
             "f1_score": 0.0,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "Where did Deborah meet her new neighbor Anna?",
@@ -10614,7 +10614,7 @@
             "category": "4",
             "bleu_score": 0,
             "f1_score": 0.0,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "Where did Jolene and her partner find a cool diving spot?",
@@ -10731,7 +10731,7 @@
             "category": "1",
             "bleu_score": 0.04545454545454546,
             "f1_score": 0.0,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "Which pet did Jolene adopt first - Susie or Seraphim?",
@@ -10740,7 +10740,7 @@
             "category": "2",
             "bleu_score": 0.023255813953488372,
             "f1_score": 0.07142857142857142,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "Which pet did Jolene adopt more recently - Susie or Seraphim?",
@@ -10758,7 +10758,7 @@
             "category": "4",
             "bleu_score": 0.03846153846153846,
             "f1_score": 0.08,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "Which year did Jolene and her partner start dating?",
@@ -10767,7 +10767,7 @@
             "category": "2",
             "bleu_score": 0,
             "f1_score": 0.0,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "Which year did Jolene start practicing yoga?",
@@ -10776,7 +10776,7 @@
             "category": "2",
             "bleu_score": 0,
             "f1_score": 0.0,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "Which yoga pose is Jolene a fan of for rest and calmness?",
@@ -10830,7 +10830,7 @@
             "category": "4",
             "bleu_score": 0.0144927536231884,
             "f1_score": 0.04081632653061225,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "Why did Jolene sometimes put off doing yoga?",
@@ -10848,7 +10848,7 @@
             "category": "4",
             "bleu_score": 0.019736842105263153,
             "f1_score": 0.0821917808219178,
-            "llm_score": 1
+            "llm_score": 0
         }
     ],
     "8": [
@@ -10868,7 +10868,7 @@
             "category": "4",
             "bleu_score": 0,
             "f1_score": 0.0,
-            "llm_score": 0
+            "llm_score": 1
         },
         {
             "question": "Considering their conversations and personal growth, what advice might Evan and Sam give to someone facing a major life transition or challenge?",
@@ -10985,7 +10985,7 @@
             "category": "1",
             "bleu_score": 0.0319634703196347,
             "f1_score": 0.07339449541284403,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "How long did Evan and his partner date before getting married?",
@@ -10994,7 +10994,7 @@
             "category": "2",
             "bleu_score": 0,
             "f1_score": 0.0,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "How many Prius has Evan owned?",
@@ -11039,7 +11039,7 @@
             "category": "3",
             "bleu_score": 0,
             "f1_score": 0.0,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "In light of the health and dietary changes discussed, what would be an appropriate gift for both Evan and Sam to encourage their healthy lifestyles?",
@@ -11048,7 +11048,7 @@
             "category": "3",
             "bleu_score": 0.13333333333333333,
             "f1_score": 0.18867924528301885,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "What accidents has Evan's son faced lately?",
@@ -11093,7 +11093,7 @@
             "category": "4",
             "bleu_score": 0,
             "f1_score": 0.0,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "What advice did Evan give Sam about finding a passion?",
@@ -11165,7 +11165,7 @@
             "category": "4",
             "bleu_score": 0,
             "f1_score": 0.0,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "What did Evan offer to share with Sam after talking about healthy snacks?",
@@ -11201,7 +11201,7 @@
             "category": "4",
             "bleu_score": 0.1388888888888889,
             "f1_score": 0.12121212121212123,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "What did Evan start doing a few years back as a stress-buster?",
@@ -11309,7 +11309,7 @@
             "category": "4",
             "bleu_score": 0,
             "f1_score": 0.0,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "What dish did Sam make on 18 August, 2023 that turned out flavorful?",
@@ -11372,7 +11372,7 @@
             "category": "4",
             "bleu_score": 0.011904761904761908,
             "f1_score": 0.03571428571428571,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "What food did Sam share a photo of on 19 August, 2023?",
@@ -11390,7 +11390,7 @@
             "category": "4",
             "bleu_score": 0,
             "f1_score": 0.0,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "What fun activity did Evan mention doing in July 2023?",
@@ -11399,7 +11399,7 @@
             "category": "4",
             "bleu_score": 0,
             "f1_score": 0.0,
-            "llm_score": 0
+            "llm_score": 1
         },
         {
             "question": "What gift did Evan receive from a close friend?",
@@ -11498,7 +11498,7 @@
             "category": "4",
             "bleu_score": 0.004338394793926247,
             "f1_score": 0.027972027972027972,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "What is the recurring dream that Sam keeps having?",
@@ -11570,7 +11570,7 @@
             "category": "2",
             "bleu_score": 0.018181818181818177,
             "f1_score": 0.047619047619047616,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "What kind of subjects does Evan enjoy painting?",
@@ -11651,7 +11651,7 @@
             "category": "4",
             "bleu_score": 0.03749999999999999,
             "f1_score": 0.10909090909090909,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "What new diet and lifestyle change did Sam adopt over time?",
@@ -11705,7 +11705,7 @@
             "category": "4",
             "bleu_score": 0.0066815144766146995,
             "f1_score": 0.050420168067226885,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "What personal health incidents does Evan face in 2023?",
@@ -11714,7 +11714,7 @@
             "category": "1",
             "bleu_score": 0.039603960396039604,
             "f1_score": 0.034482758620689655,
-            "llm_score": 0
+            "llm_score": 1
         },
         {
             "question": "What recurring adventure does Evan have with strangers?",
@@ -11759,7 +11759,7 @@
             "category": "2",
             "bleu_score": 0.017543859649122806,
             "f1_score": 0.07894736842105263,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "What sports activity did Evan and his partner try in a recent weekend?",
@@ -11822,7 +11822,7 @@
             "category": "4",
             "bleu_score": 0.04687499999999999,
             "f1_score": 0.15,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "What was Evan limiting himself to on his new diet?",
@@ -11849,7 +11849,7 @@
             "category": "4",
             "bleu_score": 0.09523809523809525,
             "f1_score": 0.13793103448275862,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "When Evan did meet his future wife?",
@@ -11876,7 +11876,7 @@
             "category": "2",
             "bleu_score": 0.019354838709677424,
             "f1_score": 0.0,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "When did Evan and Sam planned a trip to the beach together?",
@@ -11912,7 +11912,7 @@
             "category": "2",
             "bleu_score": 0,
             "f1_score": 0.0,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "When did Evan go to Jasper with his family?",
@@ -11921,7 +11921,7 @@
             "category": "2",
             "bleu_score": 0,
             "f1_score": 0.0,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "When did Evan have a drunken night with his friends?",
@@ -11930,7 +11930,7 @@
             "category": "2",
             "bleu_score": 0.01680672268907563,
             "f1_score": 0.0,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "When did Evan have his sudden heart palpitation incident that really shocked him up?",
@@ -11966,7 +11966,7 @@
             "category": "2",
             "bleu_score": 0.031578947368421054,
             "f1_score": 0.0,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "When did Evan's son fall off his bike?",
@@ -11984,7 +11984,7 @@
             "category": "2",
             "bleu_score": 0.004464285714285716,
             "f1_score": 0.0,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "When did Sam first go to the doctor and find out he had a weight problem?",
@@ -11993,7 +11993,7 @@
             "category": "2",
             "bleu_score": 0.039603960396039604,
             "f1_score": 0.031746031746031744,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "When did Sam start working out at the gym?",
@@ -12002,7 +12002,7 @@
             "category": "2",
             "bleu_score": 0.00749063670411985,
             "f1_score": 0.01785714285714286,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "When did Sam's friends mock him for being overweight?",
@@ -12029,7 +12029,7 @@
             "category": "2",
             "bleu_score": 0.07142857142857141,
             "f1_score": 0.0,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "When was Sam in the ER?",
@@ -12047,7 +12047,7 @@
             "category": "2",
             "bleu_score": 0.00704225352112676,
             "f1_score": 0.03278688524590164,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "Where did Evan take his family for a road trip on 24 May, 2023?",
@@ -12101,7 +12101,7 @@
             "category": "2",
             "bleu_score": 0,
             "f1_score": 0.0,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "Which ailment does Sam have to face due to his weight?",
@@ -12191,7 +12191,7 @@
             "category": "2",
             "bleu_score": 0,
             "f1_score": 0.0,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "Who did Evan meet on his trip to Canada, and who did he come back from Canada with?",
@@ -12218,7 +12218,7 @@
             "category": "4",
             "bleu_score": 0.006849315068493151,
             "f1_score": 0.025,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "Who was injured in Evan's family?",
@@ -12319,7 +12319,7 @@
             "category": "3",
             "bleu_score": 0,
             "f1_score": 0.0,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "How did Calvin feel about performing with someone he admires?",
@@ -12328,7 +12328,7 @@
             "category": "4",
             "bleu_score": 0.047619047619047616,
             "f1_score": 0.08333333333333333,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "How did Calvin meet Frank Ocean?",
@@ -12337,7 +12337,7 @@
             "category": "4",
             "bleu_score": 0,
             "f1_score": 0.0,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "How did the audience in Tokyo react when Calvin sang one of his songs?",
@@ -12418,7 +12418,7 @@
             "category": "2",
             "bleu_score": 0,
             "f1_score": 0.0,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "How long was the car modification workshop in San Francisco?",
@@ -12427,7 +12427,7 @@
             "category": "2",
             "bleu_score": 0,
             "f1_score": 0.0,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "How many Ferraris does Calvin own?",
@@ -12445,7 +12445,7 @@
             "category": "1",
             "bleu_score": 0,
             "f1_score": 0.0,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "How many times has Calvin had to deal with insurance paperwork?",
@@ -12472,7 +12472,7 @@
             "category": "4",
             "bleu_score": 0.11764705882352941,
             "f1_score": 0.18181818181818182,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "What activity does Dave find fulfilling, similar to Calvin's passion for music festivals?",
@@ -12481,7 +12481,7 @@
             "category": "4",
             "bleu_score": 0,
             "f1_score": 0.0,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "What advice did Calvin receive from the producer at the music festival?",
@@ -12544,7 +12544,7 @@
             "category": "4",
             "bleu_score": 0,
             "f1_score": 0.0,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "What did Calvin and his friends arrange for in the park?",
@@ -12562,7 +12562,7 @@
             "category": "4",
             "bleu_score": 0.06451612903225806,
             "f1_score": 0.13333333333333333,
-            "llm_score": 0
+            "llm_score": 1
         },
         {
             "question": "What did Calvin book a flight ticket for on 1st September 2023?",
@@ -12571,7 +12571,7 @@
             "category": "4",
             "bleu_score": 0,
             "f1_score": 0.0,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "What did Calvin discuss with the cool artist he met at the gala?",
@@ -12598,7 +12598,7 @@
             "category": "4",
             "bleu_score": 0,
             "f1_score": 0.0,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "What did Calvin receive as a gift from another artist?",
@@ -12652,7 +12652,7 @@
             "category": "4",
             "bleu_score": 0.0625,
             "f1_score": 0.11111111111111112,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "What do Dave and Calvin agree on regarding their pursuits?",
@@ -12769,7 +12769,7 @@
             "category": "4",
             "bleu_score": 0,
             "f1_score": 0.0,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "What gifts has Calvin received from his artist friends?",
@@ -12886,7 +12886,7 @@
             "category": "4",
             "bleu_score": 0.006802721088435376,
             "f1_score": 0.024390243902439025,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "What items did Calvin buy in March 2023?",
@@ -12895,7 +12895,7 @@
             "category": "1",
             "bleu_score": 0.2,
             "f1_score": 0.1904761904761905,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "What kind of impact does Dave's blog on car mods have on people?",
@@ -12922,7 +12922,7 @@
             "category": "1",
             "bleu_score": 0.01680672268907563,
             "f1_score": 0.029411764705882353,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "What kind of music has Calvin been creating lately?",
@@ -12976,7 +12976,7 @@
             "category": "4",
             "bleu_score": 0,
             "f1_score": 0.0,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "What realization did the nightclub experience bring to Calvin?",
@@ -12985,7 +12985,7 @@
             "category": "4",
             "bleu_score": 0.07843137254901959,
             "f1_score": 0.1276595744680851,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "What shared activities do Dave and Calvin have?",
@@ -13003,7 +13003,7 @@
             "category": "4",
             "bleu_score": 0,
             "f1_score": 0.0,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "What sports activity is Calvin planning to try after the tour with Frank Ocean?",
@@ -13021,7 +13021,7 @@
             "category": "1",
             "bleu_score": 0.037037037037037035,
             "f1_score": 0.0,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "What tools does Calvin use to boost his motivation for music?",
@@ -13030,7 +13030,7 @@
             "category": "4",
             "bleu_score": 0,
             "f1_score": 0.0,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "What type of car did Dave work on during the workshop?",
@@ -13057,7 +13057,7 @@
             "category": "4",
             "bleu_score": 0.017543859649122806,
             "f1_score": 0.07920792079207921,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "What type of music has Dave been getting into lately?",
@@ -13075,7 +13075,7 @@
             "category": "4",
             "bleu_score": 0.021978021978021976,
             "f1_score": 0.0,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "What type of videos does Calvin usually watch on his television?",
@@ -13084,7 +13084,7 @@
             "category": "4",
             "bleu_score": 0.07142857142857141,
             "f1_score": 0.0909090909090909,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "What was Calvin excited to do after getting his car fixed on 7 July, 2023?",
@@ -13111,7 +13111,7 @@
             "category": "2",
             "bleu_score": 0.008547008547008546,
             "f1_score": 0.0396039603960396,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "What was the artists Calvin used to listen to when he was a kid?",
@@ -13156,7 +13156,7 @@
             "category": "2",
             "bleu_score": 0,
             "f1_score": 0.0,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "When did Calvin attend a gala in Boston?",
@@ -13165,7 +13165,7 @@
             "category": "2",
             "bleu_score": 0,
             "f1_score": 0.0,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "When did Calvin book flight tickets to Boston?",
@@ -13174,7 +13174,7 @@
             "category": "2",
             "bleu_score": 0.008438818565400841,
             "f1_score": 0.019801980198019802,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "When did Calvin buy his second Ferrari?",
@@ -13183,7 +13183,7 @@
             "category": "2",
             "bleu_score": 0,
             "f1_score": 0.0,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "When did Calvin first get interested in cars?",
@@ -13192,7 +13192,7 @@
             "category": "4",
             "bleu_score": 0,
             "f1_score": 0.0,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "When did Calvin first travel to Tokyo?",
@@ -13210,7 +13210,7 @@
             "category": "2",
             "bleu_score": 0.11764705882352941,
             "f1_score": 0.17142857142857143,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "When did Calvin meet with the creative team for his new album?",
@@ -13219,7 +13219,7 @@
             "category": "2",
             "bleu_score": 0.009661835748792274,
             "f1_score": 0.021052631578947368,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "When did Calvin met with local artists in Boston?",
@@ -13228,7 +13228,7 @@
             "category": "2",
             "bleu_score": 0.012244897959183673,
             "f1_score": 0.020833333333333336,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "When did Calvin plan on travelling to Tokyo the second time?",
@@ -13237,7 +13237,7 @@
             "category": "2",
             "bleu_score": 0.0022883295194508014,
             "f1_score": 0.019801980198019806,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "When did Calvin record a podcast with his friends?",
@@ -13255,7 +13255,7 @@
             "category": "2",
             "bleu_score": 0.0144927536231884,
             "f1_score": 0.026666666666666665,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "When did Calvin's place get flooded in Tokyo?",
@@ -13273,7 +13273,7 @@
             "category": "2",
             "bleu_score": 0,
             "f1_score": 0.0,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "When did Dave find the car he repaired and started sharing in his blog?",
@@ -13282,7 +13282,7 @@
             "category": "2",
             "bleu_score": 0.017045454545454544,
             "f1_score": 0.04705882352941177,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "When did Dave have a great jam session with his band?",
@@ -13300,7 +13300,7 @@
             "category": "2",
             "bleu_score": 0,
             "f1_score": 0.0,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "When did Dave return from San Francisco?",
@@ -13318,7 +13318,7 @@
             "category": "2",
             "bleu_score": 0.006315789473684212,
             "f1_score": 0.04819277108433735,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "When did Dave sell the car he restored last year?",
@@ -13327,7 +13327,7 @@
             "category": "4",
             "bleu_score": 0.028985507246376805,
             "f1_score": 0.1081081081081081,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "When did Dave start his car maintenance shop?",
@@ -13345,7 +13345,7 @@
             "category": "2",
             "bleu_score": 0,
             "f1_score": 0.0,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "When did Dave take a trip to mountainous regions?",
@@ -13363,7 +13363,7 @@
             "category": "2",
             "bleu_score": 0.16129032258064513,
             "f1_score": 0.25806451612903225,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "When was Calvin's album released?",
@@ -13372,7 +13372,7 @@
             "category": "2",
             "bleu_score": 0.0075187969924812035,
             "f1_score": 0.0,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "When was Calvin's concert in Tokyo?",
@@ -13390,7 +13390,7 @@
             "category": "4",
             "bleu_score": 0.009708737864077669,
             "f1_score": 0.0392156862745098,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "Where did Calvin and Frank Ocean record a song together?",
@@ -13399,7 +13399,7 @@
             "category": "4",
             "bleu_score": 0.039603960396039604,
             "f1_score": 0.10526315789473684,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "Where did Calvin attend a music festival in April 2023?",
@@ -13426,7 +13426,7 @@
             "category": "4",
             "bleu_score": 0,
             "f1_score": 0.0,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "Where did Dave return from with new knowledge of different techniques of car restoration?",
@@ -13444,7 +13444,7 @@
             "category": "4",
             "bleu_score": 0,
             "f1_score": 0.0,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "Where was Calvin located in the last week of October 2023?",
@@ -13453,7 +13453,7 @@
             "category": "2",
             "bleu_score": 0,
             "f1_score": 0.0,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "Where was Dave in the last two weeks of August 2023?",
@@ -13462,7 +13462,7 @@
             "category": "2",
             "bleu_score": 0,
             "f1_score": 0.0,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "Which Disney movie did Dave mention as one of his favorites?",
@@ -13471,7 +13471,7 @@
             "category": "4",
             "bleu_score": 0,
             "f1_score": 0.0,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "Which band was Dave's favorite at the music festival in April 2023?",
@@ -13480,7 +13480,7 @@
             "category": "4",
             "bleu_score": 0,
             "f1_score": 0.0,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "Which bands has Dave enjoyed listening to?",
@@ -13498,7 +13498,7 @@
             "category": "1",
             "bleu_score": 0.02777777777777778,
             "f1_score": 0.0,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "Which city is featured in the photograph Dave showed Calvin?",
@@ -13507,7 +13507,7 @@
             "category": "4",
             "bleu_score": 0,
             "f1_score": 0.0,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "Which city was Calvin at on October 3, 2023?",
@@ -13525,7 +13525,7 @@
             "category": "2",
             "bleu_score": 0,
             "f1_score": 0.0,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "Which country do Calvin and Dave want to meet in?",
@@ -13543,7 +13543,7 @@
             "category": "1",
             "bleu_score": 0.10144927536231882,
             "f1_score": 0.1492537313432836,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "Which hobby did Dave pick up in October 2023?",
@@ -13570,7 +13570,7 @@
             "category": "4",
             "bleu_score": 0.016260162601626025,
             "f1_score": 0.05333333333333332,
-            "llm_score": 0
+            "llm_score": 1
         },
         {
             "question": "Which places or events has Calvin visited in Tokyo?",
@@ -13624,7 +13624,7 @@
             "category": "1",
             "bleu_score": 0.0022727272727272735,
             "f1_score": 0.014814814814814812,
-            "llm_score": 1
+            "llm_score": 0
         },
         {
             "question": "Who supports Calvin in tough times?",
@@ -13678,7 +13678,7 @@
             "category": "3",
             "bleu_score": 0.013422818791946308,
             "f1_score": 0.05,
-            "llm_score": 1
+            "llm_score": 0
         }
     ]
 }

@@ -49,3 +49,7 @@ MEM0G_CONFIG = {
 
 def get_vllm_client() -> OpenAI:
     return OpenAI(base_url=VLLM_BASE_URL, api_key="unused")
+
+
+# Patch mem0 VllmLLM before any Memory / graph LLM use (Qwen3 tool args "Extra data" JSON).
+from . import vllm_tool_args_patch  # noqa: F401

@@ -1,0 +1,23 @@
+{
+  "baseline": "aether",
+  "phase": "search",
+  "n_qa": 1986,
+  "search_latency_sec": {
+    "p50": 8.682258009910583,
+    "p95": 16.282798767089844,
+    "p99": 20.104947662353524
+  },
+  "search_latency_sec_count": 1986,
+  "generation_latency_sec": {
+    "p50": 0.8300168514251709,
+    "p95": 6.601338088512421,
+    "p99": 7.74818145036698
+  },
+  "generation_latency_sec_count": 1986,
+  "total_latency_sec": {
+    "p50": 9.83498740196228,
+    "p95": 17.654166221618652,
+    "p99": 21.797822368144992
+  },
+  "total_latency_sec_count": 1986
+}
