@@ -1,0 +1,23 @@
+{
+  "baseline": "mem0g",
+  "phase": "search",
+  "n_qa": 1986,
+  "search_latency_sec": {
+    "p50": 4.6349934339523315,
+    "p95": 7.755259096622467,
+    "p99": 9.32782930135727
+  },
+  "search_latency_sec_count": 1986,
+  "generation_latency_sec": {
+    "p50": 1.7274093627929688,
+    "p95": 6.029945909976959,
+    "p99": 22.56287635564805
+  },
+  "generation_latency_sec_count": 1986,
+  "total_latency_sec": {
+    "p50": 6.562347650527954,
+    "p95": 12.27818512916565,
+    "p99": 28.109314453601936
+  },
+  "total_latency_sec_count": 1986
+}

@@ -37,16 +37,38 @@ class MemorySearch:
     def search_memory(self, user_id: str, query: str, max_retries: int = 3):
         start = time.time()
         memories = None
+
+        def _invoke_search():
+            """mem0ai 1.x ``Memory.search`` expects ``user_id=...`` for OSS; bare
+            ``filters={\"user_id\": ...}`` can raise ValidationError ('user_id required')."""
+            try:
+                return self.mem.search(
+                    query,
+                    user_id=user_id,
+                    top_k=self.top_k,
+                )
+            except TypeError:
+                pass
+            try:
+                return self.mem.search(query, user_id=user_id, limit=self.top_k)
+            except TypeError:
+                pass
+            try:
+                return self.mem.search(
+                    query,
+                    filters={"user_id": user_id},
+                    top_k=self.top_k,
+                )
+            except TypeError:
+                return self.mem.search(
+                    query,
+                    filters={"user_id": user_id},
+                    limit=self.top_k,
+                )
+
         for attempt in range(max_retries):
             try:
-                try:
-                    memories = self.mem.search(
-                        query, filters={"user_id": user_id}, top_k=self.top_k
-                    )
-                except TypeError:
-                    memories = self.mem.search(
-                        query, filters={"user_id": user_id}, limit=self.top_k
-                    )
+                memories = _invoke_search()
                 break
             except Exception:
                 if attempt >= max_retries - 1:
