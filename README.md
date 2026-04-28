@@ -12,7 +12,7 @@
   <a href="https://huggingface.co/">
     <img src="https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Embeddings-FFD21E" alt="Hugging Face Embeddings">
   </a>
-  <a href="https://github.com/shreyko/Aether/tree/main/AetherExtension">
+  <a href="#chrome-extension-integration">
     <img src="https://img.shields.io/badge/Chrome-Extension-4285F4?logo=googlechrome&logoColor=white" alt="Chrome Extension">
   </a>
   <a href="YOUR_LINK_HERE">
