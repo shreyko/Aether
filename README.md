@@ -3,11 +3,21 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Architecture-Hypergraph-success" alt="Hypergraph Architecture">
-  <img src="https://img.shields.io/badge/Google%20Gemini-8E75B2?logo=googlebard&logoColor=white" alt="Google Gemini API">
-  <img src="https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Embeddings-FFD21E" alt="Hugging Face Embeddings">
-  <img src="https://img.shields.io/badge/Chrome-Extension-4285F4?logo=googlechrome&logoColor=white" alt="Chrome Extension">
-  <img src="https://img.shields.io/badge/Status-Research%20%2F%20WIP-orange" alt="Status">
+  <a href="https://en.wikipedia.org/wiki/Hypergraph">
+    <img src="https://img.shields.io/badge/Architecture-Hypergraph-success" alt="Hypergraph Architecture">
+  </a>
+  <a href="https://ai.google.dev/">
+    <img src="https://img.shields.io/badge/Google%20Gemini-8E75B2?logo=googlebard&logoColor=white" alt="Google Gemini API">
+  </a>
+  <a href="https://huggingface.co/">
+    <img src="https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Embeddings-FFD21E" alt="Hugging Face Embeddings">
+  </a>
+  <a href="https://github.com/shreyko/Aether/tree/main/AetherExtension">
+    <img src="https://img.shields.io/badge/Chrome-Extension-4285F4?logo=googlechrome&logoColor=white" alt="Chrome Extension">
+  </a>
+  <a href="YOUR_LINK_HERE">
+    <img src="https://img.shields.io/badge/Status-Research%20%2F%20WIP-orange" alt="Status">
+  </a>
 </p>
 
 # Aether: Hypergraph Long Term Memory for LLMs 
